@@ -1419,7 +1419,7 @@
     },
     {
         "question_ref":119,
-        "question_text":"Each 'Critical Location' point in the AIIB Selected Landslide Sites is associated with a two-digit or three-digit number. Identify the 'Critical Location' point numbers within MATARA that are intersected by a Major Road.",
+        "question_text":"Each 'Critical Location' point in the AIIB Selected Landslide Sites is associated with a one-digit, two-digit or three-digit number. Identify the 'Critical Location' point numbers within MATARA that are intersected by a Major Road.",
         "expected_answer":"19; 21; 22",
         "image_urls":[
             "aiib\/P000124-SL-Landslide\/image35_1.png"
