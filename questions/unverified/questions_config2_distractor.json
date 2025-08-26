@@ -839,8 +839,8 @@
     },
     {
         "question_ref":99,
-        "question_text":"Identify the point where all three Alternative Routes from China to Europe (i.e., 'Norther Corridor', 'Middle Corridor', and 'Ocean Route') meet. Which country is this point located in?",
-        "expected_answer":"China",
+        "question_text":"In 'Alternative Routes from China to Europe', the black bolded uppercase texts are country names and the grey fine lines or coastlines represent country boundaries. Identify the point where all three Alternative Routes from China to Europe (i.e., 'Northern Corridor', 'Middle Corridor', and 'Ocean Route') meet. Which country is this point located in?",
+        "expected_answer":"CHINA",
         "image_urls":[
             "aiib\/2.-Supplementary-ESIA_23042025-EN\/image27_1.png"
         ],
