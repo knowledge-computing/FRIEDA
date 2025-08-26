@@ -3266,7 +3266,7 @@
     },
     {
         "question_ref":1121,
-        "question_text":"Identify the northernmost 'Activity Center' within the 'HCP Permit Area' of Elliott State Forest. In which 'Allocation Area's is this point located?",
+        "question_text":"Identify the northernmost 'Activity Center' within the 'HCP Permit Area' of Elliott State Forest. In which two 'Allocation Area's does this 'Activity Center' overlap?",
         "expected_answer":"CRW Reserve; CRW RCA",
         "image_urls":[
             "EIS\/Final EIS for the Elliott State Research Forest HCP\/image50_1.png",
