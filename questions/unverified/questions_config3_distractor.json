@@ -4305,7 +4305,7 @@
     },
     {
         "question_ref":1155,
-        "question_text":"Within the Study Area of Meyersdale, there are seven different community resources (e.g., EMS and Medical). Identify the community resource points that are located south of the Natural Gas Pipeline. What type of community resource are these points?",
+        "question_text":"Within the Study Area of Meyersdale, there are seven different ‘Community Resources and Public Facilities’ using circular point icons (e.g., EMS and Medical). Identify the ‘community resource and public facility’ points that are located south of the Natural Gas Pipeline. What type of ‘Community Resources and Public Facilities’ are these points?",
         "expected_answer":"Place of Worship",
         "image_urls":[
             "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image789_1.png"
