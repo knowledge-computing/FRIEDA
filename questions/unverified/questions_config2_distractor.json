@@ -1472,7 +1472,7 @@
     },
     {
         "question_ref":121,
-        "question_text":"All Wedda's Settlements are associated with a GN Division name (GND Name). Which two GN Divisions of Wedda's Settlements overlap with the Forest Area in the Landslide Prone Districts of Sri Lanka?",
+        "question_text":"All Wedda's Settlements are associated with a GN Divition name (GND Name). Which two GN Divitions of Wedda's Settlements overlap with the Forest Area in the Landslide Prone Districts of Sri Lanka?",
         "expected_answer":"Dambana; Rathugala Henebedda",
         "image_urls":[
             "aiib\/environmental-and-social-management-framework-English\/image30_1.png",
