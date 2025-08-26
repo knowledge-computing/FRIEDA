@@ -713,7 +713,7 @@
     },
     {
         "question_ref":25,
-        "question_text":"Identify all 'Screenline's that intersect the SoDo Stadium Industrial Landas Subareas. Which of these is closest to a 'Ferry' line?",
+        "question_text":"Identify all 'Screenline's that intersect the 'SoDo Stadium' Industrial Lands Subareas. Which of these is closest to anyone of the 'Ferry' line?",
         "expected_answer":"D",
         "image_urls":[
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image598_1.png"
