@@ -1388,7 +1388,7 @@
     },
     {
         "question_ref":118,
-        "question_text":"Identify the two aquaculture points closest to the northernmost Purple Hairstreak distribution point. For these two points, list the sea-animals under intensive shellfish famrning (each represented by a single alphabet in the legend), as recorded by the Ireland Seafood Development Agency (BIM). Give the names of the sea-animals.",
+        "question_text":"Identify the two aquaculture points closest to the northernmost Purple Hairstreak distribution point. For these two points, list the sea-animals under intensive shellfish famrning (each represented by a single alphabet in the legend), as recorded by the Ireland Seafood Development Agency (BIM). Give the names of the sea-animals. If there are any duplicated names, just list them once.",
         "expected_answer":"Mussels; Oysters",
         "image_urls":[
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image122_1.png",
