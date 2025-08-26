@@ -3142,7 +3142,7 @@
     },
     {
         "question_ref":1117,
-        "question_text":"Which numbered 'Electrical\/Comm Routing Segment' crosses both the 'Tt' and 'ATm' geologic unit areas in Tinian?",
+        "question_text":"Which numbered 'Electrical\/Comm Routing Segment' crosses both the 'Tt' and 'QTm' geologic unit areas in Tinian?",
         "expected_answer":"4",
         "image_urls":[
             "EIS\/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1\/image75_1.png",
