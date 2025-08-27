@@ -141,7 +141,7 @@ def respond_q(model,
     generate_ids = model.generate(**inputs, max_new_tokens=30)
     input_decode = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]    # beneficial if submitted in batch; requirement, all convo should be same image size
 
-    return {'llava_ov_response': input_decode.split('assistant')[1]}
+    return {'llava_next_response': input_decode.split('assistant')[1]}
 
 def main(model_name:str,
          question_path:str,
