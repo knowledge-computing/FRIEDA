@@ -8,13 +8,9 @@ import json
 import pickle
 import polars as pl
 
-# Gemini packages
-from google import genai
-from google.genai import types
-
-# Load environment variables from .env file
-load_dotenv()
-client = genai.Client(api_key=os.getenv('GOOGLE_API_KEY'))
+import torch
+from transformers import AutoProcessor, LlavaOnevisionForConditionalGeneration
+from transformers import BitsAndBytesConfig             # To reduce memory usage
 
 def check_exist(path_dir, bool_create=True):
     if os.path.exists(path_dir):
@@ -26,6 +22,34 @@ def check_exist(path_dir, bool_create=True):
     
     return -1
 
+def define_model(model_id:str,
+                 use_flash: bool):
+    
+    # specify how to quantize the model
+    quantization_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.float16,
+    )
+
+    if use_flash:
+        model = LlavaOnevisionForConditionalGeneration.from_pretrained(
+            model_id,
+            quantization_config=quantization_config, 
+            attn_implementation="flash_attention_2",
+            ).to(0) # Only works under CUDA suppport
+    else:
+        # Slow processing
+        model = LlavaOnevisionForConditionalGeneration.from_pretrained(
+            model_id,
+            quantization_config=quantization_config, 
+            device_map="auto"
+        )
+
+    processor = AutoProcessor.from_pretrained(model_id)
+
+    return model, processor
+
 def upload_images(images:List[str],
                  image_prefix:str=None,
                  save_cache:bool=True,
@@ -36,10 +60,8 @@ def upload_images(images:List[str],
     for im_path in list(set(images)):
         if image_prefix:
             full_path = os.path.join(image_prefix, im_path)
-        
-        loaded_im = client.files.upload(file=full_path)
 
-        dict_im_data[im_path] = loaded_im.name
+        dict_im_data[im_path] = full_path
 
         if save_cache:
             with open(os.path.join(cache_dir, 'image_cache.pkl'), 'wb') as handle:
@@ -47,25 +69,28 @@ def upload_images(images:List[str],
 
     return dict_im_data
 
+
 def make_chat_prompt(question:str,
                      file_list:List[str],
-                     dict_im_data:Dict[str, str]) -> list:
-    
-    imgs = [client.files.get(name=dict_im_data[fn]) for fn in file_list]
+                     dict_im_data:Dict[str, str],
+                     img_limit:int) -> list:
 
-    content = [question]
-    content.extend(imgs)
+    content = []
+    for idx, f in enumerate(file_list):
+        if idx > img_limit:
+            break
+        content.append({"type": "image", "url": f"{dict_im_data[f]}"})
+
+    content.append({"type": "text", "text": f"{question}"})
 
     return content
 
-def respond_q(model:str,
+def respond_q(model,
+              processor,
               dict_im_data:Dict[str, str],
               question_q:str,
-              img_list:List[str]):
-    
-    content = make_chat_prompt(question_q, 
-                               img_list,
-                               dict_im_data)
+              img_list:List[str],
+              img_limit:int):
     
     instructions = """
     Answer the question using the provided images. Follow the the following instructions.
@@ -90,35 +115,54 @@ def respond_q(model:str,
     Give ONLY the answer.
     """
 
-    response = client.models.generate_content(
-        model = model,
-        config=types.GenerateContentConfig(
-            system_instruction=[
-                instructions
-            ]
-        ),
-        contents = content
-    )
+    content = make_chat_prompt(question=question_q,
+                               file_list=img_list,
+                               dict_im_data=dict_im_data,
+                               img_limit=img_limit)
+    conversation = [
+        {   "role": "system",
+            "content": [{"type": "text", "text": f"{instructions}"}],
+        },
+        {
+            "role": "user",
+            "content": content,
+        }
+    ]
 
-    return {'gemini_response': response.text}
+    inputs = processor.apply_chat_template(
+        [conversation],
+        add_generation_prompt=True,
+        tokenize=True,
+        return_dict=True,
+        padding=True,
+        return_tensors="pt"
+    ).to(model.device, torch.float16)
 
-def main(model:str,
+    generate_ids = model.generate(**inputs, max_new_tokens=30)
+    input_decode = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]    # beneficial if submitted in batch; requirement, all convo should be same image size
+
+    return {'llava_response': input_decode.split('assistant')[1]}
+
+def main(model_name:str,
          question_path:str,
          image_folder:str,
          bool_distractor:bool,
          output_dir:str,
-         cache_dir:str):
+         cache_dir:str,
+         use_flash:bool,
+         img_limit:int):
     
     # Create directory paths
     check_exist(output_dir)
     check_exist(cache_dir)
 
+    cache_file = os.path.join(cache_dir, 'image_cache.pkl')
     # Load question JSON file
     with open(question_path, 'r') as file:
         data = json.load(file)
     
     # Uploading all images to path storage
-    if len(client.files.list()) == 0:
+    if check_exist(cache_file, bool_create=False) == -1:
     # if True:
         all_images = []
         for d in data:
@@ -130,9 +174,13 @@ def main(model:str,
                                      save_cache=True,
                                      cache_dir=cache_dir)
     else:
-        with open(os.path.join(cache_dir, 'image_cache.pkl'), 'rb') as handle:
+        with open(cache_file, 'rb') as handle:
             dict_im_data = pickle.load(handle)
-    
+
+    # Load model and processor
+    model, processor = define_model(model_id=model_name, use_flash=use_flash)
+
+    # Set up questions dataframe
     pl_question = pl.read_json(question_path).with_columns(
         q_answered = pl.lit(False),
     ).with_columns(
@@ -146,7 +194,7 @@ def main(model:str,
     pl_answered = pl.DataFrame()
 
     response_cache = os.path.join(cache_dir, 'response_cache.pkl')
-    if check_exist(response_cache) == 1: 
+    if check_exist(response_cache, bool_create=False) == 1: 
         with open(response_cache, 'rb') as handle:
             pl_answered = pickle.load(handle)
 
@@ -156,7 +204,7 @@ def main(model:str,
     for i in tqdm(range(0, pl_question.height, chunk_size)):
         chunk = pl_question.slice(i, chunk_size)
         chunk = chunk.with_columns(
-            tmp = pl.struct(pl.all()).map_elements(lambda x: respond_q(model, dict_im_data, x['question_text'], x['image_lists']))
+            tmp = pl.struct(pl.all()).map_elements(lambda x: respond_q(model, processor, dict_im_data, x['question_text'], x['image_lists'], img_limit))
         ).with_columns(
             pl.col('q_answered').replace({False: True})
         ).unnest('tmp').drop('image_lists')
@@ -172,7 +220,7 @@ def main(model:str,
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
 
-    new_file_name = f"{question_path.split('.json')[0]}_{model}.json"
+    new_file_name = f"{question_path.split('.json')[0]}_onevision.json"
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
     # Removing response cache pickle file
@@ -199,6 +247,12 @@ if __name__ == '__main__':
     parser.add_argument('--cache_dir', '-c', default='./',
                         help="Location to cache directory (cache for image names)")
     
+    parser.add_argument('--flash', '-im', action="store_true", type=bool,
+                        help="Use flash attention")
+    
+    parser.add_argument('--max_images', '-max', type=int, default=20,
+                        help="FOR DEVELOPING TEST PURPOSE")
+    
     args = parser.parse_args()
     
     main(model=args.model,
@@ -206,11 +260,15 @@ if __name__ == '__main__':
          image_folder=args.images,
          bool_distractor=args.distractor,
          output_dir=args.output_dir,
-         cache_dir=args.cache_dir)
+         cache_dir=args.cache_dir,
+         use_flash=args.flash,
+         img_limit=args.max_images)
 
-# main(model='gemini-2.5-flash',
-#     question_path='/home/yaoyi/pyo00005/carto-reasoning/questions/unverified/questions_config_distractor_t.json',
-#     image_folder='/home/yaoyi/pyo00005/carto-reasoning/img-raw',
-#     bool_distractor=True,
-#     output_dir='./',
-#     cache_dir='./')
+    # main(model_name='llava-hf/llava-onevision-qwen2-7b-ov-hf',
+    #     question_path='/home/yaoyi/pyo00005/carto-reasoning/questions/unverified/questions_config_distractor_t.json',
+    #     image_folder='/home/yaoyi/pyo00005/carto-reasoning/img-raw',
+    #     bool_distractor=True,
+    #     output_dir='./',
+    #     cache_dir='./',
+    #     use_flash=False,
+    #     img_limit=args.max_images)
