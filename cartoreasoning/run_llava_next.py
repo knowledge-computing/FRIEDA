@@ -9,7 +9,7 @@ import pickle
 import polars as pl
 
 import torch
-from transformers import AutoProcessor, LlavaOnevisionForConditionalGeneration
+from transformers import AutoProcessor, LlavaNextForConditionalGeneration
 from transformers import BitsAndBytesConfig             # To reduce memory usage
 
 def check_exist(path_dir, bool_create=True):
@@ -33,14 +33,14 @@ def define_model(model_id:str,
     )
 
     if use_flash:
-        model = LlavaOnevisionForConditionalGeneration.from_pretrained(
+        model = LlavaNextForConditionalGeneration.from_pretrained(
             model_id,
-            quantization_config=quantization_config, 
+            torch_dtype=torch.float16,
             attn_implementation="flash_attention_2",
             ).to(0) # Only works under CUDA suppport
     else:
         # Slow processing
-        model = LlavaOnevisionForConditionalGeneration.from_pretrained(
+        model = LlavaNextForConditionalGeneration.from_pretrained(
             model_id,
             quantization_config=quantization_config, 
             device_map="auto"
@@ -138,10 +138,12 @@ def respond_q(model,
         return_tensors="pt"
     ).to(model.device, torch.float16)
 
-    generate_ids = model.generate(**inputs, max_new_tokens=30)
-    input_decode = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]    # beneficial if submitted in batch; requirement, all convo should be same image size
+    generate_ids = model.generate(**inputs, max_new_tokens=100)
+    output = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
+    # print(output)
+    input_decode = output[0]    # beneficial if submitted in batch; requirement, all convo should be same image size
 
-    return {'llava_next_response': input_decode.split('assistant')[1]}
+    return {'llava_next_response': input_decode.split('[/INST]')[1]}
 
 def main(model_name:str,
          question_path:str,
@@ -220,7 +222,7 @@ def main(model_name:str,
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
 
-    new_file_name = f"{question_path.split('.json')[0]}_onevision.json"
+    new_file_name = f"{question_path.split('.json')[0]}_next.json"
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
     # Removing response cache pickle file
@@ -229,10 +231,10 @@ def main(model_name:str,
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
 
-    parser.add_argument('--model', '-m', required=True,
+    parser.add_argument('--model', '-m', default='llava-hf/llama3-llava-next-8b-hf',
                         help='Model name/type')
 
-    parser.add_argument('--questions', '-q', required=True,
+    parser.add_argument('--questions', '-q', default='./questions_config.json', 
                         help='Path to questions JSON file')
 
     parser.add_argument('--images', '-im', default='./', type=str,
@@ -247,7 +249,7 @@ if __name__ == '__main__':
     parser.add_argument('--cache_dir', '-c', default='./',
                         help="Location to cache directory (cache for image names)")
     
-    parser.add_argument('--flash', '-im', action="store_true", type=bool,
+    parser.add_argument('--flash', action="store_true",
                         help="Use flash attention")
     
     parser.add_argument('--max_images', '-max', type=int, default=20,
@@ -255,20 +257,20 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
     
-    main(model=args.model,
-         question_path=args.questions,
-         image_folder=args.images,
-         bool_distractor=args.distractor,
-         output_dir=args.output_dir,
-         cache_dir=args.cache_dir,
-         use_flash=args.flash,
-         img_limit=args.max_images)
+    # main(model=args.model,
+    #      question_path=args.questions,
+    #      image_folder=args.images,
+    #      bool_distractor=args.distractor,
+    #      output_dir=args.output_dir,
+    #      cache_dir=args.cache_dir,
+    #      use_flash=args.flash,
+    #      img_limit=args.max_images)
 
-    # main(model_name='llava-hf/llava-onevision-qwen2-7b-ov-hf',
-    #     question_path='/home/yaoyi/pyo00005/carto-reasoning/questions/unverified/questions_config_distractor_t.json',
-    #     image_folder='/home/yaoyi/pyo00005/carto-reasoning/img-raw',
-    #     bool_distractor=True,
-    #     output_dir='./',
-    #     cache_dir='./',
-    #     use_flash=False,
-    #     img_limit=args.max_images)
+    main(model_name='llava-hf/llava-v1.6-mistral-7b-hf',
+        question_path='/home/yaoyi/pyo00005/carto-reasoning/questions/unverified/questions_config_distractor_t.json',
+        image_folder='/home/yaoyi/pyo00005/carto-reasoning/img-raw',
+        bool_distractor=True,
+        output_dir='./',
+        cache_dir='./',
+        use_flash=args.flash,
+        img_limit=args.max_images)

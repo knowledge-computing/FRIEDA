@@ -35,7 +35,7 @@ def define_model(model_id:str,
     if use_flash:
         model = LlavaOnevisionForConditionalGeneration.from_pretrained(
             model_id,
-            quantization_config=quantization_config, 
+            torch_dtype=torch.float16,
             attn_implementation="flash_attention_2",
             ).to(0) # Only works under CUDA suppport
     else:
@@ -229,46 +229,46 @@ def main(model_name:str,
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
 
-    parser.add_argument('--model', '-m', required=True,
-                        help='Model name/type')
+    # parser.add_argument('--model', '-m', default='llava-hf/llava-onevision-qwen2-72b-ov-hf',
+    #                     help='Model name/type')
 
-    parser.add_argument('--questions', '-q', required=True,
-                        help='Path to questions JSON file')
+    # parser.add_argument('--questions', '-q', required=True,
+    #                     help='Path to questions JSON file')
 
-    parser.add_argument('--images', '-im', default='./', type=str,
-                        help="Directory/link to reporsitory containing images")
+    # parser.add_argument('--images', '-im', default='./', type=str,
+    #                     help="Directory/link to repository containing images")
     
-    parser.add_argument('--distractor', '-d', action="store_true", 
-                        help='Use distractor images')
+    # parser.add_argument('--distractor', '-d', action="store_true", 
+    #                     help='Use distractor images')
    
-    parser.add_argument('--output_dir', '-o', default='./',
-                        help="Location to output files")
+    # parser.add_argument('--output_dir', '-o', default='./',
+    #                     help="Location to output files")
     
-    parser.add_argument('--cache_dir', '-c', default='./',
-                        help="Location to cache directory (cache for image names)")
+    # parser.add_argument('--cache_dir', '-c', default='./',
+    #                     help="Location to cache directory (cache for image names)")
     
-    parser.add_argument('--flash', '-im', action="store_true", type=bool,
-                        help="Use flash attention")
+    # parser.add_argument('--flash', '-im', action="store_true", type=bool,
+    #                     help="Use flash attention")
     
     parser.add_argument('--max_images', '-max', type=int, default=20,
                         help="FOR DEVELOPING TEST PURPOSE")
     
     args = parser.parse_args()
     
-    main(model=args.model,
-         question_path=args.questions,
-         image_folder=args.images,
-         bool_distractor=args.distractor,
-         output_dir=args.output_dir,
-         cache_dir=args.cache_dir,
-         use_flash=args.flash,
-         img_limit=args.max_images)
+    # main(model=args.model,
+    #      question_path=args.questions,
+    #      image_folder=args.images,
+    #      bool_distractor=args.distractor,
+    #      output_dir=args.output_dir,
+    #      cache_dir=args.cache_dir,
+    #      use_flash=args.flash,
+    #      img_limit=args.max_images)
 
-    # main(model_name='llava-hf/llava-onevision-qwen2-7b-ov-hf',
-    #     question_path='/home/yaoyi/pyo00005/carto-reasoning/questions/unverified/questions_config_distractor_t.json',
-    #     image_folder='/home/yaoyi/pyo00005/carto-reasoning/img-raw',
-    #     bool_distractor=True,
-    #     output_dir='./',
-    #     cache_dir='./',
-    #     use_flash=False,
-    #     img_limit=args.max_images)
+    main(model_name='llava-hf/llava-onevision-qwen2-72b-ov-hf',
+        question_path='/home/yaoyi/pyo00005/carto-reasoning/questions/unverified/questions_config_distractor_t.json',
+        image_folder='/home/yaoyi/pyo00005/carto-reasoning/img-raw',
+        bool_distractor=True,
+        output_dir='./',
+        cache_dir='./',
+        use_flash=True,
+        img_limit=args.max_images)

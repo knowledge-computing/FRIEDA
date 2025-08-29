@@ -188,7 +188,7 @@ if __name__ == '__main__':
                         help='Path to questions JSON file')
 
     parser.add_argument('--images', '-im', default='./', type=str,
-                        help="Directory/link to reporsitory containing images")
+                        help="Directory/link to repository containing images")
     
     parser.add_argument('--distractor', '-d', action="store_true", 
                         help='Use distractor images')
