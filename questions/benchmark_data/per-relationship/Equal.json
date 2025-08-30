@@ -587,8 +587,8 @@
         "question_text":"What is the Land Tenure status of the area equal to Windser NSR of Munro-Croesus property?",
         "expected_answer":"Patent",
         "image_urls":[
-            "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image21_1.jpeg",
-            "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image30_1.jpeg"
+            "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image21_m0.png",
+            "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image30_m0.png"
         ],
         "map_count":"Multi",
         "spatial_relationship":"Equal"
