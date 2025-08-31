@@ -409,7 +409,7 @@
     },
     {
         "question_ref":"q_0080",
-        "question_text":"Identify the 'PHASE 1B' CST phasing line of Downtown Singapore. How many 'SUBJECT TO DETAILED PLANNING' areas does this line intersect with?",
+        "question_text":"Identify the 'PHASE 1B' CST phasing line. How many 'SUBJECT TO DETAILED PLANNING' areas does this line intersect with?",
         "expected_answer":"2",
         "image_urls":[
             "sg-ura\/AnnualReport_1997-1998\/image16_1.png",
@@ -503,7 +503,7 @@
     },
     {
         "question_ref":"q_0089",
-        "question_text":"In the Concept Plan of the Historic District of Little India of Singapore, identify the unnamed \u2018CAR PARK\u2019 point. What is the name of the farthest named \u2018CAR PARK\u2019 from this point?",
+        "question_text":"In the Concept Plan of the Historic District of Little India, identify the unnamed \u2018CAR PARK\u2019 point. What is the name of the farthest named \u2018CAR PARK\u2019 from this point?",
         "expected_answer":"President Shopping Centre\/Hotel",
         "image_urls":[
             "sg-ura\/30yrs-of-conservation\/image15_m1.png"
@@ -513,7 +513,7 @@
     },
     {
         "question_ref":"q_0090",
-        "question_text":"Within Chinatown, Singapore, each area inside the conservation boundary is labeled with a name (e.g., TANGJONG PAGAR) and each Gazetted Monument is labeled with a number and name (e.g., 5: Al-Abrar Mosque). Which Gazetted Monuments are located in the area that contains the \u2018Future malls\u2019 line? Give just the names.",
+        "question_text":"Within Chinatown, each area inside the conservation boundary is labeled with a name (e.g., TANGJONG PAGAR) and each Gazetted Monument is labeled with a number and name (e.g., 5: Al-Abrar Mosque). Which Gazetted Monuments are located in the area that contains the \u2018Future malls\u2019 line? Give just the names.",
         "expected_answer":"Jamae Mosque; Sri Mariamman Temple",
         "image_urls":[
             "sg-ura\/AnnualReport_1997-1998\/image26_1.png"
@@ -606,7 +606,7 @@
     },
     {
         "question_ref":"q_0099",
-        "question_text":"Identify the point where all three Alternative Routes from China to Europe (i.e., 'Norther Corridor', 'Middle Corridor', and 'Ocean Route') meet. Which country is this point located in?",
+        "question_text":"Identify the point where all three Alternative Routes from China to Europe (i.e., 'Northern Corridor', 'Middle Corridor', and 'Ocean Route') meet. Which country is this point located in?",
         "expected_answer":"CHINA",
         "image_urls":[
             "aiib\/2.-Supplementary-ESIA_23042025-EN\/image27_1.png"
@@ -616,7 +616,7 @@
     },
     {
         "question_ref":"q_0100",
-        "question_text":"Within the 'Ou Tapaong OPT_Canals' boundar (red outline), identify the three bird species points: 'Bengal Florican', 'Greater Adjutant', and 'Milky Stork'. Which bird species point is located closest to the boundary?",
+        "question_text":"Within the 'Ou Tapaong OPT_Canals' boundary (red outline), identify the three bird species points: 'Bengal Florican', 'Greater Adjutant', and 'Milky Stork'. Which bird species point is located closest to the boundary?",
         "expected_answer":"Bengal Florican",
         "image_urls":[
             "aiib\/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject\/image172_1.png"
@@ -648,7 +648,7 @@
     },
     {
         "question_ref":"q_0103",
-        "question_text":"As given in the Extended Central Sketch Plan of Singapore, how many \u2018Major Bus Terminals\u2019 are located inside the \u2018High Density Housing with Commercial Uses\u2019 region?",
+        "question_text":"As given in the Extended Central Sketch Plan, how many \u2018Major Bus Terminals\u2019 are located inside the \u2018High Density Housing with Commercial Uses\u2019 region?",
         "expected_answer":"1",
         "image_urls":[
             "sg-ura\/30yrs-of-conservation\/image6_m1.png"
@@ -732,7 +732,7 @@
     },
     {
         "question_ref":"q_0111",
-        "question_text":"All Surface Water Sampling locations are associated with a unique code in the format 'SW #'. Which two Soil Categories form the boundary where the two Surface Water Sampling locations lie?",
+        "question_text":"All Surface Water Sampling Locations are associated with a unique code in the format 'SW #'. Which two Soil Categories form the boundary where the two Surface Water Sampling locations lie?",
         "expected_answer":"Jamuna,Karatoya-Bengali and Lakhya floodplain; Madhupur Soils",
         "image_urls":[
             "aiib\/Environmental-and-Social-Impact-Assessment\/image246_1.png",
@@ -765,7 +765,7 @@
     },
     {
         "question_ref":"q_0115",
-        "question_text":"China Square in Singapore is divided into multiple land parcels, each labeled with an alphabet. What is the orientation of 'Parcel B' in relation to 'Parcel D'?",
+        "question_text":"China Square is divided into multiple land parcels, each labeled with an alphabet. What is the orientation of 'Parcel B' in relation to 'Parcel D'?",
         "expected_answer":"West",
         "image_urls":[
             "sg-ura\/AnnualReport_1997-1998\/image20_1.png"
@@ -796,7 +796,7 @@
     },
     {
         "question_ref":"q_0119",
-        "question_text":"Each 'Critical Location' point in the AIIB Selected Landslide Sites is associated with a two-digit or three-digit number. Identify the 'Critical Location' point numbers within MATARA that are intersected by a Major Road.",
+        "question_text":"Each 'Critical Location' point in the AIIB Selected Landslide Sites is associated with a one-digit, two-digit, or three-digit number. Identify the 'Critical Location' point numbers within MATARA that are intersected by a Major Road.",
         "expected_answer":"19; 21; 22",
         "image_urls":[
             "aiib\/P000124-SL-Landslide\/image35_1.png"
@@ -925,7 +925,7 @@
     },
     {
         "question_ref":"q_0131",
-        "question_text":"Within the 'BUKIT PASOH' area of the Historic District Chinatown of Singapore, how many 'ENVELOPE CONTROL SITE's are located inside it?",
+        "question_text":"Within the 'BUKIT PASOH' area of the Historic District Chinatown, how many 'ENVELOPE CONTROL SITE's are located inside it?",
         "expected_answer":"5",
         "image_urls":[
             "sg-ura\/30yrs-of-conservation\/image14_m0.png"
