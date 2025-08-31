@@ -8,13 +8,27 @@ import json
 import pickle
 import polars as pl
 
+import requests
+from PIL import Image
+
 import torch
-from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
+from transformers import AutoModelForCausalLM
 from transformers import BitsAndBytesConfig             # To reduce memory usage
-from qwen_vl_utils import process_vision_info
+
+import warnings
+warnings.filterwarnings("ignore", category=pl.MapWithoutReturnDtypeWarning)
 
 with open('./instruction.pkl', 'rb') as handle:
     instructions = pickle.load(handle)
+
+# Paraemter specific to Ovis
+# Thinking mode & budget
+enable_thinking = True
+enable_thinking_budget = True  # Only effective if enable_thinking is True.
+
+# Total tokens for thinking + answer. Ensure: max_new_tokens > thinking_budget + 25
+max_new_tokens = 3072
+thinking_budget = 2048
 
 def check_exist(path_dir, bool_create=True):
     if os.path.exists(path_dir):
@@ -37,33 +51,31 @@ def define_model(model_id:str,
     )
 
     if use_flash:
-        model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+        model = AutoModelForCausalLM.from_pretrained(
             model_id,
             quantization_config=quantization_config, 
             attn_implementation="flash_attention_2",
             device_map="auto",
-            trust_remote_code=True
-        )        # Only works under CUDA suppport
+            trust_remote_code=True,
+        )
 
     else:
         # Slow processing
-        model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
-            model_id, 
+        model = AutoModelForCausalLM.from_pretrained(
+            model_id,
             quantization_config=quantization_config, 
             torch_dtype="auto", device_map="auto",
             trust_remote_code=True
         )
 
-    processor = AutoProcessor.from_pretrained(model_id)
-
-    return model, processor
+    return model
 
 def upload_images(images:List[str],
                  image_prefix:str=None,
                  save_cache:bool=True,
                  cache_dir:str=None):
-
-    dict_im_data = {}   # Storing mapping ffor images
+    # Recommended for repetitively used files or large files
+    dict_im_data = {}   # Storing mapping from image to API images
 
     for im_path in list(set(images)):
         if image_prefix:
@@ -77,7 +89,6 @@ def upload_images(images:List[str],
 
     return dict_im_data
 
-
 def make_chat_prompt(question:str,
                      file_list:List[str],
                      dict_im_data:Dict[str, str],
@@ -87,7 +98,11 @@ def make_chat_prompt(question:str,
     for idx, f in enumerate(file_list):
         if idx > img_limit:
             break
-        content.append({"type": "image", "image": f"{dict_im_data[f]}"})
+
+        if 'https' in dict_im_data[f]:
+            content.append({"type": "image", "image": Image.open(requests.get(dict_im_data[f], stream=True).raw)})
+        else:
+            content.append({"type": "image", "image": f"{dict_im_data[f]}"})
 
     content.append({"type": "text", "text": f"{question}. "})
 
@@ -96,58 +111,56 @@ def make_chat_prompt(question:str,
 def respond_q(model,
               processor,
               dict_im_data:Dict[str, str],
-              input_struct:List[dict],
-              img_limit:int):
+              question_q:str,
+              img_list:List[str],
+              img_limit:int,
+              allow_thinking:bool=True):
     
-    messages = []
-    for i in input_struct:
-        content = make_chat_prompt(question=i['question_text'],
-                                   file_list=i['image_lists'],
-                                   dict_im_data=dict_im_data,
-                                   img_limit=img_limit)
-        conversation = [
-            {"role": "system", "content": instructions},
-            {"role": "user", "content": content}
-        ]
-
-        messages.append(conversation)
-
-    texts = [
-        processor.apply_chat_template(msg, tokenize=False, add_generation_prompt=True)
-        for msg in messages
+    content = make_chat_prompt(question=question_q,
+                               file_list=img_list,
+                               dict_im_data=dict_im_data,
+                               img_limit=img_limit)
+    conversation = [
+        {   "role": "system",
+            "content": [{"type": "text", "text": f"{instructions}"}],
+        },
+        {
+            "role": "user",
+            "content": content,
+        }
     ]
 
-    image_inputs, video_inputs = process_vision_info(messages)
-    inputs = processor(
-        text=texts,
-        images=image_inputs,
-        videos=video_inputs,
-        padding=True,
-        return_tensors="pt",
-    )
-    inputs = inputs.to(model.device, torch.float16)
+    input_ids, pixel_values, grid_thws = model.preprocess_inputs(messages=conversation, 
+                                                                 add_generation_prompt=True,)
+    
+    if allow_thinking:
+        input_ids, pixel_values, grid_thws = model.preprocess_inputs(messages=conversation, 
+                                                                     add_generation_prompt=True,
+                                                                     enable_thinking=enable_thinking)
+    input_ids = input_ids.cuda()
+    pixel_values = pixel_values.cuda().to(model.dtype) if pixel_values is not None else None
+    grid_thws = grid_thws.cuda() if grid_thws is not None else None
 
-    with torch.no_grad():    
-        # Batch Inference
-        generated_ids = model.generate(**inputs, max_new_tokens=128, 
-                                       do_sample=False, temperature=None, top_p=None, top_k=None)
-        generated_ids_trimmed = [
-            out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
-    ]
-    output_texts = processor.batch_decode(
-        generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
-    )
+    with torch.no_grad():
+        
+        if allow_thinking:
+            outputs = model.generate(inputs=input_ids, pixel_values=pixel_values, grid_thws=grid_thws,
+                                     enable_thinking=enable_thinking, enable_thinking_budget=enable_thinking_budget,
+                                     max_new_tokens=max_new_tokens, thinking_budget=thinking_budget,)
+        else:
+            outputs = model.generate(inputs=input_ids, pixel_values=pixel_values, grid_thws=grid_thws,
+                                    max_new_tokens=1024, do_sample=False,
+                                    eos_token_id=model.text_tokenizer.eos_token_id,
+                                    pad_token_id=model.text_tokenizer.pad_token_id,)
 
-    list_output = []
+    response = model.text_tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-    for response in output_texts:
-        try:
-            cleaned_response = response.split('Final answer:')[1]
-            list_output.append(cleaned_response)
-        except:
-            list_output.append(response)
-
-    return list_output
+    try:
+        cleaned_response = response.split('Final answer:')[1]
+        return {'ovis2.5_response': cleaned_response}
+    except:
+        return {'ovis2.5_response': response}
+    
 
 def main(model_name:str,
          question_path:str,
@@ -156,6 +169,7 @@ def main(model_name:str,
          output_dir:str,
          cache_dir:str,
          use_flash:bool,
+         allow_thinking:bool,
          batch_size:int,
          img_limit:int):
     
@@ -175,7 +189,7 @@ def main(model_name:str,
         for d in data:
             all_images.extend(d['image_urls'])
             all_images.extend(d['contextual_urls'])
-
+ 
         dict_im_data = upload_images(images=all_images,
                                      image_prefix=image_folder,
                                      save_cache=True,
@@ -185,16 +199,16 @@ def main(model_name:str,
             dict_im_data = pickle.load(handle)
 
     # Load model and processor
-    model, processor = define_model(model_id=model_name, use_flash=use_flash)
+    model = define_model(model_id=model_name, use_flash=use_flash)
 
     # Set up questions dataframe
     pl_question = pl.read_json(question_path).with_columns(
         q_answered = pl.lit(False),
     ).with_columns(
-        pl.when(bool_distractor==True)
+        pl.when(bool_distractor)
         .then(pl.concat_list('contextual_urls', 'image_urls'))
         .otherwise(pl.col('image_urls')).alias('image_lists')
-    ).sort(pl.col('image_lists').list.len(), descending=True, maintain_order=True)
+    )
 
     pl_answered = pl.DataFrame()
 
@@ -209,25 +223,20 @@ def main(model_name:str,
     for i in tqdm(range(0, pl_question.height, batch_size)):
         chunk = pl_question.slice(i, batch_size)
 
-        chunk = chunk.with_columns(
-            tmp = pl.struct(pl.col(['question_text', 'image_lists']))
-        )
+        if batch_size > 1:
+            pass
 
-        list_input = chunk['tmp'].to_list()
-        list_output = respond_q(model=model, processor=processor,
-                                input_struct=list_input,
-                                dict_im_data=dict_im_data,
-                                img_limit=img_limit)
-        
-        chunk = chunk.with_columns(
-            pl.col('q_answered').replace({False: True}),
-            qwenvl_response = pl.Series(list_output)
-        ).drop(['tmp', 'image_lists'])
+        else:
+            chunk = chunk.with_columns(
+                tmp = pl.struct(pl.all()).map_elements(lambda x: respond_q(model, None, dict_im_data, x['question_text'], x['image_lists'], img_limit, allow_thinking))
+            ).with_columns(
+                pl.col('q_answered').replace({False: True})
+            ).unnest('tmp').drop('image_lists')
 
-        pl_answered = pl.concat(
-            [pl_answered, chunk],
-            how='diagonal'
-        )
+            pl_answered = pl.concat(
+                [pl_answered, chunk],
+                how='diagonal'
+            )
 
         with open(response_cache, 'wb') as handle:
             pickle.dump(pl_answered, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -235,10 +244,10 @@ def main(model_name:str,
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
 
-    new_file_name = f"{question_path.split('.json')[0]}_qwen.json"
+    new_file_name = f"{question_path.split('.json')[0]}_ovis25.json"
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
-    # Removing response cache pickle file
+    # Removing response cache & image cache pickle file
     os.remove(response_cache)
     os.remove(cache_file)
 
@@ -266,6 +275,9 @@ if __name__ == '__main__':
     parser.add_argument('--flash', action="store_true",
                         help="Use flash attention")
     
+    parser.add_argument('--thinking', action="store_true",
+                        help="Allow reasoning capability")
+    
     parser.add_argument('--batch_size', default=1,
                         help="Use flash attention")
     
@@ -281,15 +293,17 @@ if __name__ == '__main__':
          output_dir=args.output_dir,
          cache_dir=args.cache_dir,
          use_flash=args.flash,
+         allow_thinking=args.thinking,
          batch_size=args.batch_size,
          img_limit=args.max_images)
 
-    # main(model_name='Qwen/Qwen2.5-VL-7B-Instruct',
+    # main(model_name='AIDC-AI/Ovis2.5-2B',
     #     question_path='/home/yaoyi/pyo00005/p2/carto-reasoning/questions/benchmark_data/response_mini.json',
     #     image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
-    #     bool_distractor=True,
+    #     bool_distractor=False,
     #     output_dir='./',
     #     cache_dir='./',
     #     use_flash=True,
-    #     batch_size=2,
+    #     allow_thinking=True,
+    #     batch_size=1,
     #     img_limit=args.max_images)
