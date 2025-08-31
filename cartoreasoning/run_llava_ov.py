@@ -12,6 +12,9 @@ import torch
 from transformers import AutoProcessor, LlavaOnevisionForConditionalGeneration
 from transformers import BitsAndBytesConfig             # To reduce memory usage
 
+with open('./instruction.pkl', 'rb') as handle:
+    instructions = pickle.load(handle)
+
 def check_exist(path_dir, bool_create=True):
     if os.path.exists(path_dir):
         return 1
@@ -35,15 +38,18 @@ def define_model(model_id:str,
     if use_flash:
         model = LlavaOnevisionForConditionalGeneration.from_pretrained(
             model_id,
-            torch_dtype=torch.float16,
+            quantization_config=quantization_config,
             attn_implementation="flash_attention_2",
-            ).to(0) # Only works under CUDA suppport
+            device_map="auto",
+            trust_remote_code=True
+            )    # Only works under CUDA suppport
     else:
         # Slow processing
         model = LlavaOnevisionForConditionalGeneration.from_pretrained(
             model_id,
             quantization_config=quantization_config, 
-            device_map="auto"
+            device_map="auto",
+            trust_remote_code=True
         )
 
     processor = AutoProcessor.from_pretrained(model_id)
@@ -84,64 +90,60 @@ def make_chat_prompt(question:str,
     content.append({"type": "text", "text": f"{question}"})
 
     return content
-
+    
 def respond_q(model,
               processor,
               dict_im_data:Dict[str, str],
-              question_q:str,
-              img_list:List[str],
+              input_struct:List[dict],
               img_limit:int):
+
+    messages = []
+    for i in input_struct:
+        content = make_chat_prompt(question=i['question_text'],
+                                   file_list=i['image_lists'],
+                                   dict_im_data=dict_im_data,
+                                   img_limit=img_limit)
     
-    instructions = """
-    Answer the question using the provided images. Follow the the following instructions.
+        conversation = [
+            {   "role": "system",
+                "content": [{"type": "text", "text": f"{instructions}"}],
+            },
+            {
+                "role": "user",
+                "content": content,
+            }
+        ]
 
-    General: 
-    * If answer is a text from the map, copy it as it appears
-
-    Numerical Answers
-    * Include units as indicated on the map (Don’t convert 1200m to 1.2km)
-    * If both map frame and ruler scale is available, use the ruler scale
-    * If question asks for an area, use {unit}^2
-    * Use numerical values (e.g., 4 instead of four)
-
-    Directional Answers:
-    * Use 8 cardinal directions only: North, North East, East, South East, South, South West, West, North West
-    * Write 'North' or 'South' before 'East' or 'West'
-    * Notice that the north arrow compass do not always point upward
-
-    Multi-Part Answers:
-    * Separate with semicolon (;) (e.g., Zone A; Zone B)
-
-    Give ONLY the answer.
-    """
-
-    content = make_chat_prompt(question=question_q,
-                               file_list=img_list,
-                               dict_im_data=dict_im_data,
-                               img_limit=img_limit)
-    conversation = [
-        {   "role": "system",
-            "content": [{"type": "text", "text": f"{instructions}"}],
-        },
-        {
-            "role": "user",
-            "content": content,
-        }
-    ]
+        messages.append(conversation)
 
     inputs = processor.apply_chat_template(
-        [conversation],
+        messages,
         add_generation_prompt=True,
         tokenize=True,
         return_dict=True,
         padding=True,
+        padding_side="left",
         return_tensors="pt"
     ).to(model.device, torch.float16)
 
-    generate_ids = model.generate(**inputs, max_new_tokens=30)
-    input_decode = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]    # beneficial if submitted in batch; requirement, all convo should be same image size
+    with torch.no_grad():   
+        generate_ids = model.generate(**inputs, max_new_tokens=30, do_sample=False)
 
-    return {'llava_ov_response': input_decode.split('assistant')[1]}
+    output_texts = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
+    list_output = []
+
+    for response in output_texts:
+        try:
+            cleaned_response = response.split('assistant\n')[1]
+
+            try:
+                cleaned_response = cleaned_response.split('Final answer:')[1]
+            except: pass
+            list_output.append(cleaned_response)
+        except:
+            list_output.append(response)
+
+    return list_output
 
 def main(model_name:str,
          question_path:str,
@@ -150,6 +152,7 @@ def main(model_name:str,
          output_dir:str,
          cache_dir:str,
          use_flash:bool,
+         batch_size:int,
          img_limit:int):
     
     # Create directory paths
@@ -167,7 +170,7 @@ def main(model_name:str,
         all_images = []
         for d in data:
             all_images.extend(d['image_urls'])
-            all_images.extend(d['distractor_urls'])
+            all_images.extend(d['contextual_urls'])
 
         dict_im_data = upload_images(images=all_images,
                                      image_prefix=image_folder,
@@ -185,12 +188,10 @@ def main(model_name:str,
         q_answered = pl.lit(False),
     ).with_columns(
         pl.when(bool_distractor)
-        .then(pl.concat_list('distractor_urls', 'image_urls'))
+        .then(pl.concat_list('contextual_urls', 'image_urls'))
         .otherwise(pl.col('image_urls')).alias('image_lists')
-    )
+    ).sort(pl.col('image_lists').list.len(), descending=True, maintain_order=True)
 
-    # Running inference in chunks (of 20) in case it crashse in middle
-    chunk_size = 20 
     pl_answered = pl.DataFrame()
 
     response_cache = os.path.join(cache_dir, 'response_cache.pkl')
@@ -201,13 +202,23 @@ def main(model_name:str,
         cache_length = pl_answered.shape[0]
         pl_question = pl_question[cache_length:]
 
-    for i in tqdm(range(0, pl_question.height, chunk_size)):
-        chunk = pl_question.slice(i, chunk_size)
+    for i in tqdm(range(0, pl_question.height, batch_size)):
+        chunk = pl_question.slice(i, batch_size)
+
         chunk = chunk.with_columns(
-            tmp = pl.struct(pl.all()).map_elements(lambda x: respond_q(model, processor, dict_im_data, x['question_text'], x['image_lists'], img_limit))
-        ).with_columns(
-            pl.col('q_answered').replace({False: True})
-        ).unnest('tmp').drop('image_lists')
+            tmp = pl.struct(pl.col(['question_text', 'image_lists']))
+        )
+
+        list_input = chunk['tmp'].to_list()
+        list_output = respond_q(model=model, processor=processor,
+                                input_struct=list_input,
+                                dict_im_data=dict_im_data,
+                                img_limit=img_limit)
+        
+        chunk = chunk.with_columns(
+            pl.col('q_answered').replace({False: True}),
+            llava_ov_response = pl.Series(list_output)
+        ).drop(['tmp', 'image_lists'])
 
         pl_answered = pl.concat(
             [pl_answered, chunk],
@@ -229,46 +240,51 @@ def main(model_name:str,
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
 
-    # parser.add_argument('--model', '-m', default='llava-hf/llava-onevision-qwen2-72b-ov-hf',
-    #                     help='Model name/type')
+    parser.add_argument('--model', '-m', default='llava-hf/llava-onevision-qwen2-72b-ov-hf',
+                        help='Model name/type')
 
-    # parser.add_argument('--questions', '-q', required=True,
-    #                     help='Path to questions JSON file')
+    parser.add_argument('--questions', '-q', required=True,
+                        help='Path to questions JSON file')
 
-    # parser.add_argument('--images', '-im', default='./', type=str,
-    #                     help="Directory/link to repository containing images")
+    parser.add_argument('--images', '-im', default='./', type=str,
+                        help="Directory/link to repository containing images")
     
-    # parser.add_argument('--distractor', '-d', action="store_true", 
-    #                     help='Use distractor images')
+    parser.add_argument('--distractor', '-d', action="store_true", 
+                        help='Use distractor images')
    
-    # parser.add_argument('--output_dir', '-o', default='./',
-    #                     help="Location to output files")
+    parser.add_argument('--output_dir', '-o', default='./',
+                        help="Location to output files")
     
-    # parser.add_argument('--cache_dir', '-c', default='./',
-    #                     help="Location to cache directory (cache for image names)")
+    parser.add_argument('--cache_dir', '-c', default='./',
+                        help="Location to cache directory (cache for image names)")
     
-    # parser.add_argument('--flash', '-im', action="store_true", type=bool,
-    #                     help="Use flash attention")
+    parser.add_argument('--flash', '-im', action="store_true", type=bool,
+                        help="Use flash attention")
+
+    parser.add_argument('--batch_size', default=1,
+                        help="Batch size. Default is 1.")
     
     parser.add_argument('--max_images', '-max', type=int, default=20,
                         help="FOR DEVELOPING TEST PURPOSE")
     
     args = parser.parse_args()
     
-    # main(model=args.model,
-    #      question_path=args.questions,
-    #      image_folder=args.images,
-    #      bool_distractor=args.distractor,
-    #      output_dir=args.output_dir,
-    #      cache_dir=args.cache_dir,
-    #      use_flash=args.flash,
-    #      img_limit=args.max_images)
+    main(model=args.model,
+         question_path=args.questions,
+         image_folder=args.images,
+         bool_distractor=args.distractor,
+         output_dir=args.output_dir,
+         cache_dir=args.cache_dir,
+         use_flash=args.flash,
+         batch_size=args.batch_size,
+         img_limit=args.max_images)
 
-    main(model_name='llava-hf/llava-onevision-qwen2-72b-ov-hf',
-        question_path='/home/yaoyi/pyo00005/carto-reasoning/questions/unverified/questions_config_distractor_t.json',
-        image_folder='/home/yaoyi/pyo00005/carto-reasoning/img-raw',
-        bool_distractor=True,
-        output_dir='./',
-        cache_dir='./',
-        use_flash=True,
-        img_limit=args.max_images)
+    # main(model_name='llava-hf/llava-onevision-qwen2-7b-ov-hf',
+    #     question_path='/home/yaoyi/pyo00005/p2/carto-reasoning/questions/benchmark_data/response_mini.json',
+    #     image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
+    #     bool_distractor=True,
+    #     output_dir='./',
+    #     cache_dir='./',
+    #     use_flash=True,
+    #     batch_size=2,
+    #     img_limit=args.max_images)
