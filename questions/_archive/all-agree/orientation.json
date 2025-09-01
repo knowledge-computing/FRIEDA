@@ -1,0 +1,67 @@
+[
+    {
+        "question_text":"What direction is Needles Park located in relation to the Proposed Detention Basin of the City of Harvey Stormwater Management Project?",
+        "expected_answer":"North East",
+        "image_urls":[
+            "FEMA\/fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217\/image16_1.png",
+            "FEMA\/fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217\/image21_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"What is the position of the New 2B2 Pegmatite relative to Pegmatite #2 within the Raleigh Lake Project claim boundary?",
+        "expected_answer":"South",
+        "image_urls":[
+            "NI43-101\/k__PROJECTS_ILC_NewsReleases_2023_2023-04-13-Raleigh-43101_22141-01-ILC-MinResEstNI-43101\/image37_1.png",
+            "NI43-101\/k__PROJECTS_ILC_NewsReleases_2023_2023-04-13-Raleigh-43101_22141-01-ILC-MinResEstNI-43101\/image33_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"What is the position of Coronation N in relation to Trimbles in Hyde-Macraes Shear Zone",
+        "expected_answer":"South East",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_43101 (1)\/image93_3.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"What is the orientation of La Pista in relation to population center (centro poblado) Bonanza within the Bonanza concession area?",
+        "expected_answer":"North West",
+        "image_urls":[
+            "NI43-101\/t__SEDAR_Mineros_2023_TechnicalReport_TechReport\/image350_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"What is the position of MARCOR Zone in relation to TETRAULT Zone of Montauban Project?",
+        "expected_answer":"South East",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_ESGold_TechnicalReport_Montauban\/image55_2.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"What is the position of Velvet-Wood Project in relation to Slick Rock Project Area?",
+        "expected_answer":"North West",
+        "image_urls":[
+            "NI43-101\/C__AA-SEDAR_VELVET-PEA-2023\/image44_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"What is the position of Stream 3 catch basin in relation to stream catch 2 basin?",
+        "expected_answer":"North",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_1-TR\/image371_2.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation"
+    }
+]
