@@ -289,7 +289,7 @@ if __name__ == '__main__':
          img_limit=args.max_images)
 
     # main(model_name='AIDC-AI/Ovis2-1B',
-    #     question_path='/home/yaoyi/pyo00005/p2/carto-reasoning/questions/benchmark_data/response_mini.json',
+    #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
     #     image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
     #     bool_distractor=False,
     #     output_dir='./',
