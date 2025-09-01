@@ -3587,7 +3587,7 @@
     },
     {
         "question_ref":"q_0142",
-        "question_text":"In the City of Seattle, which 'Fire 911 Responses by ZIP Code (2016-2020)' area is the 'Police HQ' located in?",
+        "question_text":"Which 'Fire 911 Responses by ZIP Code (2016-2020)' area is the 'Police HQ' located in?",
         "expected_answer":"More than 30,000",
         "image_urls":[
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image746_1.png",
@@ -4193,7 +4193,7 @@
     },
     {
         "question_ref":"q_0159",
-        "question_text":"In the City of Seattle, which type of 'Wastewater system mainline' has the most overlapping service area with the 'Stormwater system mainline'?",
+        "question_text":"Which type of 'Wastewater system mainline' has the most overlapping service area with the 'Stormwater system mainline'?",
         "expected_answer":"Sanitary mainlines",
         "image_urls":[
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image782_1.png",
@@ -4912,7 +4912,7 @@
     },
     {
         "question_ref":"q_0182",
-        "question_text":"In the City of Seattle, what type of 'Industrial Lands Subareas' does 'Terminal 91' belong to?",
+        "question_text":"What type of 'Industrial Lands Subareas' does 'Terminal 91' belong to?",
         "expected_answer":"Interbay Smith Cove",
         "image_urls":[
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image752_m0.png",
@@ -5714,7 +5714,7 @@
     },
     {
         "question_ref":"q_1003",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the number of the Current Parking that is connected with Tyger Valley Shopping Centre by the Formal Pedestrian Crossing on Bill Bezuidenhout Drive?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the number of the Current Parking that is connected with Tyger Valley Shopping Centre by the Formal Pedestrian Crossing on Bill Bezuidenhout Drive?",
         "expected_answer":"19",
         "image_urls":[
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image57_1.png",
@@ -5845,7 +5845,7 @@
     },
     {
         "question_ref":"q_1006",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the road name where Zone 43 and Zone 37 in the SATURN Zone System with 1996 Base Network border each other?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the road name where Zone 43 and Zone 37 in the SATURN Zone System with 1996 Base Network border each other?",
         "expected_answer":"Bloemhof Rd",
         "image_urls":[
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image149_1.png",
@@ -5933,7 +5933,7 @@
     },
     {
         "question_ref":"q_1008",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what type of Development Framework is The Study Area of 13. Waste-Tech located in?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what type of Development Framework is The Study Area of 13. Waste-Tech located in?",
         "expected_answer":"Open space Network",
         "image_urls":[
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image3_1.png",
@@ -6044,7 +6044,7 @@
     },
     {
         "question_ref":"q_1012",
-        "question_text":"In the City of Seattle, which 'Elementary Attendance Area' is the 'Seattle Schools Administration' located in?",
+        "question_text":"Which 'Elementary Attendance Area' is the 'Seattle Schools Administration' located in?",
         "expected_answer":"Mercer",
         "image_urls":[
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image760_1.png",
@@ -6132,7 +6132,7 @@
     },
     {
         "question_ref":"q_1014",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Retail area in Existing Land Uses & Activities relative to the PAWC Vacant Land in Existing Open Space Network?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Retail area in Existing Land Uses & Activities relative to the PAWC Vacant Land in Existing Open Space Network?",
         "expected_answer":"North West",
         "image_urls":[
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image60_1.png",
@@ -6176,7 +6176,7 @@
     },
     {
         "question_ref":"q_1015",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the orientation of the northernmost point of Flsantekraal relative to the intersection of North-South Link and N2?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the orientation of the northernmost point of Flsantekraal relative to the intersection of North-South Link and N2?",
         "expected_answer":"North East",
         "image_urls":[
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image31_1.png",
@@ -6220,7 +6220,7 @@
     },
     {
         "question_ref":"q_1016",
-        "question_text":"In Seattle's proposed lid area, how many Gathering Spaces have their centers located within the Proposed Buildings?",
+        "question_text":"In proposed lid area, how many Gathering Spaces have their centers located within the Proposed Buildings?",
         "expected_answer":"2",
         "image_urls":[
             "seattle-planning\/507SeattleStudio_Web\/image47_1.png",
@@ -6560,7 +6560,7 @@
     },
     {
         "question_ref":"q_1026",
-        "question_text":"In the area surrounding Seattle's Potential Lid Area, what is the approximate straight-line distance from the westernmost Affordable Housing to the westernmost Construction?",
+        "question_text":"In the area surrounding Potential Lid Area, what is the approximate straight-line distance from the westernmost Affordable Housing to the westernmost Construction?",
         "expected_answer":"2900'",
         "image_urls":[
             "seattle-planning\/507SeattleStudio_Web\/image79_1.png",
@@ -6788,7 +6788,7 @@
     },
     {
         "question_ref":"q_1032",
-        "question_text":"In the Aurora Ave and 97th Residential Urban Village of Seattle, which Safety Audit Team's route is intersected by N. 100 Ave? Answer with the team number.",
+        "question_text":"In the Aurora Ave and 97th Residential Urban Village, which Safety Audit Team's route is intersected by N. 100 Ave? Answer with the team number.",
         "expected_answer":"1",
         "image_urls":[
             "seattle-planning\/Aurora-Licton-plan\/image69_1.png",
@@ -6817,7 +6817,7 @@
     },
     {
         "question_ref":"q_1033",
-        "question_text":"In what orientation is Snag Peak block relative to the city of Seattle, WA?",
+        "question_text":"In what orientation is Snag Peak block relative to the city of Seattle?",
         "expected_answer":"North West",
         "image_urls":[
             "national-parks\/646954\/image1_m1.png",
@@ -6883,7 +6883,7 @@
     },
     {
         "question_ref":"q_1035",
-        "question_text":"In Seattle, WA, how many Very Good Transit locations are situated within areas of the Future Land Use type known as Major Institutions?",
+        "question_text":"How many Very Good Transit locations are situated within areas of the Future Land Use type known as Major Institutions?",
         "expected_answer":"0",
         "image_urls":[
             "seattle-planning\/CouncilAdopted2020\/image36_1.png",
@@ -6927,7 +6927,7 @@
     },
     {
         "question_ref":"q_1037",
-        "question_text":"In Seattle, WA, which types of Urban Villages border the Park areas?",
+        "question_text":"Which types of Urban Villages border the Park areas?",
         "expected_answer":"Urban Center; Hub Urban Village; Residential Urban Village; Manufacturing \/ Industrial Center",
         "image_urls":[
             "seattle-planning\/ComprehensivePlanRacialEquityAnalysisPresentation2021\/image8_4.png",
@@ -6945,7 +6945,7 @@
     },
     {
         "question_ref":"q_1038",
-        "question_text":"In Seattle, WA, which type of Existing Land Use is covered by the highest Employment Density by Census Tract?",
+        "question_text":"Which type of Existing Land Use is covered by the highest Employment Density by Census Tract?",
         "expected_answer":"Commercial\/Mixed-Use",
         "image_urls":[
             "seattle-planning\/CouncilAdopted2020\/image435_1.png",
@@ -7033,7 +7033,7 @@
     },
     {
         "question_ref":"q_1041",
-        "question_text":"In Seattle's proposed lid area, how many Closed Highway Ramps have their centers not located within the Green Space?",
+        "question_text":"In proposed lid area, how many Closed Highway Ramps have their centers not located within the Green Space?",
         "expected_answer":"1",
         "image_urls":[
             "seattle-planning\/507SeattleStudio_Web\/image49_1.png",
@@ -7241,7 +7241,7 @@
     },
     {
         "question_ref":"q_1046",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what are the Parking Management & Public Transport Plan areas that border the Landscaped Sport Recreation Area?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what are the Parking Management & Public Transport Plan areas that border the Landscaped Sport Recreation Area?",
         "expected_answer":"3979; 150 bays; 4431",
         "image_urls":[
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image96_1.png",
@@ -7482,7 +7482,7 @@
     },
     {
         "question_ref":"q_1052",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the orientation of the northernmost Decked Parking as Developed location in Tyger Valley Centre Precinct relative to the PP Smit Sports Grounds?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the orientation of the northernmost Decked Parking as Developed location in Tyger Valley Centre Precinct relative to the PP Smit Sports Grounds?",
         "expected_answer":"North West",
         "image_urls":[
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image89_1.png",
@@ -7526,7 +7526,7 @@
     },
     {
         "question_ref":"q_1053",
-        "question_text":"What type of 'Alternative 1 - No Action' is the SoDo Stadium Industrial Lands Subareas located in Seattle, WA?",
+        "question_text":"What type of 'Alternative 1 - No Action' is the SoDo Stadium Industrial Lands Subareas located?",
         "expected_answer":"Industrial General",
         "image_urls":[
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image128_1.png",
@@ -7614,7 +7614,7 @@
     },
     {
         "question_ref":"q_1055",
-        "question_text":"In Texas, what type of soil area contains the largest area of coal (surface)?",
+        "question_text":"What type of soil area contains the largest area of coal (surface)?",
         "expected_answer":"H",
         "image_urls":[
             "national-parks\/707314\/image1_m27.png",
@@ -7867,7 +7867,7 @@
     },
     {
         "question_ref":"q_1064",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Doordekraal Dam Integrated into Continuous Green System relative to the northwest corner of The Vision of Southern Sector?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Doordekraal Dam Integrated into Continuous Green System relative to the northwest corner of The Vision of Southern Sector?",
         "expected_answer":"North East",
         "image_urls":[
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image76_1.png",
@@ -7911,7 +7911,7 @@
     },
     {
         "question_ref":"q_1065",
-        "question_text":"In Seattle's proposed lid surroundings, the majority of 'Publicly accessible plazas and green setbacks' are located in neighborhoods with which level of access to opportunity? Answer with 1-6, where 1 represents the lowest and 6 the highest.",
+        "question_text":"In proposed lid surroundings, the majority of 'Publicly accessible plazas and green setbacks' are located in neighborhoods with which level of access to opportunity? Answer with 1-6, where 1 represents the lowest and 6 the highest.",
         "expected_answer":"6",
         "image_urls":[
             "seattle-planning\/507SeattleStudio_Web\/image12_1.png",
@@ -7955,7 +7955,7 @@
     },
     {
         "question_ref":"q_1066",
-        "question_text":"In the surrounding area of Seattle's Bitter Lake Hub Urban Village, which Rezone area is disjoint from all bicycle routes or lanes?",
+        "question_text":"In the surrounding area of Bitter Lake Hub Urban Village, which Rezone area is disjoint from all bicycle routes or lanes?",
         "expected_answer":"Rezone from C1-65 to C2-65",
         "image_urls":[
             "seattle-planning\/BitterLakeDirectorsReport\/image5_1.png",
@@ -8199,7 +8199,7 @@
     },
     {
         "question_ref":"q_1074",
-        "question_text":"In the Aurora Ave and 97th Residential Urban Village of Seattle, which Safety Audit Team's route is intersected by N. 105 Ave? Answer with the team number.",
+        "question_text":"In the Aurora Ave and 97th Residential Urban Village, which Safety Audit Team's route is intersected by N. 105 Ave? Answer with the team number.",
         "expected_answer":"3",
         "image_urls":[
             "seattle-planning\/Aurora-Licton-plan\/image71_1.png",
@@ -8272,7 +8272,7 @@
     },
     {
         "question_ref":"q_1076",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the road name where Oakdale and PP Smit Sports Grounds border each other?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the road name where Oakdale and PP Smit Sports Grounds border each other?",
         "expected_answer":"Bloemhof street",
         "image_urls":[
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image44_1.png",
@@ -8316,7 +8316,7 @@
     },
     {
         "question_ref":"q_1077",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the name of the river that intersects the Golf Course area?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the name of the river that intersects the Golf Course area?",
         "expected_answer":"Golf Course River",
         "image_urls":[
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image45_1.png",
@@ -8404,7 +8404,7 @@
     },
     {
         "question_ref":"q_1079",
-        "question_text":"In Seattle, WA, which type of shoreline area borders the southwestern boundary of UW?",
+        "question_text":"Which type of shoreline area borders the southwestern boundary of UW?",
         "expected_answer":"Other Shoreline Areas",
         "image_urls":[
             "seattle-planning\/CouncilAdopted2020\/image189_1.png",
@@ -8605,7 +8605,7 @@
     },
     {
         "question_ref":"q_1085",
-        "question_text":"In Ireland, which aquaculture area location is situated in the county where the Knockharley landfill is located?",
+        "question_text":"Which aquaculture area location is situated in the county where the Knockharley landfill is located?",
         "expected_answer":"Mornington",
         "image_urls":[
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image192_1.png",
@@ -8637,7 +8637,7 @@
     },
     {
         "question_ref":"q_1086",
-        "question_text":"In the A3A Detention Pond, Port Arthur, Jefferson County, TX, what is the name of the road that intersects the 'Project Benefit Area' boundary line?",
+        "question_text":"In the A3A Detention Pond, Port Arthur, Jefferson County, Texas, what is the name of the road that intersects the 'Project Benefit Area' boundary line?",
         "expected_answer":"Hogaboom Road",
         "image_urls":[
             "FEMA\/hmgp-dr-4332-hmgp-4332-0197-tx_1-a3adetention-dea-2025225\/image11_1.png",
@@ -8660,7 +8660,7 @@
     },
     {
         "question_ref":"q_1087",
-        "question_text":"In Ireland, which type of Noise In Quiet Area overlaps the most with artificial areas?",
+        "question_text":"Which type of Noise In Quiet Area overlaps the most with artificial areas?",
         "expected_answer":"Anthropogenic Noise",
         "image_urls":[
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image97_1.png",
@@ -8692,7 +8692,7 @@
     },
     {
         "question_ref":"q_1088",
-        "question_text":"In Cape Town, near Greater Blue Downs District, what type of Node is the MVSA & MURP - Tier 2 Priority point in MFULENI area located in?",
+        "question_text":"In Cape Town, what type of Node is the MVSA & MURP - Tier 2 Priority point in MFULENI area located in?",
         "expected_answer":"District Node",
         "image_urls":[
             "capetown\/KMPGB_DSDF_EMF_Vol_3_2022\/image33_1.png",
@@ -8757,7 +8757,7 @@
     },
     {
         "question_ref":"q_1090",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Rationalise Interaction in North Entrance Precinct relative to the westernmost point of MONEX WATERFRONT?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Rationalise Interaction in North Entrance Precinct relative to the westernmost point of MONEX WATERFRONT?",
         "expected_answer":"North East",
         "image_urls":[
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image105_1.png",
@@ -8801,7 +8801,7 @@
     },
     {
         "question_ref":"q_1091",
-        "question_text":"Which segments of Level of Service Screenline intersect the Airport Boundary area in Seattle, WA?",
+        "question_text":"Which segments of Level of Service Screenline intersect the Airport Boundary area?",
         "expected_answer":"4.13",
         "image_urls":[
             "seattle-planning\/CouncilAdopted2020\/image459_1.png",
