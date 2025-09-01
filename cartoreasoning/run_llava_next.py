@@ -282,7 +282,7 @@ if __name__ == '__main__':
          img_limit=args.max_images)
 
     # main(model_name='llava-hf/llava-v1.6-mistral-7b-hf',
-    #     question_path='/home/yaoyi/pyo00005/p2/carto-reasoning/questions/benchmark_data/response_mini.json',
+    #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
     #     image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
     #     bool_distractor=True,
     #     output_dir='./',
