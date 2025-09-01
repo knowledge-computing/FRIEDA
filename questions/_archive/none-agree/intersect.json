@@ -1,0 +1,12 @@
+[
+    {
+        "question_text":"Identify the numbered areas intersected by the southern border of 010223716. Which 'Mining Concessions' equal these areas?",
+        "expected_answer":"Cementos Interoceanicos",
+        "image_urls":[
+            "NI43-101\/C__SEDARDocs_ASC-LaPrincesa_TechRep\/image24_5.jpeg",
+            "NI43-101\/C__SEDARDocs_ASC-LaPrincesa_TechRep\/image28_5.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Intersect"
+    }
+]
