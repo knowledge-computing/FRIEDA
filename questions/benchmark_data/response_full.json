@@ -7,7 +7,8 @@
             "seattle-planning\/23rdAvenueUDF\/image25_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0002",
@@ -17,7 +18,8 @@
             "seattle-planning\/23rdAvenueUDF\/image31_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0003",
@@ -27,7 +29,8 @@
             "seattle-planning\/23rdAvenueUDF\/image35_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0004",
@@ -37,7 +40,8 @@
             "seattle-planning\/23rdAvenueUDF\/image37_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0005",
@@ -47,7 +51,8 @@
             "seattle-planning\/130_145_Alternatives__2022_1202\/image6_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0006",
@@ -57,7 +62,8 @@
             "seattle-planning\/130_145_Alternatives__2022_1202\/image8_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0007",
@@ -67,7 +73,8 @@
             "seattle-planning\/507SeattleStudio_Web\/image27_m1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0008",
@@ -77,7 +84,8 @@
             "seattle-planning\/CouncilAdopted2020\/image319_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0009",
@@ -88,7 +96,8 @@
             "seattle-planning\/CouncilAdopted2020\/image459_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0010",
@@ -99,7 +108,8 @@
             "seattle-planning\/CouncilAdopted2020\/image546_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0011",
@@ -109,7 +119,8 @@
             "seattle-planning\/CouncilAdopted2020\/image578_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0012",
@@ -119,7 +130,8 @@
             "seattle-planning\/EDIImpPlan042916final\/image26_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0013",
@@ -129,7 +141,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image36_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0014",
@@ -139,7 +152,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image96_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0015",
@@ -149,7 +163,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image97_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0017",
@@ -159,7 +174,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image207_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0018",
@@ -169,7 +185,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image323_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0020",
@@ -179,7 +196,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image354_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0021",
@@ -189,7 +207,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image377_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0022",
@@ -199,7 +218,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image407_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0023",
@@ -209,7 +229,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image438_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0024",
@@ -219,7 +240,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image590_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0025",
@@ -229,7 +251,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image598_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0026",
@@ -239,7 +262,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image687_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0027",
@@ -249,7 +273,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image691_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0028",
@@ -259,7 +284,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image717_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0029",
@@ -269,7 +295,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image742_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0030",
@@ -280,7 +307,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image760_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0031",
@@ -290,7 +318,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image761_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0032",
@@ -300,7 +329,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image784_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0033",
@@ -310,7 +340,8 @@
             "seattle-planning\/lfs-existing-conditions-and-context-memorandum\/image68_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0070",
@@ -320,7 +351,8 @@
             "aiib\/2.-Supplementary-ESIA_23042025-EN\/image55_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0072",
@@ -331,7 +363,8 @@
             "aiib\/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project\/image52_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0073",
@@ -342,7 +375,8 @@
             "seychelles\/ESIA-Report-ARIA-Eco-Sol-11.07.25\/image72_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0074",
@@ -353,7 +387,8 @@
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image245_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0075",
@@ -363,7 +398,8 @@
             "seychelles\/91346907\/image56_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0076",
@@ -373,7 +409,8 @@
             "abu-dhabi\/2011-HM-Urban-Design21\/image45_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0077",
@@ -384,7 +421,8 @@
             "aiib\/environmental-and-social-management-framework-English\/image8_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0078",
@@ -394,7 +432,8 @@
             "ireland\/EPA_Irelands_Environment_2020\/image245_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0079",
@@ -405,18 +444,20 @@
             "ireland\/EPA_Irelands_Environment_2020\/image365_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0080",
-        "question_text":"Identify the 'PHASE 1B' CST phasing line of Downtown Singapore. How many 'SUBJECT TO DETAILED PLANNING' areas does this line intersect with?",
+        "question_text":"Identify the 'PHASE 1B' CST phasing line. How many 'SUBJECT TO DETAILED PLANNING' areas does this line intersect with?",
         "expected_answer":"2",
         "image_urls":[
             "sg-ura\/AnnualReport_1997-1998\/image16_1.png",
             "sg-ura\/AnnualReport_1997-1998\/image18_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0081",
@@ -426,7 +467,8 @@
             "seychelles\/ESIA-Report-ARIA-Eco-Sol-11.07.25\/image67_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0082",
@@ -436,7 +478,8 @@
             "aiib\/2.-Supplementary-ESIA_23042025-EN\/image175_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0083",
@@ -446,7 +489,8 @@
             "aiib\/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project\/image193_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0084",
@@ -457,7 +501,8 @@
             "seychelles\/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report\/image83_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0085",
@@ -467,7 +512,8 @@
             "seychelles\/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1\/image70_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0086",
@@ -478,7 +524,8 @@
             "aiib\/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject\/image138_m1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0087",
@@ -489,7 +536,8 @@
             "seychelles\/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1\/image14_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0088",
@@ -499,27 +547,30 @@
             "aiib\/2.-Supplementary-ESIA_23042025-EN\/image20_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0089",
-        "question_text":"In the Concept Plan of the Historic District of Little India of Singapore, identify the unnamed \u2018CAR PARK\u2019 point. What is the name of the farthest named \u2018CAR PARK\u2019 from this point?",
+        "question_text":"In the Concept Plan of the Historic District of Little India, identify the unnamed \u2018CAR PARK\u2019 point. What is the name of the farthest named \u2018CAR PARK\u2019 from this point?",
         "expected_answer":"President Shopping Centre\/Hotel",
         "image_urls":[
             "sg-ura\/30yrs-of-conservation\/image15_m1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0090",
-        "question_text":"Within Chinatown, Singapore, each area inside the conservation boundary is labeled with a name (e.g., TANGJONG PAGAR) and each Gazetted Monument is labeled with a number and name (e.g., 5: Al-Abrar Mosque). Which Gazetted Monuments are located in the area that contains the \u2018Future malls\u2019 line? Give just the names.",
+        "question_text":"Within Chinatown, each area inside the conservation boundary is labeled with a name (e.g., TANGJONG PAGAR) and each Gazetted Monument is labeled with a number and name (e.g., 5: Al-Abrar Mosque). Which Gazetted Monuments are located in the area that contains the \u2018Future malls\u2019 line? Give just the names.",
         "expected_answer":"Jamae Mosque; Sri Mariamman Temple",
         "image_urls":[
             "sg-ura\/AnnualReport_1997-1998\/image26_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0091",
@@ -530,7 +581,8 @@
             "seychelles\/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1\/image78_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0092",
@@ -541,7 +593,8 @@
             "aiib\/Environmental-and-Social-Impact-Assessment\/image155_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0093",
@@ -551,17 +604,19 @@
             "ireland\/EPA_Irelands_Environment_2020\/image67_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0094",
         "question_text":"In the Fisherman\u2019s Cove \/ H Resort area, there are four regions categorized as 'Land-birds Feeding Zones'. Identify the one that lies along the shoreline. How many 'Observed Nests' lie within this shoreline zone? Express your answer in form X\/Y, where X = number of shoreline nests and Y = total number of observed nests. Do not reduce the fraction.",
-        "expected_answer":"6-Mar",
+        "expected_answer":"3\/6",
         "image_urls":[
             "seychelles\/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1\/image69_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0095",
@@ -571,7 +626,8 @@
             "seychelles\/91346907\/image71_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0096",
@@ -582,7 +638,8 @@
             "seychelles\/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report\/image193_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0097",
@@ -592,7 +649,8 @@
             "aiib\/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject\/image170_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0098",
@@ -602,27 +660,30 @@
             "aiib\/Environmental-and-Social-Impact-Assessment\/image72_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0099",
-        "question_text":"Identify the point where all three Alternative Routes from China to Europe (i.e., 'Norther Corridor', 'Middle Corridor', and 'Ocean Route') meet. Which country is this point located in?",
+        "question_text":"Identify the point where all three Alternative Routes from China to Europe (i.e., 'Northern Corridor', 'Middle Corridor', and 'Ocean Route') meet. Which country is this point located in?",
         "expected_answer":"CHINA",
         "image_urls":[
             "aiib\/2.-Supplementary-ESIA_23042025-EN\/image27_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0100",
-        "question_text":"Within the 'Ou Tapaong OPT_Canals' boundar (red outline), identify the three bird species points: 'Bengal Florican', 'Greater Adjutant', and 'Milky Stork'. Which bird species point is located closest to the boundary?",
+        "question_text":"Within the 'Ou Tapaong OPT_Canals' boundary (red outline), identify the three bird species points: 'Bengal Florican', 'Greater Adjutant', and 'Milky Stork'. Which bird species point is located closest to the boundary?",
         "expected_answer":"Bengal Florican",
         "image_urls":[
             "aiib\/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject\/image172_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0101",
@@ -633,7 +694,8 @@
             "ireland\/EPA_Irelands_Environment_2020\/image262_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0102",
@@ -644,17 +706,19 @@
             "aiib\/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project\/image198_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0103",
-        "question_text":"As given in the Extended Central Sketch Plan of Singapore, how many \u2018Major Bus Terminals\u2019 are located inside the \u2018High Density Housing with Commercial Uses\u2019 region?",
+        "question_text":"As given in the Extended Central Sketch Plan, how many \u2018Major Bus Terminals\u2019 are located inside the \u2018High Density Housing with Commercial Uses\u2019 region?",
         "expected_answer":"1",
         "image_urls":[
             "sg-ura\/30yrs-of-conservation\/image6_m1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0104",
@@ -665,7 +729,8 @@
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image84_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0105",
@@ -676,7 +741,8 @@
             "aiib\/Environmental-and-Social-Impact-Assessment\/image483_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0106",
@@ -686,7 +752,8 @@
             "aiib\/P000124-SL-Landslide\/image51_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_0107",
@@ -696,7 +763,8 @@
             "seychelles\/91346907\/image27_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0108",
@@ -707,7 +775,8 @@
             "aiib\/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject\/image29_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0109",
@@ -718,7 +787,8 @@
             "aiib\/2.-Supplementary-ESIA_23042025-EN\/image116_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0110",
@@ -728,18 +798,20 @@
             "seychelles\/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report\/image15_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0111",
-        "question_text":"All Surface Water Sampling locations are associated with a unique code in the format 'SW #'. Which two Soil Categories form the boundary where the two Surface Water Sampling locations lie?",
+        "question_text":"All Surface Water Sampling Locations are associated with a unique code in the format 'SW #'. Which two Soil Categories form the boundary where the two Surface Water Sampling locations lie?",
         "expected_answer":"Jamuna,Karatoya-Bengali and Lakhya floodplain; Madhupur Soils",
         "image_urls":[
             "aiib\/Environmental-and-Social-Impact-Assessment\/image246_1.png",
             "aiib\/Environmental-and-Social-Impact-Assessment\/image219_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0112",
@@ -750,7 +822,8 @@
             "abu-dhabi\/2011-HM-Urban-Design21\/image44_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0113",
@@ -761,17 +834,19 @@
             "aiib\/IEE-20240306-iee-report\/image98_2.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0115",
-        "question_text":"China Square in Singapore is divided into multiple land parcels, each labeled with an alphabet. What is the orientation of 'Parcel B' in relation to 'Parcel D'?",
+        "question_text":"China Square is divided into multiple land parcels, each labeled with an alphabet. What is the orientation of 'Parcel B' in relation to 'Parcel D'?",
         "expected_answer":"West",
         "image_urls":[
             "sg-ura\/AnnualReport_1997-1998\/image20_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0116",
@@ -781,7 +856,8 @@
             "ireland\/EPA_Irelands_Environment_2020\/image176_m1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0118",
@@ -792,17 +868,19 @@
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image192_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0119",
-        "question_text":"Each 'Critical Location' point in the AIIB Selected Landslide Sites is associated with a two-digit or three-digit number. Identify the 'Critical Location' point numbers within MATARA that are intersected by a Major Road.",
+        "question_text":"Each 'Critical Location' point in the AIIB Selected Landslide Sites is associated with a one-digit, two-digit, or three-digit number. Identify the 'Critical Location' point numbers within MATARA that are intersected by a Major Road.",
         "expected_answer":"19; 21; 22",
         "image_urls":[
             "aiib\/P000124-SL-Landslide\/image35_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0120",
@@ -813,7 +891,8 @@
             "aiib\/2.-Supplementary-ESIA_23042025-EN\/image140_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0121",
@@ -824,7 +903,8 @@
             "aiib\/environmental-and-social-management-framework-English\/image15_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0122",
@@ -835,7 +915,8 @@
             "seychelles\/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1\/image13_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0123",
@@ -846,7 +927,8 @@
             "ireland\/EPA_Irelands_Environment_2020\/image165_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0124",
@@ -857,7 +939,8 @@
             "ireland\/EPA_Irelands_Environment_2020\/image207_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0125",
@@ -868,7 +951,8 @@
             "aiib\/Environmental-and-Social-Impact-Assessment\/image255_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0126",
@@ -878,7 +962,8 @@
             "ireland\/EPA_Irelands_Environment_2020\/image77_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0127",
@@ -889,7 +974,8 @@
             "aiib\/Environmental-and-Social-Impact-Assessment\/image271_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0128",
@@ -900,7 +986,8 @@
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image47_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0129",
@@ -910,7 +997,8 @@
             "seychelles\/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report\/image106_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0130",
@@ -921,17 +1009,19 @@
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image100_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0131",
-        "question_text":"Within the 'BUKIT PASOH' area of the Historic District Chinatown of Singapore, how many 'ENVELOPE CONTROL SITE's are located inside it?",
+        "question_text":"Within the 'BUKIT PASOH' area of the Historic District Chinatown, how many 'ENVELOPE CONTROL SITE's are located inside it?",
         "expected_answer":"5",
         "image_urls":[
             "sg-ura\/30yrs-of-conservation\/image14_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0132",
@@ -941,7 +1031,8 @@
             "ireland\/EPA_Irelands_Environment_2020\/image176_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0133",
@@ -952,7 +1043,8 @@
             "aiib\/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject\/image177_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0134",
@@ -962,7 +1054,8 @@
             "ireland\/EPA_Irelands_Environment_2020\/image79_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0135",
@@ -973,7 +1066,8 @@
             "aiib\/P000124-SL-Landslide\/image37_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0136",
@@ -983,7 +1077,8 @@
             "ireland\/EPA_Irelands_Environment_2020\/image364_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0137",
@@ -993,7 +1088,8 @@
             "abu-dhabi\/2011-HM-Urban-Design21\/image46_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0138",
@@ -1004,7 +1100,8 @@
             "aiib\/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project\/image189_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0140",
@@ -1015,7 +1112,8 @@
             "FEMA\/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702\/image113_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0142",
@@ -1026,7 +1124,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image751_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0143",
@@ -1037,7 +1136,8 @@
             "FEMA\/fema_pdmc-pj-09-nv-2018-001-marlette-dea-20240710\/image10_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0144",
@@ -1048,7 +1148,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image149_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0145",
@@ -1059,7 +1160,8 @@
             "FEMA\/HMGP-DR-4407-CA-ButteCountyWildfireMitigation-FEA-FONSI-20241010\/image145_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0146",
@@ -1070,7 +1172,8 @@
             "FEMA\/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702\/image23_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0147",
@@ -1081,7 +1184,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image159_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0148",
@@ -1092,7 +1196,8 @@
             "FEMA\/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202\/image41_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0150",
@@ -1103,7 +1208,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image101_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0151",
@@ -1114,7 +1220,8 @@
             "FEMA\/fema_rm-hurriance-ian-mat-report-12-2023\/image50_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_0152",
@@ -1125,7 +1232,8 @@
             "FEMA\/fema_ehp-lpdm-pj-06-nm-2023-001-loslucerosfiremit-drafttea-2024412\/image35_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0153",
@@ -1136,7 +1244,8 @@
             "FEMA\/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202\/image98_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0154",
@@ -1147,7 +1256,8 @@
             "FEMA\/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729\/image19_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0155",
@@ -1158,7 +1268,8 @@
             "FEMA\/fema_rm-hurriance-ian-mat-report-12-2023\/image55_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0156",
@@ -1169,7 +1280,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image162_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0157",
@@ -1180,7 +1292,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image163_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_0158",
@@ -1190,7 +1303,8 @@
             "FEMA\/fema_ehp-hmgp-dr-4562-27-or-gillespiecorners-fea-signedfonsi-20240603\/image21_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0159",
@@ -1201,7 +1315,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image784_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0160",
@@ -1212,7 +1327,8 @@
             "FEMA\/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202\/image115_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0161",
@@ -1223,7 +1339,8 @@
             "FEMA\/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125\/image8_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0162",
@@ -1234,7 +1351,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image36_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0163",
@@ -1245,7 +1363,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image161_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0164",
@@ -1256,7 +1375,8 @@
             "FEMA\/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614\/image15_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0165",
@@ -1267,7 +1387,8 @@
             "FEMA\/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702\/image118_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0166",
@@ -1278,7 +1399,8 @@
             "FEMA\/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614\/image19_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0167",
@@ -1289,7 +1411,8 @@
             "FEMA\/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125\/image25_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0168",
@@ -1300,7 +1423,8 @@
             "FEMA\/fema_oehp_lpdm-pj-06-tx-2022-006-westador-stormwater-dea-07022025\/image41_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0170",
@@ -1311,7 +1435,8 @@
             "FEMA\/fema_pdmc-pj-09-nv-2018-001-marlette-dea-20240710\/image137_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0171",
@@ -1322,7 +1447,8 @@
             "FEMA\/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125\/image11_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_0172",
@@ -1333,7 +1459,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image156_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0173",
@@ -1344,7 +1471,8 @@
             "FEMA\/fema_oehp_hancock-county-flood-risk-reduction-program_050925\/image165_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_0174",
@@ -1355,7 +1483,8 @@
             "FEMA\/fema_oehp_hancock-county-flood-risk-reduction-program_050925\/image123_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0175",
@@ -1366,7 +1495,8 @@
             "ireland\/EPA_Irelands_Environment_2020\/image337_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0176",
@@ -1377,7 +1507,8 @@
             "FEMA\/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125\/image17_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0178",
@@ -1388,7 +1519,8 @@
             "FEMA\/fema_rm-hurriance-ian-mat-report-12-2023\/image370_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0179",
@@ -1399,7 +1531,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image158_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0180",
@@ -1410,7 +1543,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image155_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0181",
@@ -1421,7 +1555,8 @@
             "FEMA\/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614\/image44_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0182",
@@ -1432,7 +1567,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image786_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0183",
@@ -1443,7 +1579,8 @@
             "FEMA\/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729\/image167_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0184",
@@ -1454,7 +1591,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image71_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0185",
@@ -1465,7 +1603,8 @@
             "FEMA\/fema_oehp_lpdm-pj-06-tx-2022-006-westador-stormwater-dea-07022025\/image82_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0186",
@@ -1476,7 +1615,8 @@
             "FEMA\/fema_ehp-lpdm-pj-06-nm-2023-001-loslucerosfiremit-drafttea-2024412\/image30_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0187",
@@ -1487,7 +1627,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image578_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0188",
@@ -1498,7 +1639,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image153_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0189",
@@ -1509,7 +1651,8 @@
             "FEMA\/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202\/image163_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0190",
@@ -1520,7 +1663,8 @@
             "FEMA\/fema_pa-dr-4472-00801-ny-rayhilltrail-dea-20240722\/image62_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_0191",
@@ -1531,7 +1675,8 @@
             "FEMA\/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702\/image115_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0192",
@@ -1542,7 +1687,8 @@
             "FEMA\/fema_bric-emb-2021-br-002-0005-ct-newhaven-fea-signedfonsi-20240904\/image34_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0193",
@@ -1553,7 +1699,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image138_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0194",
@@ -1564,7 +1711,8 @@
             "FEMA\/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729\/image168_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0195",
@@ -1575,7 +1723,8 @@
             "FEMA\/fema_oehp_hancock-county-flood-risk-reduction-program_050925\/image16_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0196",
@@ -1586,7 +1735,8 @@
             "FEMA\/fema_dr-4559-st-louis-hs-appendix\/image132_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0197",
@@ -1597,7 +1747,8 @@
             "FEMA\/fema_ehp_il-in-oh-mi-mn-wi-floodcontrol-revdpea_03252025\/image25_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0199",
@@ -1608,7 +1759,8 @@
             "FEMA\/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202\/image149_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_0200",
@@ -1619,7 +1771,8 @@
             "FEMA\/fema_dr-4559-st-louis-hs-appendix\/image247_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0201",
@@ -1630,7 +1783,8 @@
             "FEMA\/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614\/image43_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_0202",
@@ -1641,7 +1795,8 @@
             "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image157_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1001",
@@ -1652,7 +1807,8 @@
             "capetown\/District_Six_LSDF\/image42_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1002",
@@ -1663,7 +1819,8 @@
             "capetown\/District_Six_LSDF\/image60_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1003",
@@ -1674,7 +1831,8 @@
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image58_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1004",
@@ -1685,7 +1843,8 @@
             "ireland\/EPA_Irelands_Environment_2020\/image368_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1005",
@@ -1696,7 +1855,8 @@
             "capetown\/District_Six_LSDF\/image117_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1006",
@@ -1707,7 +1867,8 @@
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image151_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1007",
@@ -1718,7 +1879,8 @@
             "seattle-planning\/CouncilAdopted2020\/image579_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_1008",
@@ -1729,7 +1891,8 @@
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image16_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1010",
@@ -1740,7 +1903,8 @@
             "FEMA\/hmgp-dr-4332-hmgp-4332-0197-tx_1-a3adetention-dea-2025225\/image16_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1011",
@@ -1751,7 +1915,8 @@
             "seattle-planning\/CouncilAdopted2020\/image549_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1012",
@@ -1762,7 +1927,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image761_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1013",
@@ -1773,7 +1939,8 @@
             "capetown\/District_Six_LSDF\/image123_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1014",
@@ -1784,7 +1951,8 @@
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image64_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1015",
@@ -1795,7 +1963,8 @@
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image23_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1016",
@@ -1806,7 +1975,8 @@
             "seattle-planning\/507SeattleStudio_Web\/image51_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1017",
@@ -1817,7 +1987,8 @@
             "national-parks\/659668\/image1_m32.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1018",
@@ -1828,7 +1999,8 @@
             "national-parks\/639363\/image1_m13.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_1019",
@@ -1839,7 +2011,8 @@
             "national-parks\/642208\/image1_m54.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1020",
@@ -1850,7 +2023,8 @@
             "national-parks\/656810\/image1_m3.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1021",
@@ -1861,7 +2035,8 @@
             "capetown\/Annexure B - Cape Town Spatial Development Framework\/image56_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1022",
@@ -1872,7 +2047,8 @@
             "national-parks\/732920\/image1_m123.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1023",
@@ -1883,7 +2059,8 @@
             "capetown\/Annexure B - Cape Town Spatial Development Framework\/image92_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1024",
@@ -1894,7 +2071,8 @@
             "FEMA\/fema_r9_draft-environmental-assessment-for-carmel-river-floodplain-restoration-and-environmental-enhancement-project-hmgp-dr-4344-539-097-ca_042025\/image94_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1025",
@@ -1905,7 +2083,8 @@
             "national-parks\/639106\/image1_m9.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1026",
@@ -1916,7 +2095,8 @@
             "seattle-planning\/507SeattleStudio_Web\/image80_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_1027",
@@ -1927,7 +2107,8 @@
             "capetown\/Annexure B - Cape Town Spatial Development Framework\/image87_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1028",
@@ -1938,7 +2119,8 @@
             "capetown\/District_Six_LSDF\/image101_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1029",
@@ -1949,7 +2131,8 @@
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image57_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1030",
@@ -1960,7 +2143,8 @@
             "capetown\/Draft_LSDF_Mamre\/image25_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_1031",
@@ -1971,7 +2155,8 @@
             "national-parks\/711316\/image1_m24.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_1032",
@@ -1982,7 +2167,8 @@
             "seattle-planning\/Aurora-Licton-plan\/image70_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1033",
@@ -1993,7 +2179,8 @@
             "national-parks\/646954\/image1_m2.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1034",
@@ -2004,7 +2191,8 @@
             "national-parks\/732920\/image1_m124.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1035",
@@ -2015,7 +2203,8 @@
             "seattle-planning\/CouncilAdopted2020\/image46_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1037",
@@ -2026,7 +2215,8 @@
             "seattle-planning\/ComprehensivePlanRacialEquityAnalysisPresentation2021\/image14_3.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1038",
@@ -2037,7 +2227,8 @@
             "seattle-planning\/CouncilAdopted2020\/image436_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1040",
@@ -2048,7 +2239,8 @@
             "capetown\/District_Six_LSDF\/image58_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1041",
@@ -2059,7 +2251,8 @@
             "seattle-planning\/507SeattleStudio_Web\/image50_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1042",
@@ -2070,7 +2263,8 @@
             "capetown\/District_Six_LSDF\/image111_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1043",
@@ -2081,7 +2275,8 @@
             "capetown\/Annexure B - Cape Town Spatial Development Framework\/image95_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1044",
@@ -2092,7 +2287,8 @@
             "national-parks\/732920\/image1_m145.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1045",
@@ -2103,7 +2299,8 @@
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image100_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1046",
@@ -2114,7 +2311,8 @@
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image99_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1047",
@@ -2125,7 +2323,8 @@
             "national-parks\/664400\/image1_m23.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_1048",
@@ -2136,7 +2335,8 @@
             "national-parks\/732920\/image1_m107.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1049",
@@ -2147,7 +2347,8 @@
             "seattle-planning\/507SeattleStudio_Web\/image52_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1050",
@@ -2158,7 +2359,8 @@
             "capetown\/District_Six_LSDF\/image45_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1051",
@@ -2169,7 +2371,8 @@
             "national-parks\/698075\/image1_m6.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1052",
@@ -2180,7 +2383,8 @@
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image118_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1053",
@@ -2191,7 +2395,8 @@
             "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image151_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1054",
@@ -2202,7 +2407,8 @@
             "national-parks\/732920\/image1_m101.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1055",
@@ -2213,7 +2419,8 @@
             "national-parks\/707314\/image1_m26.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1057",
@@ -2224,7 +2431,8 @@
             "FEMA\/mat-report_hurricane-harvey-texas\/image42_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1058",
@@ -2235,7 +2443,8 @@
             "capetown\/Annexure B - Cape Town Spatial Development Framework\/image49_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1059",
@@ -2246,7 +2455,8 @@
             "seattle-planning\/130_145_Alternatives__2022_1202\/image8_2.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_1060",
@@ -2257,7 +2467,8 @@
             "national-parks\/732920\/image1_m118.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1061",
@@ -2268,7 +2479,8 @@
             "national-parks\/711316\/image1_m12.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1062",
@@ -2279,7 +2491,8 @@
             "national-parks\/639363\/image1_m14.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_1063",
@@ -2290,7 +2503,8 @@
             "national-parks\/664400\/image1_m50.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1064",
@@ -2301,7 +2515,8 @@
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image77_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1065",
@@ -2312,7 +2527,8 @@
             "seattle-planning\/507SeattleStudio_Web\/image22_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1066",
@@ -2323,7 +2539,8 @@
             "seattle-planning\/BitterLakeDirectorsReport\/image6_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1067",
@@ -2334,7 +2551,8 @@
             "national-parks\/711316\/image1_m6.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1068",
@@ -2345,7 +2563,8 @@
             "FEMA\/fema_r9_draft-environmental-assessment-for-carmel-river-floodplain-restoration-and-environmental-enhancement-project-hmgp-dr-4344-539-097-ca_042025\/image189_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1069",
@@ -2356,7 +2575,8 @@
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image96_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1070",
@@ -2367,18 +2587,20 @@
             "FEMA\/mat-report_hurricane-harvey-texas\/image0_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1071",
-        "question_text":"Around the North Chicago Storm Sewer Project area, in which direction is the westernmost 'Staging Area' located relative to the 'Naval Station Great Lakes'?",
+        "question_text":"Around the North Chicago Storm Sewer Project area, in which orientation is the westernmost 'Staging Area' located relative to the 'Naval Station Great Lakes'?",
         "expected_answer":"South West",
         "image_urls":[
             "FEMA\/LPDM-PJ-05-IL-2022-002-North_Chicago-FEA-11202024\/image10_1.png",
             "FEMA\/LPDM-PJ-05-IL-2022-002-North_Chicago-FEA-11202024\/image32_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1072",
@@ -2389,7 +2611,8 @@
             "capetown\/District_Six_LSDF\/image97_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_1073",
@@ -2400,7 +2623,8 @@
             "capetown\/District_Six_LSDF\/image119_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1074",
@@ -2411,7 +2635,8 @@
             "seattle-planning\/Aurora-Licton-plan\/image72_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1075",
@@ -2422,7 +2647,8 @@
             "seattle-planning\/507SeattleStudio_Web\/image11_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1076",
@@ -2433,7 +2659,8 @@
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image46_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1077",
@@ -2444,7 +2671,8 @@
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image53_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1078",
@@ -2455,7 +2683,8 @@
             "capetown\/District_Six_LSDF\/image64_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1079",
@@ -2466,18 +2695,20 @@
             "seattle-planning\/CouncilAdopted2020\/image560_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1080",
-        "question_text":"In the CRFREE Project, in which direction is the 'Intermittent Drainage Channel (MFCA)' located relative to the 'CARMEL MEADOWS PUMP STATION'?",
+        "question_text":"In the CRFREE Project, in which orientation is the 'Intermittent Drainage Channel (MFCA)' located relative to the 'CARMEL MEADOWS PUMP STATION'?",
         "expected_answer":"East",
         "image_urls":[
             "FEMA\/fema_r9_draft-environmental-assessment-for-carmel-river-floodplain-restoration-and-environmental-enhancement-project-hmgp-dr-4344-539-097-ca_042025\/image97_1.png",
             "FEMA\/fema_r9_draft-environmental-assessment-for-carmel-river-floodplain-restoration-and-environmental-enhancement-project-hmgp-dr-4344-539-097-ca_042025\/image98_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1081",
@@ -2488,7 +2719,8 @@
             "FEMA\/fema_r9_draft-environmental-assessment-for-carmel-river-floodplain-restoration-and-environmental-enhancement-project-hmgp-dr-4344-539-097-ca_042025\/image101_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1082",
@@ -2499,7 +2731,8 @@
             "FEMA\/hmgp-dr-4332-hmgp-4332-0197-tx_1-a3adetention-dea-2025225\/image31_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1083",
@@ -2510,7 +2743,8 @@
             "national-parks\/732920\/image1_m147.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1084",
@@ -2521,7 +2755,8 @@
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image84_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1085",
@@ -2532,7 +2767,8 @@
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image245_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1086",
@@ -2543,7 +2779,8 @@
             "FEMA\/hmgp-dr-4332-hmgp-4332-0197-tx_1-a3adetention-dea-2025225\/image20_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1087",
@@ -2554,7 +2791,8 @@
             "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image104_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1088",
@@ -2565,7 +2803,8 @@
             "capetown\/KMPGB_DSDF_EMF_Vol_3_2022\/image40_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1089",
@@ -2576,7 +2815,8 @@
             "capetown\/Annexure B - Cape Town Spatial Development Framework\/image66_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1090",
@@ -2587,7 +2827,8 @@
             "capetown\/Elsieskraal River Valley Development Framework, 1998\/image106_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1091",
@@ -2598,7 +2839,8 @@
             "seattle-planning\/CouncilAdopted2020\/image462_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1092",
@@ -2609,7 +2851,8 @@
             "national-parks\/711316\/image1_m5.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1093",
@@ -2619,7 +2862,8 @@
             "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image21_m1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1094",
@@ -2629,7 +2873,8 @@
             "EIS\/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1\/image36_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1095",
@@ -2639,7 +2884,8 @@
             "sg-ura\/Skyline_Issue_13\/image7_m2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1096",
@@ -2650,7 +2896,8 @@
             "EIS\/Green Eagle Railroad FEIS Volume II- Appendices\/image291_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1097",
@@ -2660,7 +2907,8 @@
             "EIS\/Appendix D - Biological Assessment\/image10_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1098",
@@ -2670,7 +2918,8 @@
             "EIS\/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility\/image444_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1099",
@@ -2681,7 +2930,8 @@
             "EIS\/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives\/image38_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1100",
@@ -2692,7 +2942,8 @@
             "EIS\/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS\/image163_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1101",
@@ -2703,7 +2954,8 @@
             "EIS\/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices\/image19_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1102",
@@ -2714,7 +2966,8 @@
             "EIS\/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1\/image124_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1103",
@@ -2725,7 +2978,8 @@
             "EIS\/Final EIS - Barred Owl Management Strategy\/image56_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1104",
@@ -2736,7 +2990,8 @@
             "EIS\/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7\/image109_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1105",
@@ -2746,7 +3001,8 @@
             "EIS\/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1\/image354_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_1106",
@@ -2757,7 +3013,8 @@
             "EIS\/MetroTransitExpansion_Appendix A1_Purpose and Need\/image18_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1107",
@@ -2768,7 +3025,8 @@
             "EIS\/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives\/image53_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1108",
@@ -2779,7 +3037,8 @@
             "EIS\/Final EIS for the Elliott State Research Forest HCP\/image169_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1109",
@@ -2789,7 +3048,8 @@
             "EIS\/IHNC Appendix F - 2017 Draft GRR and Draft SEIS IHNC Lock Replacement Project\/image41_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1111",
@@ -2800,7 +3060,8 @@
             "EIS\/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1\/image73_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1112",
@@ -2811,7 +3072,8 @@
             "EIS\/Green Eagle Railroad FEIS Volume II- Appendices\/image213_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1113",
@@ -2822,7 +3084,8 @@
             "EIS\/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.1_ESA Consultation (USFWS)_Part3\/image54_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1114",
@@ -2833,7 +3096,8 @@
             "EIS\/Annex 4 - NHPA Section 106 May 2025\/image239_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1115",
@@ -2844,7 +3108,8 @@
             "EIS\/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility\/image453_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1116",
@@ -2855,7 +3120,8 @@
             "EIS\/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1\/image43_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1118",
@@ -2866,7 +3132,8 @@
             "EIS\/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7\/image103_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1119",
@@ -2877,7 +3144,8 @@
             "EIS\/Appendices A through L_CJMT_RDEIS\/image299_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1120",
@@ -2888,7 +3156,8 @@
             "EIS\/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives\/image57_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1121",
@@ -2899,7 +3168,8 @@
             "EIS\/Final EIS for the Elliott State Research Forest HCP\/image55_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1122",
@@ -2909,7 +3179,8 @@
             "EIS\/VSFB_Falcon_Launch_Draft_EIS_May_2025\/image39_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1123",
@@ -2920,7 +3191,8 @@
             "EIS\/Appendices A through L_CJMT_RDEIS\/image150_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1124",
@@ -2931,7 +3203,8 @@
             "EIS\/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1\/image176_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1125",
@@ -2942,7 +3215,8 @@
             "EIS\/Appendices A through L_CJMT_RDEIS\/image148_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1126",
@@ -2952,7 +3226,8 @@
             "EIS\/Final EIS for the Elliott State Research Forest HCP\/image218_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1127",
@@ -2962,7 +3237,8 @@
             "EIS\/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1\/image150_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1128",
@@ -2973,7 +3249,8 @@
             "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image273_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1129",
@@ -2983,7 +3260,8 @@
             "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image119_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1130",
@@ -2994,7 +3272,8 @@
             "EIS\/Final EIS for the Elliott State Research Forest HCP\/image90_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1131",
@@ -3004,7 +3283,8 @@
             "EIS\/VSFB_Falcon_Launch_Draft_EIS_May_2025\/image141_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1132",
@@ -3014,7 +3294,8 @@
             "EIS\/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility\/image194_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1133",
@@ -3024,7 +3305,8 @@
             "EIS\/Vol-1-FEIS-US6219-Section050-Transportation-Improvement-Project-Combined-FEIS-ROD-May-2025\/image106_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1134",
@@ -3034,7 +3316,8 @@
             "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image629_m9.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1135",
@@ -3044,7 +3327,8 @@
             "EIS\/Appendices A through L_CJMT_RDEIS\/image303_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1136",
@@ -3055,7 +3339,8 @@
             "EIS\/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS\/image16_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1137",
@@ -3066,7 +3351,8 @@
             "EIS\/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices\/image405_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1138",
@@ -3077,7 +3363,8 @@
             "EIS\/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1\/image65_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1139",
@@ -3088,7 +3375,8 @@
             "EIS\/MetroTransitExpansion_Chapter 2_Alternatives Considered\/image16_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1140",
@@ -3098,7 +3386,8 @@
             "EIS\/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1\/image80_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1141",
@@ -3109,7 +3398,8 @@
             "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image226_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1142",
@@ -3120,7 +3410,8 @@
             "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image781_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1143",
@@ -3131,7 +3422,8 @@
             "EIS\/Green Eagle Railroad FEIS Volume II- Appendices\/image113_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1144",
@@ -3141,7 +3433,8 @@
             "EIS\/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation\/image26_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1145",
@@ -3152,7 +3445,8 @@
             "EIS\/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives\/image55_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1146",
@@ -3162,7 +3456,8 @@
             "EIS\/Final EIS - Barred Owl Management Strategy\/image29_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1147",
@@ -3172,7 +3467,8 @@
             "EIS\/Annex 4 - NHPA Section 106 May 2025\/image200_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1148",
@@ -3183,7 +3479,8 @@
             "EIS\/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation\/image32_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1149",
@@ -3194,17 +3491,19 @@
             "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image227_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1150",
-        "question_text":"What is thhis region? Provide the answer in the exact range format ({number}-{number}) without the percentage (%) symbol.",
+        "question_text":"What is the approximate straight-line distance between the SLC-6 Launch Site and the 2 psf contour of the Falcon Heavy Launch line?",
         "expected_answer":"40 Miles",
         "image_urls":[
             "EIS\/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1\/image51_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_1151",
@@ -3215,7 +3514,8 @@
             "EIS\/Annex 4 - NHPA Section 106 May 2025\/image241_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1152",
@@ -3226,7 +3526,8 @@
             "sg-ura\/Skyline_Issue_13\/image7_m1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1153",
@@ -3236,7 +3537,8 @@
             "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image782_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1154",
@@ -3247,7 +3549,8 @@
             "EIS\/Draft SpaceX Starship-Super Heavy CCSFS Environmental Impact Statement\/image45_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_1155",
@@ -3257,7 +3560,8 @@
             "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image789_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1157",
@@ -3268,7 +3572,8 @@
             "EIS\/Appendices A through L_CJMT_RDEIS\/image280_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1158",
@@ -3278,7 +3583,8 @@
             "sg-ura\/Skyline_Issue_13\/image15_m1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1159",
@@ -3289,7 +3595,8 @@
             "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image126_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_1160",
@@ -3299,7 +3606,8 @@
             "EIS\/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1\/image78_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_2001",
@@ -3309,7 +3617,8 @@
             "NI43-101\/w__McFarlaneLakeMining_SEDAR_1210098_tech_Jul04_2023_mcfarlaneTR-july42023\/image61_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2002",
@@ -3320,7 +3629,8 @@
             "NI43-101\/z__AgnicoEagle_Techreport_TechReport-221231_TechReport-LaRonde\/image59_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2003",
@@ -3330,7 +3640,8 @@
             "NI43-101\/C__AA-SEDAR_VELVET-PEA-2023\/image48_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2004",
@@ -3340,7 +3651,8 @@
             "NI43-101\/C__FILINGS_Tearlach_Tearlach_TechnicalReport\/image22_4.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2005",
@@ -3350,7 +3662,8 @@
             "NI43-101\/C__SEDAR_FILINGS_2023_Technical_Report_COZ_TR_20230502\/image53_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2007",
@@ -3360,7 +3673,8 @@
             "NI43-101\/t__SEDAR_Mineros_2023_TechnicalReport_TechReport\/image350_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_2008",
@@ -3370,7 +3684,8 @@
             "NI43-101\/C__SEDAR_FILINGS_2023_Mulatos_Tech_Rep_Mar_27_2023\/image69_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2009",
@@ -3381,7 +3696,8 @@
             "NI43-101\/C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101\/image241_3.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2013",
@@ -3391,7 +3707,8 @@
             "NI43-101\/C__SEDAR_FILINGS_CENTTechnicalReport\/image11_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_2015",
@@ -3401,7 +3718,8 @@
             "NI43-101\/w__P2Gold_SEDAR_1187436_tech_Feb17_2023_02172023p2gold-tr\/image39_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2016",
@@ -3412,7 +3730,8 @@
             "NI43-101\/C__Filings_Yaramoko_43_101_Yaramoko_43101\/image33_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2017",
@@ -3423,7 +3742,8 @@
             "NI43-101\/C__SEDAR_FILINGS_SGOTechRep20230324\/image42_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2019",
@@ -3433,28 +3753,31 @@
             "NI43-101\/C__SEDAR_FILINGS_LEK_TechReport_2023_v3_5\/image16_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2020",
-        "question_text":"What is the position of Coronation N in relation to Trimbles in Hyde-Macraes Shear Zone",
+        "question_text":"What is the orientation of Coronation N in relation to Trimbles in Hyde-Macraes Shear Zone",
         "expected_answer":"South East",
         "image_urls":[
             "NI43-101\/C__SEDAR_43101 (1)\/image93_3.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_2021",
-        "question_text":"What is the position of the New 2B2 Pegmatite relative to Pegmatite #2 within the Raleigh Lake Project claim boundary?",
+        "question_text":"What is the orientation of the New 2B2 Pegmatite relative to Pegmatite #2 within the Raleigh Lake Project claim boundary?",
         "expected_answer":"South",
         "image_urls":[
             "NI43-101\/k__PROJECTS_ILC_NewsReleases_2023_2023-04-13-Raleigh-43101_22141-01-ILC-MinResEstNI-43101\/image37_1.jpeg",
             "NI43-101\/k__PROJECTS_ILC_NewsReleases_2023_2023-04-13-Raleigh-43101_22141-01-ILC-MinResEstNI-43101\/image33_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_2022",
@@ -3464,7 +3787,8 @@
             "NI43-101\/C__SEDAR_FILINGS_SRG_REPORT\/image90_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2024",
@@ -3474,17 +3798,19 @@
             "NI43-101\/w__GalianoGold_SEDAR_1194039_tech_Mar28_2023_galiano_techreport\/image121_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2025",
-        "question_text":"What is the position of Stream 3 catch basin in relation to stream catch 2 basin?",
+        "question_text":"What is the orientation of Stream 3 catch basin in relation to stream catch 2 basin?",
         "expected_answer":"North",
         "image_urls":[
             "NI43-101\/C__SEDAR_1-TR\/image371_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_2026",
@@ -3495,7 +3821,8 @@
             "NI43-101\/C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA\/image144_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2027",
@@ -3505,7 +3832,8 @@
             "NI43-101\/C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9\/image144_3.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_2028",
@@ -3516,7 +3844,8 @@
             "NI43-101\/i__SEDAR_DenisonMines_2023_DenisonTRVol\/image55_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_2029",
@@ -3526,7 +3855,8 @@
             "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image37_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_2030",
@@ -3536,7 +3866,8 @@
             "NI43-101\/z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed\/image131_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3001",
@@ -3546,7 +3877,8 @@
             "NI43-101\/C__SEDAR_01SEDARFilings_EuropacTECHRPT01312023JA\/image14_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3002",
@@ -3556,7 +3888,8 @@
             "NI43-101\/C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9\/image165_3.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3006",
@@ -3566,7 +3899,8 @@
             "NI43-101\/C__DATA_tmc43101mar21\/image62_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3009",
@@ -3577,7 +3911,8 @@
             "NI43-101\/d__SEDAR_Boston_23june3585143_Tech_Report_Robex\/image358_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3010",
@@ -3587,17 +3922,19 @@
             "NI43-101\/C__SEDAR_Sherritt-Technicals_NI43-101_TechnicalReport\/image176_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3012",
-        "question_text":"Identify the East Tintic Historic Mine closest to the Trixie Main Shaft. What is the position of this mine in relation to the Trixie Main Shaft within the Cordero Mining concession?",
+        "question_text":"Identify the East Tintic Historic Mine closest to the Trixie Main Shaft. What is the orientation of this mine in relation to the Trixie Main Shaft within the Cordero Mining concession?",
         "expected_answer":"North West",
         "image_urls":[
             "NI43-101\/d__SEDAR_Montreal_JEAN-LUC_Osisko_Technical_Report_Osisko_NI-43-101-Report_Jan27\/image63_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_3013",
@@ -3607,7 +3944,8 @@
             "NI43-101\/C__SEDAR_FILINGS_TR-FordingRiver-2023TR\/image72_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3014",
@@ -3618,7 +3956,8 @@
             "NI43-101\/l__SEDAR_Osino_DFSTechReportJuly132023_OsinoDFSJuly132023\/image432_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3016",
@@ -3629,7 +3968,8 @@
             "NI43-101\/y__PUBLIC_Lithium-Americas-Corp_2023_technical-reports_Pastos-Grandes-Project_TR-pastos-grandes-update\/image75_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3018",
@@ -3639,7 +3979,8 @@
             "NI43-101\/l__55954_1_TECHRPT_SilverCloud-2023-01-27_BRCTechReport\/image29_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3020",
@@ -3650,29 +3991,32 @@
             "NI43-101\/C__SEDAR_filings_Alpha_TechReport_July13\/image68_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3021",
-        "question_text":"Which direction does Property Mineral Disposition MC00013808 lies in relation to Big Bear Camp?",
+        "question_text":"Which orientation does Property Mineral Disposition MC00013808 lies in relation to Big Bear Camp?",
         "expected_answer":"South East",
         "image_urls":[
             "NI43-101\/C___docs_230404catStrategicTR_230404catStrategicTR_cwm\/image117_2.jpeg",
             "NI43-101\/C___docs_230404catStrategicTR_230404catStrategicTR_cwm\/image119_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_3022",
-        "question_text":"What is the position of 'Titan II T.241084' relative to 'Aida T.163184' within the Cordero mining concession?",
+        "question_text":"What is the orientation of 'Titan II T.241084' relative to 'Aida T.163184' within the Cordero mining concession?",
         "expected_answer":"South West",
         "image_urls":[
             "NI43-101\/y__PUBLIC_Discovery-Silver-Corp_2023_technical-reports_DSV-Cordero-technical-report\/image75_2.png",
             "NI43-101\/y__PUBLIC_Discovery-Silver-Corp_2023_technical-reports_DSV-Cordero-technical-report\/image76_2.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_3023",
@@ -3682,7 +4026,8 @@
             "NI43-101\/z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed\/image45_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_3024",
@@ -3693,7 +4038,8 @@
             "NI43-101\/C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9\/image99_3.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3027",
@@ -3703,7 +4049,8 @@
             "NI43-101\/C__SEDAR_FILINGS_North-Peaks_43-101_NPR-NI-43-101-Tech-Report\/image22_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3028",
@@ -3713,7 +4060,8 @@
             "NI43-101\/g__Sayona_2023_NAL_Refiling_20230420_NAL_Report\/image355_3.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_3029",
@@ -3723,7 +4071,8 @@
             "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image81_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_3030",
@@ -3734,7 +4083,8 @@
             "NI43-101\/C__SEDAR_FILINGS_Element79_43-101_LuceroNI43-101-Final\/image15_2.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4001",
@@ -3744,7 +4094,8 @@
             "NI43-101\/C___docs_230404catStrategicTR_230404catStrategicTR_cwm\/image28_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4002",
@@ -3755,7 +4106,8 @@
             "NI43-101\/i__Securities_SEDAR_ToFile_Level14_Level14_Tech_Rept_May_2023\/image110_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_4005",
@@ -3766,7 +4118,8 @@
             "NI43-101\/C__SEDAR_FILINGS_Meridian_2023_TechRpt2023_MNOTechRpt2023\/image114_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4006",
@@ -3776,7 +4129,8 @@
             "NI43-101\/z__AgnicoEagle_Techreport_TechReport-221231_TechReport-LaRonde\/image86_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_4007",
@@ -3786,7 +4140,8 @@
             "NI43-101\/d__SEDAR_Montreal_Radisson_TechReport_0417\/image110_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4008",
@@ -3797,7 +4152,8 @@
             "NI43-101\/C__Users_silve_Downloads_Sedar_PEATR\/image206_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_4010",
@@ -3807,7 +4163,8 @@
             "NI43-101\/C__SEDAR_LUG_2023LUGTechnicalReport\/image68_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4011",
@@ -3818,7 +4175,8 @@
             "NI43-101\/z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed\/image13_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4013",
@@ -3828,7 +4186,8 @@
             "NI43-101\/w__StrataboundMinerals_SEDAR_1194765_tech_Mar31_2023_file_strata_tr_03312023\/image264_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_4014",
@@ -3838,7 +4197,8 @@
             "NI43-101\/C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA\/image71_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_4015",
@@ -3848,7 +4208,8 @@
             "NI43-101\/z__nou-43101-PEA-ang\/image61_3.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4016",
@@ -3858,7 +4219,8 @@
             "NI43-101\/C__SEDAR_FILINGS__doc__SEDAR_NewOriginGoldTR_pp\/image34_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4018",
@@ -3869,7 +4231,8 @@
             "NI43-101\/C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA\/image17_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4020",
@@ -3879,7 +4242,8 @@
             "NI43-101\/C__AA-SEDAR_VELVET-PEA-2023\/image51_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4021",
@@ -3889,7 +4253,8 @@
             "NI43-101\/C__SEDAR_01SEDARFilings_AvinoTCHRPT03302023JA\/image41_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_4022",
@@ -3900,7 +4265,8 @@
             "NI43-101\/C__SEDAR_FILINGS_RMCTechnicalReport\/image57_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4024",
@@ -3910,7 +4276,8 @@
             "NI43-101\/C__RedWillow_TechnicalReport\/image53_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4025",
@@ -3920,7 +4287,8 @@
             "NI43-101\/C__SEDARDocs_ASC-LaPrincesa_TechRep\/image53_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_4026",
@@ -3931,7 +4299,8 @@
             "NI43-101\/C__Filings_Alchemist_Technical_report_alchemist\/image44_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4027",
@@ -3941,7 +4310,8 @@
             "NI43-101\/C__SEDAR_01SEDARFilings_EuropacTECHRPT01312023JA\/image18_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_4028",
@@ -3951,7 +4321,8 @@
             "NI43-101\/C__SEDAR_FILINGS_rokcrsourcesTECH05082023CA\/image29_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_4029",
@@ -3961,7 +4332,8 @@
             "NI43-101\/i__Securities_SEDAR_ToFile_Level14_Level14_Tech_Rept_May_2023\/image50_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_4030",
@@ -3971,7 +4343,8 @@
             "NI43-101\/n__SEDAR_WRLG_NI43-101_Report_Update_v20230619\/image26_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5001",
@@ -3982,7 +4355,8 @@
             "FEMA\/fema_ehp_il-in-oh-mi-mn-wi-floodcontrol-revdpea_03252025\/image54_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5003",
@@ -3993,7 +4367,8 @@
             "seattle-planning\/OneSeattlePlanDEIS\/image210_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5004",
@@ -4004,7 +4379,8 @@
             "NI43-101\/p__BC_Securities_and_MA_SEDAR_DOWNLOAD_ARIS_20230331TR\/image38_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5005",
@@ -4014,7 +4390,8 @@
             "NI43-101\/C__SEDAR_FILINGS_HighTideTR04062023\/image42_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5007",
@@ -4025,7 +4402,8 @@
             "FEMA\/fema_bric-ema-2021-br-005-0044-nc-salisburywatersupplyresilency-fea-signed_fonsi-20240715\/image24_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5009",
@@ -4035,7 +4413,8 @@
             "NI43-101\/C__FILINGS_SEDAR-OTC-CSE_722031_AAGBerenTR\/image91_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_5010",
@@ -4045,7 +4424,8 @@
             "seattle-planning\/507SeattleStudio_Web\/image26_m1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_5011",
@@ -4055,7 +4435,8 @@
             "NI43-101\/C__SEDAR_FILINGS_3_Amend_43101_Jul122023_esign\/image33_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5012",
@@ -4065,7 +4446,8 @@
             "NI43-101\/z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed\/image40_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5013",
@@ -4076,7 +4458,8 @@
             "seattle-planning\/UptownDirectorsReport2017\/image18_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5014",
@@ -4086,7 +4469,8 @@
             "NI43-101\/i__Securities_SEDAR_ToFile_Level14_Level14_Tech_Rept_May_2023\/image26_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5015",
@@ -4096,7 +4480,8 @@
             "NI43-101\/C__Users_silve_Downloads_Sedar_PEATR\/image62_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5016",
@@ -4106,7 +4491,8 @@
             "NI43-101\/C__FILINGS_DarkStar_FinalProspectus_DarkStar_TechnicalReport\/image15_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5017",
@@ -4116,7 +4502,8 @@
             "NI43-101\/C__SEDAR_FILINGS_BenzMining_2023_TechReport_BZTechRpt\/image74_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5018",
@@ -4127,7 +4514,8 @@
             "FEMA\/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702\/image8_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5019",
@@ -4137,7 +4525,8 @@
             "NI43-101\/l__49926_1_TechReports2023_Guanacevi_Guanacevi_TechReport_2023\/image36_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5020",
@@ -4148,7 +4537,8 @@
             "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image30_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5021",
@@ -4158,7 +4548,8 @@
             "NI43-101\/z__PUBLIC_Consolidated-Uranium-Inc_2023_AN-SPMeeting_CUR-Cyclone-Rim-TR\/image5_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5022",
@@ -4169,7 +4560,8 @@
             "NI43-101\/C__FILINGS_SEDAR-OTC-CSE_722031_AAGBerenTR\/image41_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5023",
@@ -4180,7 +4572,8 @@
             "NI43-101\/C__Upload_Denarius_2023_Apr14_Denarius_TechRep_0414\/image27_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5024",
@@ -4190,7 +4583,8 @@
             "seattle-planning\/OneSeattlePlanDEIS\/image164_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5026",
@@ -4201,7 +4595,8 @@
             "NI43-101\/i__Soco_Sedar_2023_ST_Fokus_Technical_Report_FOKUS_techreport_NI43-101\/image144_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_5027",
@@ -4211,7 +4606,8 @@
             "NI43-101\/C__RedWillow_TechnicalReport\/image13_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_5028",
@@ -4221,7 +4617,8 @@
             "NI43-101\/C__SEDAR_FILINGS_TR-FordingRiver-2023TR\/image103_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_5029",
@@ -4231,7 +4628,8 @@
             "NI43-101\/i__SEDAR_TrilogyMetals(NovaCopper)_2023_TechReportBornite_021423\/image22_3.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_5030",
@@ -4241,7 +4639,8 @@
             "seattle-planning\/lfs-test-case-memorandum\/image42_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_6001",
@@ -4251,7 +4650,8 @@
             "NI43-101\/C__RedWillow_TechnicalReport\/image10_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6002",
@@ -4261,7 +4661,8 @@
             "FEMA\/fema_bric-emb-2021-br-002-0005-ct-newhaven-fea-signedfonsi-20240904\/image20_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_6004",
@@ -4272,7 +4673,8 @@
             "NI43-101\/C__SEDAR_FILINGS_StamperOil_2023_STMP2301170550_STMP2301170550TR\/image64_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_6005",
@@ -4282,7 +4684,8 @@
             "NI43-101\/C__RedWillow_TechnicalReport\/image78_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6006",
@@ -4292,7 +4695,8 @@
             "NI43-101\/w__StrataboundMinerals_SEDAR_1194765_tech_Mar31_2023_file_strata_tr_03312023\/image104_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6007",
@@ -4303,7 +4707,8 @@
             "NI43-101\/C__Jul_14_Reunion_TR\/image182_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6008",
@@ -4314,7 +4719,8 @@
             "NI43-101\/C__SEDAR_FILINGS_BravadaTechR_TOGO_WINDMTN_PEA_20JAN23\/image45_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6009",
@@ -4324,7 +4730,8 @@
             "NI43-101\/C__FILINGS_SEDAR-OTC-CSE_722031_AAGBerenTR\/image37_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6010",
@@ -4334,7 +4741,8 @@
             "NI43-101\/C__SEDAR_1-TR\/image127_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6011",
@@ -4345,7 +4753,8 @@
             "FEMA\/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702\/image121_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6012",
@@ -4356,7 +4765,8 @@
             "NI43-101\/k__filings_livework_wkout_71392_Mandalay_TechReport\/image40_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6013",
@@ -4367,7 +4777,8 @@
             "NI43-101\/C__SEDAR_TechnicalReport (1)\/image44_3.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6014",
@@ -4377,7 +4788,8 @@
             "NI43-101\/C__SEDAR_FILINGS_BenzMining_2023_TechReport_BZTechRpt\/image67_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6015",
@@ -4387,7 +4799,8 @@
             "NI43-101\/C__SEDAR_FILINGS_OSK_TchRpt_WindfallProjectJan2023\/image441_3.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_6018",
@@ -4397,7 +4810,8 @@
             "NI43-101\/C__SEDAR_FILINGS_BravadaTechR_TOGO_WINDMTN_PEA_20JAN23\/image61_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6019",
@@ -4407,7 +4821,8 @@
             "NI43-101\/d__AYM-NI43-101-PEA-Feb21-2023\/image42_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_6022",
@@ -4418,7 +4833,8 @@
             "FEMA\/fema_ehp-lpdm-pj-06-nm-2023-001-loslucerosfiremit-drafttea-2024412\/image4_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6023",
@@ -4428,7 +4844,8 @@
             "NI43-101\/k__filings_livework_wkout_71400_Karora_TechReport\/image26_3.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_6024",
@@ -4439,7 +4856,8 @@
             "NI43-101\/C__SEDAR_FILINGS_OSK_TchRpt_WindfallProjectJan2023\/image105_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6025",
@@ -4449,7 +4867,8 @@
             "NI43-101\/w__Iamgold_SEDAR_1188221_tech_Feb22_2023_iag_tr_022323\/image21_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6026",
@@ -4459,7 +4878,8 @@
             "NI43-101\/g__Sayona_2023_Moblan_20230414_Moblan_Report\/image104_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_6027",
@@ -4469,7 +4889,8 @@
             "NI43-101\/C__SF_TECHREPORT\/image46_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6029",
@@ -4480,7 +4901,8 @@
             "NI43-101\/i__Securities_SEDAR_ToFile_Level14_Level14_Tech_Rept_May_2023\/image47_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_6030",
@@ -4490,7 +4912,8 @@
             "NI43-101\/z__Manuela_TechnicalR\/image93_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7001",
@@ -4501,7 +4924,8 @@
             "NI43-101\/i__Soco_Sedar_2023_ST_Fokus_Technical_Report_FOKUS_techreport_NI43-101\/image31_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7002",
@@ -4511,7 +4935,8 @@
             "NI43-101\/f__Arabella_SEDAR_KNGTechReport\/image21_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7003",
@@ -4521,7 +4946,8 @@
             "FEMA\/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202\/image50_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_7004",
@@ -4531,7 +4957,8 @@
             "NI43-101\/C__SEDARFilings_Atha_ARPreProspectus_TechRepGoldenRose\/image73_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_7005",
@@ -4541,7 +4968,8 @@
             "NI43-101\/C__SEDAR_FILINGS_CENTTechnicalReport\/image15_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7006",
@@ -4552,7 +4980,8 @@
             "FEMA\/LPDM-PJ-05-IL-2022-002-North_Chicago-FEA-11202024\/image26_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_7008",
@@ -4563,7 +4992,8 @@
             "NI43-101\/y__filings_livework_wkout_71500_HopeMining_TechReport\/image38_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7009",
@@ -4573,7 +5003,8 @@
             "NI43-101\/C__SEDAR_FILINGS_Jerico-Cumberland_TR-ST-ANT-FINAL\/image23_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7010",
@@ -4583,7 +5014,8 @@
             "FEMA\/fema_ehp-hmgp-dr-4407-ca-buttecountywildfiremitigation-dea-20240411\/image9_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7011",
@@ -4593,7 +5025,8 @@
             "NI43-101\/w__StrataboundMinerals_SEDAR_1194765_tech_Mar31_2023_file_strata_tr_03312023\/image112_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7012",
@@ -4604,7 +5037,8 @@
             "FEMA\/fema_dr-4559-st-louis-hs-appendix\/image243_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7013",
@@ -4615,7 +5049,8 @@
             "NI43-101\/y__PUBLIC_Lithium-Americas-Corp_2023_technical-reports_Pastos-Grandes-Project_TR-pastos-grandes-update\/image28_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_7014",
@@ -4625,7 +5060,8 @@
             "NI43-101\/C__SEDAR_FILINGS_CENTTechnicalReport\/image22_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7015",
@@ -4636,7 +5072,8 @@
             "NI43-101\/C__MS_SEDAR_Technical_Report_MAC_Project\/image14_6.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7016",
@@ -4647,7 +5084,8 @@
             "NI43-101\/C__SEDAR_FILINGS_RushraremetalsTECH03282023CA\/image18_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7017",
@@ -4657,7 +5095,8 @@
             "NI43-101\/C__KosterDamTechReportISM\/image13_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7018",
@@ -4668,7 +5107,8 @@
             "FEMA\/fema_pa-dr-4611-3143-la-southterrebonnemiddleschool-fea-20250311\/image21_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7019",
@@ -4679,7 +5119,8 @@
             "NI43-101\/C__Users_Nathalie_Documents_RappTech\/image62_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7020",
@@ -4690,7 +5131,8 @@
             "NI43-101\/C__SEDAR_FILINGS_OSK_TchRpt_WindfallProjectJan2023\/image181_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7021",
@@ -4700,7 +5142,8 @@
             "NI43-101\/C__SEDAR_FILINGS_OSK_TchRpt_WindfallProjectJan2023\/image560_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7022",
@@ -4711,7 +5154,8 @@
             "NI43-101\/m__SEDAR_Jaguar_NI43-101-TechnicalReport\/image24_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7023",
@@ -4721,7 +5165,8 @@
             "NI43-101\/C__SEDAR_FILINGS_SantaAna2023\/image50_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7025",
@@ -4732,7 +5177,8 @@
             "NI43-101\/C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101\/image64_3.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7026",
@@ -4743,7 +5189,8 @@
             "FEMA\/fema_pa-dr-4611-3143-la-southterrebonnemiddleschool-fea-20250311\/image22_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7027",
@@ -4753,7 +5200,8 @@
             "NI43-101\/C__AA-SEDAR_VELVET-PEA-2023\/image45_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7028",
@@ -4763,7 +5211,8 @@
             "FEMA\/fema-oehp_hmgp-dr-4489-0041-il-peoria-borrow-fsea-fonsi-07022025\/image21_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_7029",
@@ -4773,7 +5222,8 @@
             "NI43-101\/C__SEDAR_FILINGS_HighTideTR04062023\/image51_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_7030",
@@ -4783,7 +5233,8 @@
             "NI43-101\/d__SEDAR_Boston_23june3585143_Tech_Report_Robex\/image64_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_8001",
@@ -4793,7 +5244,8 @@
             "seattle-planning\/507SeattleStudio_Web\/image14_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_8002",
@@ -4804,7 +5256,8 @@
             "NI43-101\/g__Sayona_2023_Moblan_20230414_Moblan_Report\/image33_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8003",
@@ -4814,7 +5267,8 @@
             "NI43-101\/C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA\/image82_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_8004",
@@ -4824,7 +5278,8 @@
             "NI43-101\/C__MS_SEDAR_Technical_Report_MAC_Project\/image43_6.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8005",
@@ -4834,7 +5289,8 @@
             "NI43-101\/l__SEDAR_Osino_DFSTechReportJuly132023_OsinoDFSJuly132023\/image526_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8006",
@@ -4844,7 +5300,8 @@
             "NI43-101\/C__1SEDARFilings_CascadeTechnicalPriJan24\/image29_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8007",
@@ -4854,7 +5311,8 @@
             "NI43-101\/C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101\/image115_3.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8008",
@@ -4864,7 +5322,8 @@
             "NI43-101\/C__SEDAR_FILINGS_2023_Mulatos_Tech_Rep_Mar_27_2023\/image57_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8009",
@@ -4875,7 +5334,8 @@
             "FEMA\/fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217\/image33_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8010",
@@ -4885,7 +5345,8 @@
             "NI43-101\/C__SEDAR_FILINGS_Jerico-Cumberland_TR-ST-ANT-FINAL\/image29_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8012",
@@ -4896,7 +5357,8 @@
             "NI43-101\/C__SEDAR_FILINGS_SEM_PROSPECTUS_FINAL_4SEMTechReportMurdockMtn\/image23_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8013",
@@ -4907,7 +5369,8 @@
             "NI43-101\/C__SEDAR_FILINGS_StamperOil_2023_STMP2301170550_STMP2301170550TR\/image17_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8014",
@@ -4918,7 +5381,8 @@
             "NI43-101\/k__filings_livework_wkout_71561_E3Lithium_TechReport\/image24_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8015",
@@ -4928,7 +5392,8 @@
             "NI43-101\/C__SEDAR_FILINGS_AAAA_Viscount_2023-KSR-43-101F\/image17_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8016",
@@ -4938,7 +5403,8 @@
             "NI43-101\/C__Users_sedar.LAW_Desktop_Hermonie_WhistlerTR\/image77_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_8017",
@@ -4949,7 +5415,8 @@
             "NI43-101\/C__SEDAR_FILINGS_20230628collectivetech\/image14_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8018",
@@ -4960,7 +5427,8 @@
             "FEMA\/hmgp-dr-4332-hmgp-4332-0197-tx_1-a3adetention-dea-2025225\/image27_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8020",
@@ -4971,7 +5439,8 @@
             "NI43-101\/n__SEDAR_WRLG_NI43-101_Report_Update_v20230619\/image28_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_8021",
@@ -4981,18 +5450,20 @@
             "NI43-101\/C__SEDAR_TechnicalReport\/image35_m0.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8022",
-        "question_text":"In which direction is University Park located in relation to the Proposed Wet Pond within the MWRD City of Harvey BRIC Funding Infrastructure Project Area?",
+        "question_text":"In which orientation is University Park located in relation to the Proposed Wet Pond within the MWRD City of Harvey BRIC Funding Infrastructure Project Area?",
         "expected_answer":"South West",
         "image_urls":[
             "FEMA\/fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217\/image149_1.png",
             "FEMA\/fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217\/image158_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_8023",
@@ -5002,7 +5473,8 @@
             "NI43-101\/C__TK_SEDAR_4847_102_7TECHREPORT\/image63_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8024",
@@ -5013,7 +5485,8 @@
             "FEMA\/fema_ehp-bric-emd-2021-br-063-0016-ut-citycreekwtp-dea-20240318\/image10_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8025",
@@ -5024,7 +5497,8 @@
             "FEMA\/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729\/image159_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8026",
@@ -5035,28 +5509,31 @@
             "NI43-101\/C__SEDAR_1-TR\/image81_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8027",
-        "question_text":"What direction is Needles Park located in relation to the Proposed Detention Basin of the City of Harvey Stormwater Management Project?",
+        "question_text":"What orientation is Needles Park located in relation to the Proposed Detention Basin of the City of Harvey Stormwater Management Project?",
         "expected_answer":"North East",
         "image_urls":[
             "FEMA\/fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217\/image16_1.png",
             "FEMA\/fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217\/image21_1.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_8028",
-        "question_text":"What is the position of the drilling collars completed by 'UKHM' compared to the drilling collars by 'Spectrum (2003)' at AurMac Project?",
+        "question_text":"What is the orientation of the drilling collars completed by 'UKHM' compared to the drilling collars by 'Spectrum (2003)' at AurMac Project?",
         "expected_answer":"South West",
         "image_urls":[
             "NI43-101\/C__SEDARFILINGS_Banyan-TR_BanyanTR_ss\/image49_3.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_8029",
@@ -5066,7 +5543,8 @@
             "NI43-101\/C__SEDAR_FILINGS_Volt_230523TechReport\/image37_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_8030",
@@ -5076,7 +5554,8 @@
             "FEMA\/fema_bric-ema-2020-br-100-0009-nc-lumbertonloop-fea-signedfonsi-20240731\/image43_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9001",
@@ -5087,7 +5566,8 @@
             "NI43-101\/z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed\/image35_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9002",
@@ -5100,7 +5580,8 @@
             "NI43-101\/C___docs_230404catStrategicTR_230404catStrategicTR_cwm\/image26_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9003",
@@ -5110,7 +5591,8 @@
             "NI43-101\/C__KosterDamTechReportISM\/image9_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9004",
@@ -5121,7 +5603,8 @@
             "NI43-101\/C__SEDAR_1-TR\/image49_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9005",
@@ -5132,7 +5615,8 @@
             "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image135_1.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_9006",
@@ -5142,7 +5626,8 @@
             "NI43-101\/C__FILINGS_SEDAR-OTC-CSE_1_TechReport_2022_FINAL\/image22_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9007",
@@ -5153,7 +5638,8 @@
             "NI43-101\/C__SEDAR_FILINGS_20230711LithiumChileNI43101\/image26_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9008",
@@ -5163,17 +5649,19 @@
             "NI43-101\/C__AA-SEDAR_VELVET-PEA-2023\/image25_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9010",
-        "question_text":"What is the position of MARCOR Zone in relation to TETRAULT Zone of Montauban Project?",
+        "question_text":"What is the orientation of MARCOR Zone in relation to TETRAULT Zone of Montauban Project?",
         "expected_answer":"South East",
         "image_urls":[
             "NI43-101\/C__SEDAR_FILINGS_ESGold_TechnicalReport_Montauban\/image55_2.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_9011",
@@ -5184,7 +5672,8 @@
             "NI43-101\/z__PUBLIC_Lundin-Mining-Corporation_2023_technical-reports_Caserones_Lundin-NI43-101-TR-Caserones\/image37_3.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9012",
@@ -5194,7 +5683,8 @@
             "NI43-101\/C___docs_221231alturasMineralsAFSaif_220629alturasMineralsTR_cwm\/image20_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9013",
@@ -5204,7 +5694,8 @@
             "NI43-101\/C__FILINGS_Tearlach_Tearlach_TechnicalReport\/image14_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9014",
@@ -5214,7 +5705,8 @@
             "NI43-101\/C__SEDAR_01SEDARFilings_AvinoTCHRPT03302023JA\/image47_2.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9015",
@@ -5224,7 +5716,8 @@
             "NI43-101\/C___docs_221231alturasMineralsAFSaif_220629alturasMineralsTR_cwm\/image33_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Distance"
+        "spatial_relationship":"Distance",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9016",
@@ -5234,28 +5727,31 @@
             "NI43-101\/C__Data_zbnitrjul17\/image169_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Intersect"
+        "spatial_relationship":"Intersect",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9017",
-        "question_text":"Which direction does Seeley Lake lie in relation to Marathon Project\u2019s Tailings Storage Facility?",
+        "question_text":"Which orientation does Seeley Lake lie in relation to Marathon Project\u2019s Tailings Storage Facility?",
         "expected_answer":"North West",
         "image_urls":[
             "NI43-101\/C__SEDAR_1-TR\/image55_2.jpeg",
             "NI43-101\/C__SEDAR_1-TR\/image39_2.jpeg"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_9018",
-        "question_text":"What is the position of Velvet-Wood Project in relation to Slick Rock Project Area?",
+        "question_text":"What is the orientation of Velvet-Wood Project in relation to Slick Rock Project Area?",
         "expected_answer":"North West",
         "image_urls":[
             "NI43-101\/C__AA-SEDAR_VELVET-PEA-2023\/image44_1.png"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Orientation"
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal"
     },
     {
         "question_ref":"q_9019",
@@ -5265,7 +5761,8 @@
             "NI43-101\/C__KC_SEDAR_4811101_LABTechnicalReport\/image45_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Within"
+        "spatial_relationship":"Within",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9022",
@@ -5275,7 +5772,8 @@
             "NI43-101\/C__FILINGS_Tearlach_Tearlach_TechnicalReport\/image45_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"distance"
     },
     {
         "question_ref":"q_9023",
@@ -5285,7 +5783,8 @@
             "NI43-101\/C__Data_zbnitrjul17\/image42_1.jpeg"
         ],
         "map_count":"Single",
-        "spatial_relationship":"Border"
+        "spatial_relationship":"Border",
+        "answer_type":"textual"
     },
     {
         "question_ref":"q_9024",
@@ -5296,6 +5795,7 @@
             "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image30_m0.png"
         ],
         "map_count":"Multi",
-        "spatial_relationship":"Equal"
+        "spatial_relationship":"Equal",
+        "answer_type":"textual"
     }
 ]
