@@ -3,7 +3,7 @@ import pandas as pd
 
 updated_data = pl.read_json('./response_full.json')
 
-distractor_data = ['./response_full_d20.json', './response_full_30.json']
+distractor_data = ['./response_full_d20.json', './response_full_d30.json']
 
 for d in distractor_data:
     t_data = pl.read_json(d).select(
