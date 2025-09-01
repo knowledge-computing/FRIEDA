@@ -2,68 +2,62 @@ import polars as pl
 import re
 import statistics
 
-# Update response all
 
-pl_data = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/response_full_d20.json').select(
-    pl.col(['question_ref', 'question_text', 'expected_answer'])
+regex_pattern = r"\d+\.?\d*"
+
+pl_data = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/response_full_d20.json').filter(
+    pl.col('answer_type') == 'distance'
 )
 
-pl_annotator = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/annotator_response/response_all.json').select(
-    pl.col(['question_ref', 'annotator_response'])
-)
+def std_calculation(expected_answer, annotator_response):
+    expected_answer = float(re.search(regex_pattern, expected_answer).group())
+
+    list_response = []
+    for r in annotator_response:
+        if (r == "None") or (not r):
+            pass
+        else:
+            list_response.append(float(re.search(regex_pattern, r).group()))
+
+    list_annotator = list_response
+    list_response.append(expected_answer)
+    # list_response = 
+
+    mean_value = statistics.mean(list_response)
+    median_value = statistics.median(list_response)
+    std_value = statistics.stdev(list_response)
+
+    list_tf = []
+    expected_in = False
+
+    for a in list_annotator:
+        if (a < mean_value-std_value) or (a > mean_value+std_value):
+            list_tf.append(False)
+        else:
+            list_tf.append(True)
+
+    # print(mean_value, median_value, std_value)
+    
+    return {'annotator_response': list_annotator, 
+            'mean': mean_value,
+            'median': median_value,
+            'std': std_value,
+            'expected_value': expected_answer,
+            'w/i': list_tf}
+
+pl_annotator = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/annotator_response/response_all.json')
 
 pl_full = pl.concat(
     [pl_data, pl_annotator],
-    how='align'
+    how='align_left'
 ).select(
-    pl.col(['question_ref', 'question_text', 'expected_answer', 'annotator_response'])
-)
+    pl.col('question_ref'),
+    tmp = pl.struct(pl.all()).map_elements(lambda x: std_calculation(x['expected_answer'], x['annotator_response']))
+).unnest('tmp').explode(['annotator_response', 'w/i'])
 
-pd_full = pl_full.to_pandas()
-pd_full.to_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/annotator_response/response_all.json', orient='records', indent=4)
+pl_full.write_csv('./tmp.csv')
 
-
-# regex_pattern = r"\d+\.?\d*"
-
-# pl_data = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/response_full_d20.json').filter(
-#     pl.col('answer_type') == 'distance'
-# )
-
-# def std_calculation(expected_answer, annotator_response):
-#     expected_answer = float(re.search(regex_pattern, expected_answer).group())
-#     # annotator_response = list(filter(None, annotator_response))
-#     # list_response = []
-
-#     # for r in annotator_response:
-#     #     if r:
-#     #         list_response.append(float(re.search(regex_pattern, r).group()))
-
-#     print(expected_answer, annotator_response)
-    
-#     return 0
-
-# pl_annotator = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/annotator_response/response_all.json')
-
-# pl_full = pl.concat(
-#     [pl_data, pl_annotator],
-#     how='align_left'
-# ).with_columns(
-#     pl.struct(pl.all()).map_elements(lambda x: std_calculation(x['expected_answer'], x['annotator_response']))
-# )
-
-
-# print(pl_full)
-
-# text = "Hello, world! 1234"
-# regex_pattern = r"\d+\.?\d*"
-
-# match = re.search(regex_pattern, text).group()
-
-# print(match)
-
-
-
-
+print(pl_full)
 
 ####
 
