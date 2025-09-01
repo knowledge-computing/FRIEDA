@@ -1,0 +1,32 @@
+[
+    {
+        "question_text":"On the 'Arizona Lithium Corp Claims Map' dated August 2022, what alternative name or designation is used to represent 'Rhodes Marsh Lithium Brine Project' claim location?",
+        "expected_answer":"Cronin Capital Claims",
+        "image_urls":[
+            "NI43-101\/C__Filings_Alchemist_Technical_report_alchemist\/image8_1.png",
+            "NI43-101\/C__Filings_Alchemist_Technical_report_alchemist\/image44_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Equal"
+    },
+    {
+        "question_text":"Which Los Reyes Claim block equals the 1 percent royalty block?",
+        "expected_answer":"Los Reyes Seis",
+        "image_urls":[
+            "NI43-101\/z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed\/image35_3.jpeg",
+            "NI43-101\/z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed\/image35_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Equal"
+    },
+    {
+        "question_text":"What is the Land Tenure status of the area equal to Windser NSR of Munro-Croesus property?",
+        "expected_answer":"Patent",
+        "image_urls":[
+            "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image21_m0.png",
+            "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image30_m0.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Equal"
+    }
+]
