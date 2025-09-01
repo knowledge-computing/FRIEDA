@@ -3038,7 +3038,7 @@
     },
     {
         "question_ref":"q_1135",
-        "question_text":"In Tinian, each 'Noise Sensitive Receptor' is assigned a unique code in the format {Letter}{Number} and has an associated name (e.g., code 'T1' corresponds to 'Tinian High School'). Among the receptors with codes beginning with 'S', which one is located closest to the '115 dB' boundary of Explosives Training Range 40lb Cratering Charge (PK15) Noise Contours? Give just the name",
+        "question_text":"In Tinian, each 'Noise Sensitive Receptor' is assigned a unique code in the format {Letter}{Number} and has an associated name (e.g., code 'T1' corresponds to 'Tinian High School'). Among the receptors with codes beginning with 'S', which one is located closest to the '115 dB' boundary of Explosives Training Range 40lb Cratering Charge (PK15) Noise Contours? Give just the name.",
         "expected_answer":"Coral Ocean Point Resort",
         "image_urls":[
             "EIS\/Appendices A through L_CJMT_RDEIS\/image303_1.png"
