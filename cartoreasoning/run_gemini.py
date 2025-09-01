@@ -294,8 +294,8 @@ if __name__ == '__main__':
          img_limit=args.max_images)
 
     # main(model='gemini-2.5-flash-lite',
-    #     question_path='/home/yaoyi/pyo00005/p2/carto-reasoning/questions/benchmark_data/response_mini.json',
-    #     image_folder='/home/yaoyi/pyo00005/p2/carto-image',
+    #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
+    #     image_folder='./p2/carto-image',
     #     bool_distractor=True,
     #     output_dir='./',
     #     cache_dir='./',
