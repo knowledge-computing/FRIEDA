@@ -151,8 +151,8 @@
     },
     {
         "question_ref":"q_0016",
-        "question_text":"Which 'Race and Social Equity Composite Index' categories cover the 'Interbay Dravus' within the Ballard\u2013Interbay MIC of City of Seattle? Exclude the word 'Disadvantage' from each category names.",
-        "expected_answer":"Middle; Second Lowest; Lowest",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Lowest; Second Lowest; Middle",
             "Middle",
@@ -181,8 +181,8 @@
     },
     {
         "question_ref":"q_0019",
-        "question_text":"Within the southern section of Ballard-Interbay MIC, identify the two concave areas along the boundary. How many 'Hazardous Waste and Toxics Reduction' points are located within these areas?",
-        "expected_answer":"3",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "3",
             null,
@@ -341,8 +341,8 @@
     },
     {
         "question_ref":"q_0071",
-        "question_text":"Identify the 'Lineament' line that runs through the horizontal center of the Greater Mumbai District, Maharashtra. Which two Hydrogeology areas does this line separate? Exclude any name portions written in parentheses.",
-        "expected_answer":"Hilly Area; Soft Rock",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             null,
             "Hilly Area; Hard Rock",
@@ -431,7 +431,7 @@
     },
     {
         "question_ref":"q_0080",
-        "question_text":"Identify the 'PHASE 1B' CST phasing line of Downtown Singapore. How many 'SUBJECT TO DETAILED PLANNING' areas does this line intersect with?",
+        "question_text":"Identify the 'PHASE 1B' CST phasing line. How many 'SUBJECT TO DETAILED PLANNING' areas does this line intersect with?",
         "expected_answer":"2",
         "annotator_response":[
             "2",
@@ -521,7 +521,7 @@
     },
     {
         "question_ref":"q_0089",
-        "question_text":"In the Concept Plan of the Historic District of Little India of Singapore, identify the unnamed \u2018CAR PARK\u2019 point. What is the name of the farthest named \u2018CAR PARK\u2019 from this point?",
+        "question_text":"In the Concept Plan of the Historic District of Little India, identify the unnamed \u2018CAR PARK\u2019 point. What is the name of the farthest named \u2018CAR PARK\u2019 from this point?",
         "expected_answer":"President Shopping Centre\/Hotel",
         "annotator_response":[
             "President Shopping Centre\/Hotel",
@@ -531,7 +531,7 @@
     },
     {
         "question_ref":"q_0090",
-        "question_text":"Within Chinatown, Singapore, each area inside the conservation boundary is labeled with a name (e.g., TANGJONG PAGAR) and each Gazetted Monument is labeled with a number and name (e.g., 5: Al-Abrar Mosque). Which Gazetted Monuments are located in the area that contains the \u2018Future malls\u2019 line? Give just the names.",
+        "question_text":"Within Chinatown, each area inside the conservation boundary is labeled with a name (e.g., TANGJONG PAGAR) and each Gazetted Monument is labeled with a number and name (e.g., 5: Al-Abrar Mosque). Which Gazetted Monuments are located in the area that contains the \u2018Future malls\u2019 line? Give just the names.",
         "expected_answer":"Jamae Mosque; Sri Mariamman Temple",
         "annotator_response":[
             "Jamae Mosque; Sri Mariamman Temple",
@@ -572,11 +572,11 @@
     {
         "question_ref":"q_0094",
         "question_text":"In the Fisherman\u2019s Cove \/ H Resort area, there are four regions categorized as 'Land-birds Feeding Zones'. Identify the one that lies along the shoreline. How many 'Observed Nests' lie within this shoreline zone? Express your answer in form X\/Y, where X = number of shoreline nests and Y = total number of observed nests. Do not reduce the fraction.",
-        "expected_answer":"6-Mar",
+        "expected_answer":"3\/6",
         "annotator_response":[
-            "6-Mar",
-            "6-Jan",
-            "6-Mar"
+            "3\/6",
+            "1\/6",
+            "3\/6"
         ]
     },
     {
@@ -621,7 +621,7 @@
     },
     {
         "question_ref":"q_0099",
-        "question_text":"Identify the point where all three Alternative Routes from China to Europe (i.e., 'Norther Corridor', 'Middle Corridor', and 'Ocean Route') meet. Which country is this point located in?",
+        "question_text":"Identify the point where all three Alternative Routes from China to Europe (i.e., 'Northern Corridor', 'Middle Corridor', and 'Ocean Route') meet. Which country is this point located in?",
         "expected_answer":"CHINA",
         "annotator_response":[
             "CHINA",
@@ -631,7 +631,7 @@
     },
     {
         "question_ref":"q_0100",
-        "question_text":"Within the 'Ou Tapaong OPT_Canals' boundar (red outline), identify the three bird species points: 'Bengal Florican', 'Greater Adjutant', and 'Milky Stork'. Which bird species point is located closest to the boundary?",
+        "question_text":"Within the 'Ou Tapaong OPT_Canals' boundary (red outline), identify the three bird species points: 'Bengal Florican', 'Greater Adjutant', and 'Milky Stork'. Which bird species point is located closest to the boundary?",
         "expected_answer":"Bengal Florican",
         "annotator_response":[
             "Bengal Florican",
@@ -661,7 +661,7 @@
     },
     {
         "question_ref":"q_0103",
-        "question_text":"As given in the Extended Central Sketch Plan of Singapore, how many \u2018Major Bus Terminals\u2019 are located inside the \u2018High Density Housing with Commercial Uses\u2019 region?",
+        "question_text":"As given in the Extended Central Sketch Plan, how many \u2018Major Bus Terminals\u2019 are located inside the \u2018High Density Housing with Commercial Uses\u2019 region?",
         "expected_answer":"1",
         "annotator_response":[
             "1",
@@ -741,7 +741,7 @@
     },
     {
         "question_ref":"q_0111",
-        "question_text":"All Surface Water Sampling locations are associated with a unique code in the format 'SW #'. Which two Soil Categories form the boundary where the two Surface Water Sampling locations lie?",
+        "question_text":"All Surface Water Sampling Locations are associated with a unique code in the format 'SW #'. Which two Soil Categories form the boundary where the two Surface Water Sampling locations lie?",
         "expected_answer":"Jamuna,Karatoya-Bengali and Lakhya floodplain; Madhupur Soils",
         "annotator_response":[
             "Peat; Jamuna, Karatoya-Bengali and Lakhya floodplain",
@@ -771,8 +771,8 @@
     },
     {
         "question_ref":"q_0114",
-        "question_text":"Identify the area in which the air quality assessment zone 'Sligo' is located. Within this area, how many bathing areas are classified as 'Compliant with EC Guide and Mandatory Values'? Include the ones if they lie on the border.",
-        "expected_answer":"2",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "16",
             null,
@@ -781,7 +781,7 @@
     },
     {
         "question_ref":"q_0115",
-        "question_text":"China Square in Singapore is divided into multiple land parcels, each labeled with an alphabet. What is the orientation of 'Parcel B' in relation to 'Parcel D'?",
+        "question_text":"China Square is divided into multiple land parcels, each labeled with an alphabet. What is the orientation of 'Parcel B' in relation to 'Parcel D'?",
         "expected_answer":"West",
         "annotator_response":[
             "West",
@@ -801,8 +801,8 @@
     },
     {
         "question_ref":"q_0117",
-        "question_text":"The Fisherman's Cove Project is divided into two areas: J67 and J146, while the H Resort Project area is divided into three regions: V576, V577, and V10116. What is the approximate horizontal (east-west) distance between the westernmost 'Native Plants' point in V576 and the easternmost 'Endemic Plants' point in J146.",
-        "expected_answer":"55 m",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "50m",
             "300m",
@@ -821,7 +821,7 @@
     },
     {
         "question_ref":"q_0119",
-        "question_text":"Each 'Critical Location' point in the AIIB Selected Landslide Sites is associated with a two-digit or three-digit number. Identify the 'Critical Location' point numbers within MATARA that are intersected by a Major Road.",
+        "question_text":"Each 'Critical Location' point in the AIIB Selected Landslide Sites is associated with a one-digit, two-digit, or three-digit number. Identify the 'Critical Location' point numbers within MATARA that are intersected by a Major Road.",
         "expected_answer":"19; 21; 22",
         "annotator_response":[
             "19; 21; 22",
@@ -941,7 +941,7 @@
     },
     {
         "question_ref":"q_0131",
-        "question_text":"Within the 'BUKIT PASOH' area of the Historic District Chinatown of Singapore, how many 'ENVELOPE CONTROL SITE's are located inside it?",
+        "question_text":"Within the 'BUKIT PASOH' area of the Historic District Chinatown, how many 'ENVELOPE CONTROL SITE's are located inside it?",
         "expected_answer":"5",
         "annotator_response":[
             "5",
@@ -1021,8 +1021,8 @@
     },
     {
         "question_ref":"q_0139",
-        "question_text":"In the City of Seattle, the Manufacturing Industrial Centers are divided into three categories under 'Alternative 2 \u2013 Limited' and four categories under 'Alternative 3 \u2013 Targeted.' When comparing the areas across categories, which category shows the largest increase in size?",
-        "expected_answer":"Maritime, Manufacturing & Logistics",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Maritime, Manufacturing & Logistics",
             "Urban Industrial",
@@ -1041,8 +1041,8 @@
     },
     {
         "question_ref":"q_0141",
-        "question_text":"Within North Shore Levee West, which \u2018Flood Zones\u2019 are the \u2018Mitigation Site\u2019 located in?",
-        "expected_answer":"100-Year Floodplain; 500-Year Floodplain",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "100-Year Floodplain; 500-Year Floodplain",
             "500-Year Floodplain",
@@ -1051,7 +1051,7 @@
     },
     {
         "question_ref":"q_0142",
-        "question_text":"In the City of Seattle, which 'Fire 911 Responses by ZIP Code (2016-2020)' area is the 'Police HQ' located in?",
+        "question_text":"Which 'Fire 911 Responses by ZIP Code (2016-2020)' area is the 'Police HQ' located in?",
         "expected_answer":"More than 30,000",
         "annotator_response":[
             "More than 30,000",
@@ -1121,8 +1121,8 @@
     },
     {
         "question_ref":"q_0149",
-        "question_text":"Identify the 'Closure Structure' on Endresen Rd in Area 1 of North Shore Levee West. What is the approximate distance from this 'Closure Structure' to the 'Queen Ave Pump Station Outfall'?",
-        "expected_answer":"2500 Feet",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "1600 Feat",
             "2400 Feet",
@@ -1221,7 +1221,7 @@
     },
     {
         "question_ref":"q_0159",
-        "question_text":"In the City of Seattle, which type of 'Wastewater system mainline' has the most overlapping service area with the 'Stormwater system mainline'?",
+        "question_text":"Which type of 'Wastewater system mainline' has the most overlapping service area with the 'Stormwater system mainline'?",
         "expected_answer":"Sanitary mainlines",
         "annotator_response":[
             "Sanitary mainlines",
@@ -1321,8 +1321,8 @@
     },
     {
         "question_ref":"q_0169",
-        "question_text":"Within the Project Area (Sub Lots) of Medford City, which districts or areas (e.g., Southeast Medford) does the Bear Creek Greenway cross within the Medford City limits?",
-        "expected_answer":"Liberty Park; Geneva Minnesota Historic District; South Oakdale Historic District",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Yes",
             "Liberty Park, Geneva-Minnesota Historic District",
@@ -1401,8 +1401,8 @@
     },
     {
         "question_ref":"q_0177",
-        "question_text":"The Hancock County Flood Risk Reduction Program identifies two wetland types, in addition to Freshwater Pond, Lake, and River areas. Which wetland type is located within the 'Zone AE - Regulatory Floodway' in the Eagle Creek Basin?",
-        "expected_answer":"Freshwater Forested\/Shrub Wetland",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Freshwater Pond",
             "Freshwater Forested\/Shrub Wetland",
@@ -1451,7 +1451,7 @@
     },
     {
         "question_ref":"q_0182",
-        "question_text":"In the City of Seattle, what type of 'Industrial Lands Subareas' does 'Terminal 91' belong to?",
+        "question_text":"What type of 'Industrial Lands Subareas' does 'Terminal 91' belong to?",
         "expected_answer":"Interbay Smith Cove",
         "annotator_response":[
             "Interbay Smith Cove",
@@ -1611,8 +1611,8 @@
     },
     {
         "question_ref":"q_0198",
-        "question_text":"Identify the area within Oregon where the point labeled \u2018Roseburg\u2019 is located. How many Historic Observations of Franklin's Bumble Bee are found within this area?",
-        "expected_answer":"2",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "2",
             "1",
@@ -1661,8 +1661,8 @@
     },
     {
         "question_ref":"q_1000",
-        "question_text":"Surrounding the Chaco Culture National Historical Park, which geologic unit intersects the Colorado Plateau?",
-        "expected_answer":"Cliff House Sandstone",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "B. Land, moderate to low sediment source",
             null,
@@ -1691,7 +1691,7 @@
     },
     {
         "question_ref":"q_1003",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the number of the Current Parking that is connected with Tyger Valley Shopping Centre by the Formal Pedestrian Crossing on Bill Bezuidenhout Drive?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the number of the Current Parking that is connected with Tyger Valley Shopping Centre by the Formal Pedestrian Crossing on Bill Bezuidenhout Drive?",
         "expected_answer":"19",
         "annotator_response":[
             "19",
@@ -1721,7 +1721,7 @@
     },
     {
         "question_ref":"q_1006",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the road name where Zone 43 and Zone 37 in the SATURN Zone System with 1996 Base Network border each other?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the road name where Zone 43 and Zone 37 in the SATURN Zone System with 1996 Base Network border each other?",
         "expected_answer":"Bloemhof Rd",
         "annotator_response":[
             "Bloemhof Rd",
@@ -1741,7 +1741,7 @@
     },
     {
         "question_ref":"q_1008",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what type of Development Framework is The Study Area of 13. Waste-Tech located in?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what type of Development Framework is The Study Area of 13. Waste-Tech located in?",
         "expected_answer":"Open space Network",
         "annotator_response":[
             "Open space Network",
@@ -1751,8 +1751,8 @@
     },
     {
         "question_ref":"q_1009",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Residential Development Only location in North Residential Precinct relative to the westernmost point of Managed Pedestrian Access to Water's Edge & Canal in Waterfront Precinct?",
-        "expected_answer":"North East",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "North West",
             "South",
@@ -1781,7 +1781,7 @@
     },
     {
         "question_ref":"q_1012",
-        "question_text":"In the City of Seattle, which 'Elementary Attendance Area' is the 'Seattle Schools Administration' located in?",
+        "question_text":"Which 'Elementary Attendance Area' is the 'Seattle Schools Administration' located in?",
         "expected_answer":"Mercer",
         "annotator_response":[
             "Mercer",
@@ -1801,7 +1801,7 @@
     },
     {
         "question_ref":"q_1014",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Retail area in Existing Land Uses & Activities relative to the PAWC Vacant Land in Existing Open Space Network?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Retail area in Existing Land Uses & Activities relative to the PAWC Vacant Land in Existing Open Space Network?",
         "expected_answer":"North West",
         "annotator_response":[
             "North West",
@@ -1811,7 +1811,7 @@
     },
     {
         "question_ref":"q_1015",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the orientation of the northernmost point of Flsantekraal relative to the intersection of North-South Link and N2?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the orientation of the northernmost point of Flsantekraal relative to the intersection of North-South Link and N2?",
         "expected_answer":"North East",
         "annotator_response":[
             "North East",
@@ -1821,7 +1821,7 @@
     },
     {
         "question_ref":"q_1016",
-        "question_text":"In Seattle's proposed lid area, how many Gathering Spaces have their centers located within the Proposed Buildings?",
+        "question_text":"In proposed lid area, how many Gathering Spaces have their centers located within the Proposed Buildings?",
         "expected_answer":"2",
         "annotator_response":[
             "2",
@@ -1921,7 +1921,7 @@
     },
     {
         "question_ref":"q_1026",
-        "question_text":"In the area surrounding Seattle's Potential Lid Area, what is the approximate straight-line distance from the westernmost Affordable Housing to the westernmost Construction?",
+        "question_text":"In the area surrounding Potential Lid Area, what is the approximate straight-line distance from the westernmost Affordable Housing to the westernmost Construction?",
         "expected_answer":"2900'",
         "annotator_response":[
             "2400'",
@@ -1981,7 +1981,7 @@
     },
     {
         "question_ref":"q_1032",
-        "question_text":"In the Aurora Ave and 97th Residential Urban Village of Seattle, which Safety Audit Team's route is intersected by N. 100 Ave? Answer with the team number.",
+        "question_text":"In the Aurora Ave and 97th Residential Urban Village, which Safety Audit Team's route is intersected by N. 100 Ave? Answer with the team number.",
         "expected_answer":"1",
         "annotator_response":[
             "Team 1",
@@ -1991,7 +1991,7 @@
     },
     {
         "question_ref":"q_1033",
-        "question_text":"In what orientation is Snag Peak block relative to the city of Seattle, WA?",
+        "question_text":"In what orientation is Snag Peak block relative to the city of Seattle?",
         "expected_answer":"North West",
         "annotator_response":[
             "North West",
@@ -2011,7 +2011,7 @@
     },
     {
         "question_ref":"q_1035",
-        "question_text":"In Seattle, WA, how many Very Good Transit locations are situated within areas of the Future Land Use type known as Major Institutions?",
+        "question_text":"How many Very Good Transit locations are situated within areas of the Future Land Use type known as Major Institutions?",
         "expected_answer":"0",
         "annotator_response":[
             "0",
@@ -2021,8 +2021,8 @@
     },
     {
         "question_ref":"q_1036",
-        "question_text":"In Seattle, WA, which type of urban village area contains the least amount of people of any race?",
-        "expected_answer":"Manufacturing \/ Industrial Center",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Manufacturing \/ Industrial Center",
             "Hub Urban Village",
@@ -2031,7 +2031,7 @@
     },
     {
         "question_ref":"q_1037",
-        "question_text":"In Seattle, WA, which types of Urban Villages border the Park areas?",
+        "question_text":"Which types of Urban Villages border the Park areas?",
         "expected_answer":"Urban Center; Hub Urban Village; Residential Urban Village; Manufacturing \/ Industrial Center",
         "annotator_response":[
             "Urban Center; Hub Urban Village; Residential Urban Village; Manufacturing \/ Industrial Center",
@@ -2041,7 +2041,7 @@
     },
     {
         "question_ref":"q_1038",
-        "question_text":"In Seattle, WA, which type of Existing Land Use is covered by the highest Employment Density by Census Tract?",
+        "question_text":"Which type of Existing Land Use is covered by the highest Employment Density by Census Tract?",
         "expected_answer":"Commercial\/Mixed-Use",
         "annotator_response":[
             "Commercial\/Mixed-Use",
@@ -2051,8 +2051,8 @@
     },
     {
         "question_ref":"q_1039",
-        "question_text":"Which Original Area of Reservation borders the Indian Reservation area where Badlands National Park is located?",
-        "expected_answer":"ROSEBUD INDIAN RESERVATION",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "ROSEBUD INDIAN RESERVATION",
             "PINE RIDGE Indian Reservation",
@@ -2071,7 +2071,7 @@
     },
     {
         "question_ref":"q_1041",
-        "question_text":"In Seattle's proposed lid area, how many Closed Highway Ramps have their centers not located within the Green Space?",
+        "question_text":"In proposed lid area, how many Closed Highway Ramps have their centers not located within the Green Space?",
         "expected_answer":"1",
         "annotator_response":[
             "1",
@@ -2121,7 +2121,7 @@
     },
     {
         "question_ref":"q_1046",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what are the Parking Management & Public Transport Plan areas that border the Landscaped Sport Recreation Area?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what are the Parking Management & Public Transport Plan areas that border the Landscaped Sport Recreation Area?",
         "expected_answer":"3979; 150 bays; 4431",
         "annotator_response":[
             "4431; 150 bays; 3979",
@@ -2181,7 +2181,7 @@
     },
     {
         "question_ref":"q_1052",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the orientation of the northernmost Decked Parking as Developed location in Tyger Valley Centre Precinct relative to the PP Smit Sports Grounds?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the orientation of the northernmost Decked Parking as Developed location in Tyger Valley Centre Precinct relative to the PP Smit Sports Grounds?",
         "expected_answer":"North West",
         "annotator_response":[
             "North West",
@@ -2191,7 +2191,7 @@
     },
     {
         "question_ref":"q_1053",
-        "question_text":"What type of 'Alternative 1 - No Action' is the SoDo Stadium Industrial Lands Subareas located in Seattle, WA?",
+        "question_text":"What type of 'Alternative 1 - No Action' is the SoDo Stadium Industrial Lands Subareas located?",
         "expected_answer":"Industrial General",
         "annotator_response":[
             "Industrial General",
@@ -2211,7 +2211,7 @@
     },
     {
         "question_ref":"q_1055",
-        "question_text":"In Texas, what type of soil area contains the largest area of coal (surface)?",
+        "question_text":"What type of soil area contains the largest area of coal (surface)?",
         "expected_answer":"H",
         "annotator_response":[
             "H",
@@ -2221,8 +2221,8 @@
     },
     {
         "question_ref":"q_1056",
-        "question_text":"In what orientation is EAST GALLATIN RANGE FAULT relative to the South Fork fault mass?",
-        "expected_answer":"North West",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "North West",
             "South East?",
@@ -2301,7 +2301,7 @@
     },
     {
         "question_ref":"q_1064",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Doordekraal Dam Integrated into Continuous Green System relative to the northwest corner of The Vision of Southern Sector?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Doordekraal Dam Integrated into Continuous Green System relative to the northwest corner of The Vision of Southern Sector?",
         "expected_answer":"North East",
         "annotator_response":[
             "North East",
@@ -2311,7 +2311,7 @@
     },
     {
         "question_ref":"q_1065",
-        "question_text":"In Seattle's proposed lid surroundings, the majority of 'Publicly accessible plazas and green setbacks' are located in neighborhoods with which level of access to opportunity? Answer with 1-6, where 1 represents the lowest and 6 the highest.",
+        "question_text":"In proposed lid surroundings, the majority of 'Publicly accessible plazas and green setbacks' are located in neighborhoods with which level of access to opportunity? Answer with 1-6, where 1 represents the lowest and 6 the highest.",
         "expected_answer":"6",
         "annotator_response":[
             "6",
@@ -2321,7 +2321,7 @@
     },
     {
         "question_ref":"q_1066",
-        "question_text":"In the surrounding area of Seattle's Bitter Lake Hub Urban Village, which Rezone area is disjoint from all bicycle routes or lanes?",
+        "question_text":"In the surrounding area of Bitter Lake Hub Urban Village, which Rezone area is disjoint from all bicycle routes or lanes?",
         "expected_answer":"Rezone from C1-65 to C2-65",
         "annotator_response":[
             "Rezone from C1-65 to C2-65",
@@ -2371,7 +2371,7 @@
     },
     {
         "question_ref":"q_1071",
-        "question_text":"Around the North Chicago Storm Sewer Project area, in which direction is the westernmost 'Staging Area' located relative to the 'Naval Station Great Lakes'?",
+        "question_text":"Around the North Chicago Storm Sewer Project area, in which orientation is the westernmost 'Staging Area' located relative to the 'Naval Station Great Lakes'?",
         "expected_answer":"South West",
         "annotator_response":[
             "South West",
@@ -2401,7 +2401,7 @@
     },
     {
         "question_ref":"q_1074",
-        "question_text":"In the Aurora Ave and 97th Residential Urban Village of Seattle, which Safety Audit Team's route is intersected by N. 105 Ave? Answer with the team number.",
+        "question_text":"In the Aurora Ave and 97th Residential Urban Village, which Safety Audit Team's route is intersected by N. 105 Ave? Answer with the team number.",
         "expected_answer":"3",
         "annotator_response":[
             "3",
@@ -2421,7 +2421,7 @@
     },
     {
         "question_ref":"q_1076",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the road name where Oakdale and PP Smit Sports Grounds border each other?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the road name where Oakdale and PP Smit Sports Grounds border each other?",
         "expected_answer":"Bloemhof street",
         "annotator_response":[
             "Bloemhof Street",
@@ -2431,7 +2431,7 @@
     },
     {
         "question_ref":"q_1077",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the name of the river that intersects the Golf Course area?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the name of the river that intersects the Golf Course area?",
         "expected_answer":"Golf Course River",
         "annotator_response":[
             "Golf Course River",
@@ -2451,7 +2451,7 @@
     },
     {
         "question_ref":"q_1079",
-        "question_text":"In Seattle, WA, which type of shoreline area borders the southwestern boundary of UW?",
+        "question_text":"Which type of shoreline area borders the southwestern boundary of UW?",
         "expected_answer":"Other Shoreline Areas",
         "annotator_response":[
             "Other Shoreline Areas",
@@ -2461,7 +2461,7 @@
     },
     {
         "question_ref":"q_1080",
-        "question_text":"In the CRFREE Project, in which direction is the 'Intermittent Drainage Channel (MFCA)' located relative to the 'CARMEL MEADOWS PUMP STATION'?",
+        "question_text":"In the CRFREE Project, in which orientation is the 'Intermittent Drainage Channel (MFCA)' located relative to the 'CARMEL MEADOWS PUMP STATION'?",
         "expected_answer":"East",
         "annotator_response":[
             "East",
@@ -2511,7 +2511,7 @@
     },
     {
         "question_ref":"q_1085",
-        "question_text":"In Ireland, which aquaculture area location is situated in the county where the Knockharley landfill is located?",
+        "question_text":"Which aquaculture area location is situated in the county where the Knockharley landfill is located?",
         "expected_answer":"Mornington",
         "annotator_response":[
             "Mornington",
@@ -2521,7 +2521,7 @@
     },
     {
         "question_ref":"q_1086",
-        "question_text":"In the A3A Detention Pond, Port Arthur, Jefferson County, TX, what is the name of the road that intersects the 'Project Benefit Area' boundary line?",
+        "question_text":"In the A3A Detention Pond, Port Arthur, Jefferson County, Texas, what is the name of the road that intersects the 'Project Benefit Area' boundary line?",
         "expected_answer":"Hogaboom Road",
         "annotator_response":[
             "Hogaboom Road",
@@ -2531,7 +2531,7 @@
     },
     {
         "question_ref":"q_1087",
-        "question_text":"In Ireland, which type of Noise In Quiet Area overlaps the most with artificial areas?",
+        "question_text":"Which type of Noise In Quiet Area overlaps the most with artificial areas?",
         "expected_answer":"Anthropogenic Noise",
         "annotator_response":[
             "Anthropogenic Noise",
@@ -2541,7 +2541,7 @@
     },
     {
         "question_ref":"q_1088",
-        "question_text":"In Cape Town, near Greater Blue Downs District, what type of Node is the MVSA & MURP - Tier 2 Priority point in MFULENI area located in?",
+        "question_text":"In Cape Town, what type of Node is the MVSA & MURP - Tier 2 Priority point in MFULENI area located in?",
         "expected_answer":"District Node",
         "annotator_response":[
             "District Node",
@@ -2561,7 +2561,7 @@
     },
     {
         "question_ref":"q_1090",
-        "question_text":"In Cape Town, near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Rationalise Interaction in North Entrance Precinct relative to the westernmost point of MONEX WATERFRONT?",
+        "question_text":"Near ELSIESKRAAL RIVER VALLEY, what is the orientation of the Rationalise Interaction in North Entrance Precinct relative to the westernmost point of MONEX WATERFRONT?",
         "expected_answer":"North East",
         "annotator_response":[
             "North East",
@@ -2571,8 +2571,8 @@
     },
     {
         "question_ref":"q_1091",
-        "question_text":"Which segments of Level of Service Screenline intersect the Airport Boundary area in Seattle, WA?",
-        "expected_answer":"3.12; 4.13",
+        "question_text":"Which segments of Level of Service Screenline intersect the Airport Boundary area?",
+        "expected_answer":"4.13",
         "annotator_response":[
             "4.13",
             "4.13",
@@ -2761,8 +2761,8 @@
     },
     {
         "question_ref":"q_1110",
-        "question_text":"Identify the two 'Farm Operators' within which the area marked as 'Potentially Eligible Historic Resource' lies. Which Farm Operators share a boundary with these two identified Farm Operators?",
-        "expected_answer":"Jerry Deal; Chris & Linda Maust",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Jim Stutzman; William and Sylvia Mast",
             "Jerry Deal; Chris and Linda Maust",
@@ -2831,8 +2831,8 @@
     },
     {
         "question_ref":"q_1117",
-        "question_text":"Which numbered 'Electrical\/Comm Routing Segment' crosses both the 'Tt' and 'ATm' geologic unit areas in Tinian?",
-        "expected_answer":"4",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             null,
             null,
@@ -3011,7 +3011,7 @@
     },
     {
         "question_ref":"q_1135",
-        "question_text":"In Tinian, each 'Noise Sensitive Receptor' is assigned a unique code in the format {Letter}{Number} and has an associated name (e.g., code 'T1' corresponds to 'Tinian High School'). Among the receptors with codes beginning with 'S', which one is located closest to the '115 dB' boundary of Explosives Training Range 40lb Cratering Charge (PK15) Noise Contours? Give just the name",
+        "question_text":"In Tinian, each 'Noise Sensitive Receptor' is assigned a unique code in the format {Letter}{Number} and has an associated name (e.g., code 'T1' corresponds to 'Tinian High School'). Among the receptors with codes beginning with 'S', which one is located closest to the '115 dB' boundary of Explosives Training Range 40lb Cratering Charge (PK15) Noise Contours? Give just the name.",
         "expected_answer":"Coral Ocean Point Resort",
         "annotator_response":[
             "Coral Ocean Point Resort",
@@ -3161,7 +3161,7 @@
     },
     {
         "question_ref":"q_1150",
-        "question_text":"What is thhis region? Provide the answer in the exact range format ({number}-{number}) without the percentage (%) symbol.",
+        "question_text":"What is the approximate straight-line distance between the SLC-6 Launch Site and the 2 psf contour of the Falcon Heavy Launch line?",
         "expected_answer":"40 Miles",
         "annotator_response":[
             "46MILES",
@@ -3221,8 +3221,8 @@
     },
     {
         "question_ref":"q_1156",
-        "question_text":"Which two 'Proposed Recreation Facilities' are located along the 'Walking Portage' in the Turner Falls and Northfield Mountain Prospect Area?",
-        "expected_answer":"Put-in; Unity Park Put-in",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Put-in; Viewing Platform",
             "Viewing Platform; Unity Park Put-in",
@@ -3321,8 +3321,8 @@
     },
     {
         "question_ref":"q_2006",
-        "question_text":"The Maria Teresa mine lies on the border between the metallogenic belt represented by roman numeral XI and which other metallogenic belt? Give the full name of the belt.",
-        "expected_answer":"Lower Cretaceous Cu-Fe-Au (IOGG) deposits",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "Upper Jurassice-Albian volcanogenic massive sulfides Cu-Zn-Au deposits",
@@ -3361,8 +3361,8 @@
     },
     {
         "question_ref":"q_2010",
-        "question_text":"What is the maximum horizontal distance of the overlapped mineralized zone 101 and 102 of SW Deposit?",
-        "expected_answer":"55 m",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "38 metres",
@@ -3371,8 +3371,8 @@
     },
     {
         "question_ref":"q_2011",
-        "question_text":"Which Original Agreement regions of the Windfall Lake Property share the longest boundary with the Urban-Duke Property within the Urban-Barry Greenstone Belt?",
-        "expected_answer":"NORONT South Block",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "NORONT South Block",
@@ -3381,8 +3381,8 @@
     },
     {
         "question_ref":"q_2012",
-        "question_text":"Geordie Deposit of Marthon Project property is located closest to which company's property?",
-        "expected_answer":"Sienna Resources Inc",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "Sienna Resources Inc",
@@ -3401,8 +3401,8 @@
     },
     {
         "question_ref":"q_2014",
-        "question_text":"Which claim block shares border with 9 different claim block in Claim LAN?",
-        "expected_answer":"2145325",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "0",
             "2145325",
@@ -3441,8 +3441,8 @@
     },
     {
         "question_ref":"q_2018",
-        "question_text":"What is the shortest straight-line distance between the Sudbury Mining Claim S 470253 and the nearest freehold property?",
-        "expected_answer":"7",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             null,
@@ -3461,7 +3461,7 @@
     },
     {
         "question_ref":"q_2020",
-        "question_text":"What is the position of Coronation N in relation to Trimbles in Hyde-Macraes Shear Zone",
+        "question_text":"What is the orientation of Coronation N in relation to Trimbles in Hyde-Macraes Shear Zone",
         "expected_answer":"South East",
         "annotator_response":[
             "South East",
@@ -3471,7 +3471,7 @@
     },
     {
         "question_ref":"q_2021",
-        "question_text":"What is the position of the New 2B2 Pegmatite relative to Pegmatite #2 within the Raleigh Lake Project claim boundary?",
+        "question_text":"What is the orientation of the New 2B2 Pegmatite relative to Pegmatite #2 within the Raleigh Lake Project claim boundary?",
         "expected_answer":"South",
         "annotator_response":[
             "South",
@@ -3491,8 +3491,8 @@
     },
     {
         "question_ref":"q_2023",
-        "question_text":"Identify the Federally Managed Mining Leases in Indin Lake Gold Property. These areas corresponds to which labeled areas. Give just the years. The labels are currently in form DATE NAME.",
-        "expected_answer":"2011-01-07; 2012-01-26",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "2012-05-28; 2011-01-07; 2012-01-26",
@@ -3511,7 +3511,7 @@
     },
     {
         "question_ref":"q_2025",
-        "question_text":"What is the position of Stream 3 catch basin in relation to stream catch 2 basin?",
+        "question_text":"What is the orientation of Stream 3 catch basin in relation to stream catch 2 basin?",
         "expected_answer":"North",
         "annotator_response":[
             "North",
@@ -3591,8 +3591,8 @@
     },
     {
         "question_ref":"q_3003",
-        "question_text":"The Galloway property consists of multiple claim blocks associated with a unique number (e.g., 1033274). How many claim blocks are intersected by the boundary of the 'Planned Ecological Reserve' (as of March 6, 2023)?",
-        "expected_answer":"8",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "12",
             "None",
@@ -3601,8 +3601,8 @@
     },
     {
         "question_ref":"q_3004",
-        "question_text":"Identify the VHMS deposit and occurrences farthest from the Lookout-Mammoth drift. Where is this deposit (in terms of cardinal direction) located in relation to the Lookout-Mammoth drift.",
-        "expected_answer":"North West",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "None",
@@ -3611,8 +3611,8 @@
     },
     {
         "question_ref":"q_3005",
-        "question_text":"Identify the River that runs through the center of the MOA ORIENTAL concession block. How many Density Pits are located on the east side of this river?",
-        "expected_answer":"6",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "6",
             "None",
@@ -3631,8 +3631,8 @@
     },
     {
         "question_ref":"q_3007",
-        "question_text":"Within the Iron Point Claim area, how many Brownstone claim blocks are intersected by the easternmost edge of the Silver Coin Unpatented Claim block?",
-        "expected_answer":"4",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "3",
             "0",
@@ -3641,8 +3641,8 @@
     },
     {
         "question_ref":"q_3008",
-        "question_text":"Identify the southernmost gold showing and the southernmost gold deposit within the Nighthawk Gold Property. What is the straight-line distance between these two points?",
-        "expected_answer":"15.75 km",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "7km",
             "None",
@@ -3671,8 +3671,8 @@
     },
     {
         "question_ref":"q_3011",
-        "question_text":"How many rock samples are taken from MAC Project\u2019s Target Area #1",
-        "expected_answer":"4",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "21",
             "0.36%",
@@ -3681,7 +3681,7 @@
     },
     {
         "question_ref":"q_3012",
-        "question_text":"Identify the East Tintic Historic Mine closest to the Trixie Main Shaft. What is the position of this mine in relation to the Trixie Main Shaft within the Cordero Mining concession?",
+        "question_text":"Identify the East Tintic Historic Mine closest to the Trixie Main Shaft. What is the orientation of this mine in relation to the Trixie Main Shaft within the Cordero Mining concession?",
         "expected_answer":"North West",
         "annotator_response":[
             "None",
@@ -3711,8 +3711,8 @@
     },
     {
         "question_ref":"q_3015",
-        "question_text":"Identify two areas within IBW: (1) area overlapping with Dehasa Paymogo and (2) area overlapping with ZE Andevalo Occidental. Estimate the length of the shared boundary between these two regions.",
-        "expected_answer":"384 km",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "1500m",
             "2000",
@@ -3731,8 +3731,8 @@
     },
     {
         "question_ref":"q_3017",
-        "question_text":"What is the relative position of the eastern edge of Balan compared to the eastern boundary of the Kini\u00e9ro tailings storage facility?",
-        "expected_answer":"North East",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             null,
             "North West",
@@ -3751,8 +3751,8 @@
     },
     {
         "question_ref":"q_3019",
-        "question_text":"How many surface rights are part of Farm Bloemhof 4KS?",
-        "expected_answer":"16",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "None",
@@ -3771,7 +3771,7 @@
     },
     {
         "question_ref":"q_3021",
-        "question_text":"Which direction does Property Mineral Disposition MC00013808 lies in relation to Big Bear Camp?",
+        "question_text":"Which orientation does Property Mineral Disposition MC00013808 lies in relation to Big Bear Camp?",
         "expected_answer":"South East",
         "annotator_response":[
             "South East",
@@ -3781,7 +3781,7 @@
     },
     {
         "question_ref":"q_3022",
-        "question_text":"What is the position of 'Titan II T.241084' relative to 'Aida T.163184' within the Cordero mining concession?",
+        "question_text":"What is the orientation of 'Titan II T.241084' relative to 'Aida T.163184' within the Cordero mining concession?",
         "expected_answer":"South West",
         "annotator_response":[
             "South West",
@@ -3811,8 +3811,8 @@
     },
     {
         "question_ref":"q_3025",
-        "question_text":"The Jeanette Lithium Property is divided into claims associated with unique numbers (e.g., 702827). Identify the claim with the great number of 'Grab Sample Locations'. How many 'Channel Sample Locations' are within this claim?",
-        "expected_answer":"18",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "2",
             "26",
@@ -3821,8 +3821,8 @@
     },
     {
         "question_ref":"q_3026",
-        "question_text":"Identify the concave region that shares a boundary with claim block S-111156 of Red Willow Project. Which company occupies this region? For example, Red Willow Project area is occupied by Purepoint Uranium.",
-        "expected_answer":"Denison",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Purepoint Uranium",
             "DENISON",
@@ -3891,8 +3891,8 @@
     },
     {
         "question_ref":"q_4003",
-        "question_text":"In which stratified rock unit is the federal mining claim Deana G-32 located in?",
-        "expected_answer":"Moira Sound Unit - Ordovician to Lower Silurian",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "Moira Sound Unit",
@@ -3901,8 +3901,8 @@
     },
     {
         "question_ref":"q_4004",
-        "question_text":"The Sonoro Gold Concession area contains multiple claim blocks associated with a name and T-code (e.g., Tres Amigos T-166174). Which claim block contains the fewest Surface Samples (Au_ppm)?",
-        "expected_answer":"Teresita T-220210",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Teresita T-220210",
             "Abel Fracc. I T220657",
@@ -3951,8 +3951,8 @@
     },
     {
         "question_ref":"q_4009",
-        "question_text":"How many claim blocks of the O'Brien Project does the power line pass through?",
-        "expected_answer":"30",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "30",
             "25",
@@ -3981,8 +3981,8 @@
     },
     {
         "question_ref":"q_4012",
-        "question_text":"Identify the 'Gradient Resistivity - 2007' zone intersected by four 'SWML survey' lines in the Red Willow Long Lake region. How many 'Ground EM Anomalies' are located within this zone?",
-        "expected_answer":"3",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "7",
             "4",
@@ -4031,8 +4031,8 @@
     },
     {
         "question_ref":"q_4017",
-        "question_text":"Identify the inner hole within the Goldlund Property Boundary. Which 'Minor Showing' is located closest to the this inner hole?",
-        "expected_answer":"Slough Lake",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Mafic to Intermediate Volcanic;Felsic Volcanic;Sediment",
             "what is inner hole?",
@@ -4051,8 +4051,8 @@
     },
     {
         "question_ref":"q_4019",
-        "question_text":"How many S-# blocks does the 'Interp. Brittle Fault' cross within the Red Willow project area?",
-        "expected_answer":"6",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "6",
             "5",
@@ -4091,8 +4091,8 @@
     },
     {
         "question_ref":"q_4023",
-        "question_text":"Identify the numbered areas intersected by the southern border of 010223716. Which 'Mining Concessions' equal these areas?",
-        "expected_answer":"Cementos Interoceanicos",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "CEMENTOS VIII",
             "PRINCESA NOR",
@@ -4181,8 +4181,8 @@
     },
     {
         "question_ref":"q_5002",
-        "question_text":"In Fording River Operations, all Track Coal Limited Fee Gimple Tenure and Track Coal Limited Coal Tenure blocks are associated with a number. Which of these blocks contains the 'General Office'?",
-        "expected_answer":"383282",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "None",
@@ -4221,8 +4221,8 @@
     },
     {
         "question_ref":"q_5006",
-        "question_text":"Which Nearby Active Claims' around Simard NE Ltihium property has the most Metallic Deposit (Lithium)?",
-        "expected_answer":"Exiro Minerals corp.",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Sayona Quebec Inc",
             "Sayona Quebec Inc",
@@ -4241,8 +4241,8 @@
     },
     {
         "question_ref":"q_5008",
-        "question_text":"Which zoning category does the funded project line cross within the study area that borders the City of Shoreline?",
-        "expected_answer":"Neighborhood Commercial",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "Single Familiy; Parks\/Open Space",
@@ -4411,8 +4411,8 @@
     },
     {
         "question_ref":"q_5025",
-        "question_text":"Identify the overlapping 'Gradient Resistivity -2007, 2012' zone within the Red Willow Lasby Lake Area. What is the estimated size of the area of this overlapping region? Use the unit as given on the scale.",
-        "expected_answer":"221000 m^2",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "4000000m^2",
@@ -4491,8 +4491,8 @@
     },
     {
         "question_ref":"q_6003",
-        "question_text":"St.Anthony property consists of two claim blocks. How many 'Rock Sample - Ni' were collected in 2022 within the boundaries of the 030785M claim block of the St. Anthony Property?",
-        "expected_answer":"3",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "81-274",
             "2",
@@ -4621,8 +4621,8 @@
     },
     {
         "question_ref":"q_6016",
-        "question_text":"What is the shortest distance between the Bayou Terrebonne and the Proposed Campus Line near the Proposed South Terrebonne Middle School (STMS)?",
-        "expected_answer":"0.3 mi",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "0.15 miles",
@@ -4631,8 +4631,8 @@
     },
     {
         "question_ref":"q_6017",
-        "question_text":"The Gabriel Project is consists of 7 geologic types associated with a unique alphabetical geologic code. Identify the three BlackRock Collars lying on the most eastern 'Roads_Dirt' line within the Gabriel Project Boundary. What is the geologic code in which these three points are situated?",
-        "expected_answer":"Ts",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Not sure if the geologic code means 14, 15, 10",
             "Ts",
@@ -4661,8 +4661,8 @@
     },
     {
         "question_ref":"q_6020",
-        "question_text":"Identify the island-like claim area of IAMGOLD Nelligan Project. What is the name of the Adjacent Properties that lies closest to this area.",
-        "expected_answer":"Mosaic Minerals",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "Troilus Gold Corp.",
             "Mosaic minerals",
@@ -4671,8 +4671,8 @@
     },
     {
         "question_ref":"q_6021",
-        "question_text":"Each tenure block within the Skyfire property is associated with a number (e.g., 1042714). Which tenure block is touched by the boundary of 'Phyllite' lithology region?",
-        "expected_answer":"1042713",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "All blocks except 1042472",
             "1042713",
@@ -4741,8 +4741,8 @@
     },
     {
         "question_ref":"q_6028",
-        "question_text":"What is the approximate distance from Ktondyko community to the POINT AUX CHENES FLOODGATE?",
-        "expected_answer":"17 miles",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "8 miles",
             "5 miles",
@@ -4831,8 +4831,8 @@
     },
     {
         "question_ref":"q_7007",
-        "question_text":"How many Parcels are within the Acquistion Area\/Nature Based Solutions Area of the Proposed BRIC Funding Infrastructure Project Area?",
-        "expected_answer":"31",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "47",
@@ -5001,8 +5001,8 @@
     },
     {
         "question_ref":"q_7024",
-        "question_text":"The Copperhead property boundary consists of claim blocks with unique number and names (e.g., 1096974 Red Line 3). Which claim blocks of the Copperhead Property boundary share border with the Report area '22102' of B.C. Assessment Report?",
-        "expected_answer":"Newmont East (1078227); Newmont East 1 (1078228)",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "1078231 NEWMONTEA ST4; 1078228 NEWMONTEA ST1; 1078227 NEWMONTEA ST",
             "1078231 Newmontea St4",
@@ -5171,8 +5171,8 @@
     },
     {
         "question_ref":"q_8011",
-        "question_text":"Within the Project Site Boundary along Bay Street Landing, Murray Hulbert Avenue, and Front Street in New York, what is the Base Flood Elevation (BFE) at the location marked as 'Photograph Location 27'?",
-        "expected_answer":"15",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "12",
             "1%",
@@ -5251,8 +5251,8 @@
     },
     {
         "question_ref":"q_8019",
-        "question_text":"The Lekcin property is divided into 5 sub-areas. How many 2018 Friesen rock samples were collected within the sub-areas that are intersected by the power line?",
-        "expected_answer":"3",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "2",
             "0",
@@ -5281,7 +5281,7 @@
     },
     {
         "question_ref":"q_8022",
-        "question_text":"In which direction is University Park located in relation to the Proposed Wet Pond within the MWRD City of Harvey BRIC Funding Infrastructure Project Area?",
+        "question_text":"In which orientation is University Park located in relation to the Proposed Wet Pond within the MWRD City of Harvey BRIC Funding Infrastructure Project Area?",
         "expected_answer":"South West",
         "annotator_response":[
             "South West",
@@ -5331,7 +5331,7 @@
     },
     {
         "question_ref":"q_8027",
-        "question_text":"What direction is Needles Park located in relation to the Proposed Detention Basin of the City of Harvey Stormwater Management Project?",
+        "question_text":"What orientation is Needles Park located in relation to the Proposed Detention Basin of the City of Harvey Stormwater Management Project?",
         "expected_answer":"North East",
         "annotator_response":[
             "North East",
@@ -5341,7 +5341,7 @@
     },
     {
         "question_ref":"q_8028",
-        "question_text":"What is the position of the drilling collars completed by 'UKHM' compared to the drilling collars by 'Spectrum (2003)' at AurMac Project?",
+        "question_text":"What is the orientation of the drilling collars completed by 'UKHM' compared to the drilling collars by 'Spectrum (2003)' at AurMac Project?",
         "expected_answer":"South West",
         "annotator_response":[
             "South",
@@ -5461,8 +5461,8 @@
     },
     {
         "question_ref":"q_9009",
-        "question_text":"What is the west-east distance between the center of MC22-120 drillhole line and MC22-93 drillhole line of HighGold.",
-        "expected_answer":"900 m",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "200",
             "400mE",
@@ -5471,7 +5471,7 @@
     },
     {
         "question_ref":"q_9010",
-        "question_text":"What is the position of MARCOR Zone in relation to TETRAULT Zone of Montauban Project?",
+        "question_text":"What is the orientation of MARCOR Zone in relation to TETRAULT Zone of Montauban Project?",
         "expected_answer":"South East",
         "annotator_response":[
             "Southeast",
@@ -5541,7 +5541,7 @@
     },
     {
         "question_ref":"q_9017",
-        "question_text":"Which direction does Seeley Lake lie in relation to Marathon Project\u2019s Tailings Storage Facility?",
+        "question_text":"Which orientation does Seeley Lake lie in relation to Marathon Project\u2019s Tailings Storage Facility?",
         "expected_answer":"North West",
         "annotator_response":[
             "West",
@@ -5551,7 +5551,7 @@
     },
     {
         "question_ref":"q_9018",
-        "question_text":"What is the position of Velvet-Wood Project in relation to Slick Rock Project Area?",
+        "question_text":"What is the orientation of Velvet-Wood Project in relation to Slick Rock Project Area?",
         "expected_answer":"North West",
         "annotator_response":[
             "North West",
@@ -5571,8 +5571,8 @@
     },
     {
         "question_ref":"q_9020",
-        "question_text":"What is the approximate size of the area of UV geology type overlapping Triple A and El Pilar block in MON concession?",
-        "expected_answer":"7km^2",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "UV",
             "4",
@@ -5581,8 +5581,8 @@
     },
     {
         "question_ref":"q_9021",
-        "question_text":"What is the approximate horizontal length of the TrGs region with the shortest distance from Golden Sky\u2019s Bullseye property.",
-        "expected_answer":"6 km",
+        "question_text":null,
+        "expected_answer":null,
         "annotator_response":[
             "None",
             "2.5",
