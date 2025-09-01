@@ -254,7 +254,7 @@ if __name__ == '__main__':
     parser.add_argument('--distractor', '-d', action="store_true", 
                         help='Use distractor images')
    
-    parser.add_argument('--output_dir', '-o', default='./',
+    parser.add_argument('--output_dir', '-o', default='./responses',
                         help="Location to output files")
     
     parser.add_argument('--cache_dir', '-c', default='./',

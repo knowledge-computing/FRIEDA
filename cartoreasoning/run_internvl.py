@@ -242,26 +242,26 @@ def main(model_name:str,
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
 
-    # parser.add_argument('--model', '-m', default='llava-hf/llava-next-72b-hf',
-    #                     help='Model name/type')
+    parser.add_argument('--model', '-m', default='llava-hf/llava-next-72b-hf',
+                        help='Model name/type')
 
-    # parser.add_argument('--questions', '-q', required=True, 
-    #                     help='Path to questions JSON file')
+    parser.add_argument('--questions', '-q', required=True, 
+                        help='Path to questions JSON file')
 
-    # parser.add_argument('--images', '-im', required=True, type=str,
-    #                     help="Directory/link to reporsitory containing images")
+    parser.add_argument('--images', '-im', required=True, type=str,
+                        help="Directory/link to reporsitory containing images")
     
-    # parser.add_argument('--distractor', '-d', action="store_true", 
-    #                     help='Use distractor images')
+    parser.add_argument('--distractor', '-d', action="store_true", 
+                        help='Use distractor images')
    
-    # parser.add_argument('--output_dir', '-o', default='./',
-    #                     help="Location to output files")
+    parser.add_argument('--output_dir', '-o', default='./responses',
+                        help="Location to output files")
     
-    # parser.add_argument('--cache_dir', '-c', default='./',
-    #                     help="Location to cache directory (cache for image names)")
+    parser.add_argument('--cache_dir', '-c', default='./',
+                        help="Location to cache directory (cache for image names)")
     
-    # parser.add_argument('--flash', action="store_true",
-    #                     help="Use flash attention")
+    parser.add_argument('--flash', action="store_true",
+                        help="Use flash attention")
     
     parser.add_argument('--batch_size', default=1,
                         help="Batch size. Default is 1.")
@@ -271,22 +271,22 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
     
-    # main(model=args.model,
-    #      question_path=args.questions,
-    #      image_folder=args.images,
-    #      bool_distractor=args.distractor,
-    #      output_dir=args.output_dir,
-    #      cache_dir=args.cache_dir,
-    #      use_flash=args.flash,
-    #      batch_size=args.batch_size,
-    #      img_limit=args.max_images)
+    main(model=args.model,
+         question_path=args.questions,
+         image_folder=args.images,
+         bool_distractor=args.distractor,
+         output_dir=args.output_dir,
+         cache_dir=args.cache_dir,
+         use_flash=args.flash,
+         batch_size=args.batch_size,
+         img_limit=args.max_images)
 
-    main(model_name='OpenGVLab/InternVL3_5-8B-HF',
-        question_path='/home/yaoyi/pyo00005/p2/carto-reasoning/questions/benchmark_data/response_mini.json',
-        image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
-        bool_distractor=True,
-        output_dir='./',
-        cache_dir='./',
-        use_flash=True,
-        batch_size=1,
-        img_limit=args.max_images)
+    # main(model_name='OpenGVLab/InternVL3_5-8B-HF',
+    #     question_path='/home/yaoyi/pyo00005/p2/carto-reasoning/questions/benchmark_data/response_mini.json',
+    #     image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
+    #     bool_distractor=True,
+    #     output_dir='./',
+    #     cache_dir='./',
+    #     use_flash=True,
+    #     batch_size=1,
+    #     img_limit=args.max_images)
