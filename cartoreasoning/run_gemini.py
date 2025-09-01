@@ -21,6 +21,7 @@ client = genai.Client(api_key=os.getenv('GOOGLE_API_KEY'))
 
 with open('./instruction.pkl', 'rb') as handle:
     instructions = pickle.load(handle)
+    instructions += "DO NOT use web search."    # Adding in case they use search
 
 def check_exist(path_dir, bool_create=True):
     if os.path.exists(path_dir):
@@ -97,13 +98,11 @@ def respond_q(model:str,
 def gemini_sync(model,
                 dict_im_data,
                 pl_question,
-                cache_dir,
-                question_path):
+                response_cache):
     # Running inference in chunks (of 20) in case it crashs in middle
     chunk_size = 20 
     pl_answered = pl.DataFrame()
 
-    response_cache = os.path.join(cache_dir, 'response_cache.pkl')
     if check_exist(response_cache) == 1: 
         with open(response_cache, 'rb') as handle:
             pl_answered = pickle.load(handle)
@@ -130,17 +129,12 @@ def gemini_sync(model,
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
 
-    new_file_name = f"{question_path.split('.json')[0]}_{model}.json"
-    pd_answered.to_json(new_file_name, orient='records', indent=4)
-
-    # Removing response cache pickle file
-    os.remove(response_cache)
+    return pd_answered, response_cache
 
 def gemini_async(model,
                  dict_im_data,
                  pl_question,
-                 cache_dir,
-                 question_path):
+                 cache_dir,):
     
     input_struct = pl_question.select(
         tmp = pl.struct(pl.all())
@@ -174,30 +168,12 @@ def gemini_async(model,
     # Create batch job
     job = client.batches.create(
         model=model,
-        src=batch_input.name,  # the uploaded JSONL File object
-        config={"display_name": "maps-eval-run-01"},
+        src=batch_input.name,  # the uploaded JSONL File name
+        config={"display_name": "carto-eval-run-01"},
     )
     print("Batch job:", job.name)  # e.g., "batches/abcdef123"
 
-    # Get result
-    while True:
-        job = client.batches.get(name=job.name)
-        state = job.state.name
-        print("state:", state)
-        if state in {"JOB_STATE_SUCCEEDED","JOB_STATE_FAILED","JOB_STATE_CANCELLED","JOB_STATE_EXPIRED"}:
-            break
-        time.sleep(5)
-
-    if state == "JOB_STATE_SUCCEEDED":
-        # If you sent a file input, results come back as a JSONL file reference
-        out_file = job.response.responses_file   # e.g. files/xyz...
-        # Download the file bytes
-        data = client.files.download(name=out_file.name).read()  # bytes of JSONL
-        # Each line: either a GenerateContentResponse or a per-line error/status
-        for line in data.decode("utf-8").splitlines():
-            print("testing", line)
-    else:
-        print("Batch did not succeed:", state)
+    return job.name
 
 def main(model:str,
          question_path:str,
@@ -240,17 +216,43 @@ def main(model:str,
         .otherwise(pl.col('image_urls')).alias('image_lists')
     )
 
+    # Common file names amonst async/sync
+    response_cache = os.path.join(cache_dir, 'response_cache.pkl')
+    if bool_distractor:
+        new_file_name = os.path.join(output_dir, 'gemini_w_contextual.json')
+    else:
+        new_file_name = os.path.join(output_dir, 'gemini_wo_contextual.json')
+    new_file_name = f"{question_path.split('.json')[0]}_{model}.json"
+    
     if not bool_batch:
         # Run Sync
-        gemini_sync(model=model, 
-                    dict_im_data=dict_im_data, pl_question=pl_question,
-                    cache_dir=cache_dir, question_path=question_path)
+        pd_answered, response_cache = gemini_sync(model=model, 
+                                  dict_im_data=dict_im_data, pl_question=pl_question,
+                                  response_cache=response_cache)
+        
+        pd_answered.to_json(new_file_name, orient='records', indent=4)
+
+        # Removing response cache pickle file
+        os.remove(response_cache)
+
     else:
         # Run Async
-        gemini_async(model=model, 
-                     dict_im_data=dict_im_data, pl_question=pl_question,
-                     cache_dir=cache_dir, question_path=question_path)
-    
+        job_name = gemini_async(model=model, 
+                                dict_im_data=dict_im_data, pl_question=pl_question,
+                                cache_dir=cache_dir)
+        
+        # Information while running async
+        dict_info = {
+            "job_name": job_name,
+            "output_dir": output_dir,
+            "cache_dir": cache_dir,
+            "output_fn": new_file_name
+        }
+
+        with open(response_cache, 'wb') as handle:
+            pickle.dump(dict_info, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+        print(f"Batch job information stored in dir {cache_dir}")
     
 
 if __name__ == '__main__':
@@ -297,5 +299,5 @@ if __name__ == '__main__':
     #     bool_distractor=True,
     #     output_dir='./',
     #     cache_dir='./',
-    #     bool_batch=True,
+    #     bool_batch=False,
     #     img_limit=args.max_images)

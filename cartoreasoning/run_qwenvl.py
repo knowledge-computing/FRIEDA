@@ -50,7 +50,7 @@ def define_model(model_id:str,
         model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
             model_id, 
             quantization_config=quantization_config, 
-            torch_dtype="auto", device_map="auto",
+            device_map="auto",
             trust_remote_code=True
         )
 
@@ -129,7 +129,7 @@ def respond_q(model,
 
     with torch.no_grad():    
         # Batch Inference
-        generated_ids = model.generate(**inputs, max_new_tokens=128, 
+        generated_ids = model.generate(**inputs, max_new_tokens=256, 
                                        do_sample=False, temperature=None, top_p=None, top_k=None)
         generated_ids_trimmed = [
             out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
@@ -142,8 +142,9 @@ def respond_q(model,
 
     for response in output_texts:
         try:
-            cleaned_response = response.split('Final answer:')[1]
+            cleaned_response = response.split("Final answer:")[-1].strip()
             list_output.append(cleaned_response)
+            
         except:
             list_output.append(response)
 
@@ -235,7 +236,11 @@ def main(model_name:str,
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
 
-    new_file_name = f"{question_path.split('.json')[0]}_qwen.json"
+    if bool_distractor:
+        new_file_name = os.path.join(output_dir, 'qwen_w_contextual.json')
+    else:
+        new_file_name = os.path.join(output_dir, 'qwen_wo_contextual.json')
+
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
     # Removing response cache pickle file
@@ -248,11 +253,11 @@ if __name__ == '__main__':
     parser.add_argument('--model', '-m', default='Qwen/Qwen2.5-VL-72B-Instruct',
                         help='Model name/type')
 
-    parser.add_argument('--questions', '-q', required=True,
+    parser.add_argument('--questions', '-q', required=True, 
                         help='Path to questions JSON file')
 
-    parser.add_argument('--images', '-im', default='./', type=str,
-                        help="Directory/link to repository containing images")
+    parser.add_argument('--images', '-im', required=True, type=str,
+                        help="Directory/link to reporsitory containing images")    
     
     parser.add_argument('--distractor', '-d', action="store_true", 
                         help='Use distractor images')
@@ -267,7 +272,7 @@ if __name__ == '__main__':
                         help="Use flash attention")
     
     parser.add_argument('--batch_size', default=1,
-                        help="Use flash attention")
+                        help="Batch size. Default is 1.")
     
     parser.add_argument('--max_images', '-max', type=int, default=20,
                         help="FOR DEVELOPING TEST PURPOSE")

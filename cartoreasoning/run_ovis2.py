@@ -78,13 +78,16 @@ def make_chat_prompt(question:str,
     # for idx, f in enumerate(file_list):
     #     if idx > img_limit:
     #         break
+    question_default = "Answer in English only."
 
     if 'https' in dict_im_data[file_list[0]]:
         image = [Image.open(requests.get(dict_im_data[image_path], stream=True).raw) for image_path in file_list]
     else:
         image = [Image.open(dict_im_data[image_path]) for image_path in file_list]
 
-    query = '\n'.join([f'Image {i+1}: <image>' for i in range(len(image))]) + '\n' + question
+    query = question_default + '\n' + \
+            '\n'.join([f'Image {i+1}: <image>' for i in range(len(image))]) + \
+            '\n' + question
 
     return query, image
 
@@ -119,11 +122,11 @@ def respond_q(model,
 
     with torch.inference_mode():
         gen_kwargs = dict(
-            max_new_tokens=1024,
-            do_sample=False,
-            top_p=1.0,
-            top_k=1,            # Not controllable parameters but leaving it just in case
-            temperature=0.0,    # Not controllable parameters but leaving it just in case
+            max_new_tokens=256,
+            do_sample=False,            # Basically temp=0
+            top_p=None,
+            top_k=None,
+            temperature=None,
             repetition_penalty=None,
             eos_token_id=model.generation_config.eos_token_id,
             pad_token_id=text_tokenizer.pad_token_id,
@@ -135,8 +138,12 @@ def respond_q(model,
     list_output = []
 
     for i in range(len(input_struct)):
-        output = text_tokenizer.decode(output_ids[i], skip_special_tokens=True)
-        list_output.append(output)
+        response = text_tokenizer.decode(output_ids[i], skip_special_tokens=True)
+        try:
+            cleaned_response = response.split('Final answer:')[-1].strip()
+            list_output.append(cleaned_response)
+        except:
+            list_output.append(response)
 
     return list_output
 
@@ -187,8 +194,6 @@ def main(model_name:str,
         .otherwise(pl.col('image_urls')).alias('image_lists')
     )
 
-    # Running inference in chunks (of 20) in case it crashse in middle
-    chunk_size = batch_size
     pl_answered = pl.DataFrame()
 
     response_cache = os.path.join(cache_dir, 'response_cache.pkl')
@@ -199,8 +204,8 @@ def main(model_name:str,
         cache_length = pl_answered.shape[0]
         pl_question = pl_question[cache_length:]
 
-    for i in tqdm(range(0, pl_question.height, chunk_size)):
-        chunk = pl_question.slice(i, chunk_size)
+    for i in tqdm(range(0, pl_question.height, batch_size)):
+        chunk = pl_question.slice(i, batch_size)
 
         chunk = chunk.with_columns(
             tmp = pl.struct(pl.col(['question_text', 'image_lists']))
@@ -230,11 +235,16 @@ def main(model_name:str,
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
 
-    new_file_name = f"{question_path.split('.json')[0]}_ovis2.json"
+    if bool_distractor:
+        new_file_name = os.path.join(output_dir, 'ovis2_w_contextual.json')
+    else:
+        new_file_name = os.path.join(output_dir, 'ovis2_wo_contextual.json')
+
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
     # Removing response cache pickle file
     os.remove(response_cache)
+    os.remove(cache_file)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
@@ -242,12 +252,12 @@ if __name__ == '__main__':
     parser.add_argument('--model', '-m', default='AIDC-AI/Ovis2-34B',
                         help='Model name/type')
 
-    parser.add_argument('--questions', '-q', required=True,
+    parser.add_argument('--questions', '-q', required=True, 
                         help='Path to questions JSON file')
 
-    parser.add_argument('--images', '-im', default='./', type=str,
-                        help="Directory/link to repository containing images")
-    
+    parser.add_argument('--images', '-im', required=True, type=str,
+                        help="Directory/link to reporsitory containing images")
+        
     parser.add_argument('--distractor', '-d', action="store_true", 
                         help='Use distractor images')
    
@@ -261,12 +271,22 @@ if __name__ == '__main__':
                         help="Use flash attention")
     
     parser.add_argument('--batch_size', default=1,
-                        help="Batch size. Default is no batching.")
+                        help="Batch size. Default is 1.")
     
     parser.add_argument('--max_images', '-max', type=int, default=20,
                         help="FOR DEVELOPING TEST PURPOSE")
     
     args = parser.parse_args()
+
+    main(model=args.model,
+         question_path=args.questions,
+         image_folder=args.images,
+         bool_distractor=args.distractor,
+         output_dir=args.output_dir,
+         cache_dir=args.cache_dir,
+         use_flash=args.flash,
+         batch_size=args.batch_size,
+         img_limit=args.max_images)
 
     # main(model_name='AIDC-AI/Ovis2-1B',
     #     question_path='/home/yaoyi/pyo00005/p2/carto-reasoning/questions/benchmark_data/response_mini.json',

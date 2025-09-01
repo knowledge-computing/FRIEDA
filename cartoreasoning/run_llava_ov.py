@@ -127,19 +127,16 @@ def respond_q(model,
     ).to(model.device, torch.float16)
 
     with torch.no_grad():   
-        generate_ids = model.generate(**inputs, max_new_tokens=30, do_sample=False)
+        generate_ids = model.generate(**inputs, max_new_tokens=256, do_sample=False)
 
     output_texts = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
     list_output = []
 
     for response in output_texts:
         try:
-            cleaned_response = response.split('assistant\n')[1]
-
-            try:
-                cleaned_response = cleaned_response.split('Final answer:')[1]
-            except: pass
+            cleaned_response = response.split("Final answer:")[-1].strip()
             list_output.append(cleaned_response)
+            
         except:
             list_output.append(response)
 
@@ -231,11 +228,16 @@ def main(model_name:str,
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
 
-    new_file_name = f"{question_path.split('.json')[0]}_onevision.json"
+    if bool_distractor:
+        new_file_name = os.path.join(output_dir, 'onevision_w_contextual.json')
+    else:
+        new_file_name = os.path.join(output_dir, 'onevision_wo_contextual.json')
+
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
     # Removing response cache pickle file
     os.remove(response_cache)
+    os.remove(cache_file)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
@@ -243,11 +245,11 @@ if __name__ == '__main__':
     parser.add_argument('--model', '-m', default='llava-hf/llava-onevision-qwen2-72b-ov-hf',
                         help='Model name/type')
 
-    parser.add_argument('--questions', '-q', required=True,
+    parser.add_argument('--questions', '-q', required=True, 
                         help='Path to questions JSON file')
 
-    parser.add_argument('--images', '-im', default='./', type=str,
-                        help="Directory/link to repository containing images")
+    parser.add_argument('--images', '-im', required=True, type=str,
+                        help="Directory/link to reporsitory containing images")
     
     parser.add_argument('--distractor', '-d', action="store_true", 
                         help='Use distractor images')
