@@ -1,92 +1,65 @@
+import os
+import fire
+
+import pickle
 import polars as pl
-import re
-import statistics
 
 
-regex_pattern = r"\d+\.?\d*"
+# if __name__ == '__main__':
+#     parser = argparse.ArgumentParser(description='Contextual Image Append Tool')
 
-pl_data = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/response_full_d20.json').filter(
-    pl.col('answer_type') == 'distance'
-)
+#     parser.add_argument('--file_data', type=str, required=True)
+#     parser.add_argument('--image_dir', type=str, required=True)
+#     parser.add_argument('--context_size', type=int, required=True)
 
-def std_calculation(expected_answer, annotator_response):
-    expected_answer = float(re.search(regex_pattern, expected_answer).group())
-
-    list_response = []
-    for r in annotator_response:
-        if (r == "None") or (not r):
-            pass
-        else:
-            list_response.append(float(re.search(regex_pattern, r).group()))
-
-    list_annotator = list_response
-    list_response.append(expected_answer)
-    # list_response = 
-
-    mean_value = statistics.mean(list_response)
-    median_value = statistics.median(list_response)
-    std_value = statistics.stdev(list_response)
-
-    list_tf = []
-    expected_in = False
-
-    for a in list_annotator:
-        if (a < mean_value-std_value) or (a > mean_value+std_value):
-            list_tf.append(False)
-        else:
-            list_tf.append(True)
-
-    # print(mean_value, median_value, std_value)
+#     parser.add_argument('--start_index', type=int, default=0)
+#     parser.add_argument('--last_index', type=int, default=None)
     
-    return {'annotator_response': list_annotator, 
-            'mean': mean_value,
-            'median': median_value,
-            'std': std_value,
-            'expected_value': expected_answer,
-            'w/i': list_tf}
 
-pl_annotator = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/annotator_response/response_all.json')
+#     args = parser.parse_args()
 
-pl_full = pl.concat(
-    [pl_data, pl_annotator],
-    how='align_left'
-).select(
-    pl.col('question_ref'),
-    tmp = pl.struct(pl.all()).map_elements(lambda x: std_calculation(x['expected_answer'], x['annotator_response']))
-).unnest('tmp').explode(['annotator_response', 'w/i'])
+#     append_contextual_info(file_name=args.file_data, 
+#                            dir_image=args.image_dir,
+#                            contextual_size=args.context_size,
+#                            start_idx=args.start_index,
+#                            last_idx=args.last_index)
 
-pl_full.write_csv('./tmp.csv')
+def test_orientation(expected_answer):
+    with open('', 'rb') as handle:
+        dict_orientation = pickle.load(handle)
 
-print(pl_full)
-
-####
+    ea_idx = list_orientation.index(expected_answer)
 
 
-# orientation = ['North',
-#                'North West',
-#                'West',
-#                'South West',
-#                'South',
-#                'South East',
-#                'East',
-#                'North East']
+    return 0
 
-# answer = 'North'
+def main(output:str,
+         response_col:str=None):
+    pl_vlm_output = pl.read_json()
 
-# answer_idx = orientation.index(answer)
-# list_indexes = [answer_idx, answer_idx-1, answer_idx+1]
-# acceptable = [orientation[i] for i in list_indexes]
+    # Load orientation dictionary
+    with open('./orientation.pkl', 'rb') as handle:
+        dict_orientation = pickle.load(handle)
 
-# print(acceptable)
+    # Expected answer always in expected answer column
+    # Partition by answer_type column
 
-# import statistics
+    if not response_col:
+        # Identify column with the name 'response'
+        response_col = 'response'
+        pass
 
-# data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    for df in pl_vlm_output.partition_by('answer_type'):
+        if df.items(0, 'answer_type') == 'cardinal':
+            df = df.with_columns(
+                pl.col('expected_answer').replace(dict_orientation)
+            ).with_columns(
+                correct = pl.col(response_col).is_in('expected_answer')
+            )
 
-# # Calculate the mean
-# mean_value = statistics.mean(data)
-# print(f"Mean: {mean_value}")
+        pass
 
-# # Calculate the median
-# median_value = statistics.median(data)
-# print(f"Median: {median_value}")
+    print(output)
+
+if __name__ == '__main__':
+    fire.Fire(main)
