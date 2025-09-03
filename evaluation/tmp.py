@@ -2,6 +2,8 @@ import polars as pl
 import re
 import statistics
 import copy
+import numpy as np
+from scipy.stats import mstats
 
 
 regex_pattern = r"\d+\.?\d*"
@@ -9,6 +11,18 @@ regex_pattern = r"\d+\.?\d*"
 pl_data = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/response_full_d20.json').filter(
     pl.col('answer_type') == 'distance'
 )
+
+def winsorized_bootstrap(data, proportion=0.25, n_boot=1000, bool_out=False):
+    means = []
+    # data = data * 4
+    for _ in range(n_boot):
+        # sample = random.choice(data)
+        sample = np.random.choice(data, size=len(data), replace=True)
+        if bool_out:
+            sample = mstats.winsorize(sample, limits=proportion)
+        # means.append(statistics.mean(wins))
+        means.append(np.mean(sample))
+    return means
 
 def std_calculation(expected_answer, annotator_response):
     expected_answer = float(re.search(regex_pattern, expected_answer).group())
@@ -20,36 +34,37 @@ def std_calculation(expected_answer, annotator_response):
         else:
             list_response.append(float(re.search(regex_pattern, r).group()))
 
-    list_annotator = copy.deepcopy(list_response)
-    list_annotator.append(expected_answer)
     list_response.append(expected_answer)
+    list_annotator = copy.deepcopy(list_response)
+
     # list_response = 
 
-    while True:
-        mean_value = statistics.mean(list_response)
-        median_value = statistics.median(list_response)
-        std_value = statistics.stdev(list_response)
+    std_value = statistics.stdev(list_response)
 
-        list_tf = []
+    list_tf = []
 
-        count = 0
-        for a in list_response:
-            if (a < expected_answer-(2*std_value)) or (a > expected_answer+(2*std_value)):
-                list_response.remove(a)
-                count += 1
-            else:
-                pass
+    flag_bootstrap = False
+    count = 0
+    for a in list_response:
+        if (a < expected_answer-(1*std_value)) or (a > expected_answer+(1*std_value)):
+            flag_bootstrap == True
+        else:
+            pass
 
-        if count == 0:
-            break
+    winsorized_std = np.std(winsorized_bootstrap(list_annotator, bool_out=flag_bootstrap), ddof=1)
 
     # print(mean_value, median_value, std_value)
     
-    return {'annotator_response': list_annotator, 
-            'mean': mean_value,
-            'median': median_value,
-            'std': std_value,
-            'expected_value': expected_answer,}
+    if flag_bootstrap:
+        return {'annotator_response': list_annotator, 
+                'std': std_value,
+                'win_std': winsorized_std,
+                'expected_value': expected_answer,}
+    else:
+        return {'annotator_response': list_annotator, 
+                'std': std_value,
+                'win_std': std_value,
+                'expected_value': expected_answer,}
 
 pl_annotator = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/annotator_response/response_all.json')
 
@@ -61,7 +76,7 @@ pl_full = pl.concat(
     tmp = pl.struct(pl.all()).map_elements(lambda x: std_calculation(x['expected_answer'], x['annotator_response']))
 ).unnest('tmp').explode('annotator_response')
 
-pl_full.write_csv('./tmp.csv')
+pl_full.write_csv('./tmp_w.csv')
 
 print(pl_full)
 
