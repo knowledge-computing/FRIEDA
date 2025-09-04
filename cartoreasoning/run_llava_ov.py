@@ -260,7 +260,7 @@ if __name__ == '__main__':
     parser.add_argument('--cache_dir', '-c', default='./',
                         help="Location to cache directory (cache for image names)")
     
-    parser.add_argument('--flash', '-im', action="store_true", type=bool,
+    parser.add_argument('--flash', '-f', action="store_true", 
                         help="Use flash attention")
 
     parser.add_argument('--batch_size', type=int, default=1,
@@ -271,7 +271,7 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
     
-    main(model=args.model,
+    main(model_name=args.model,
          question_path=args.questions,
          image_folder=args.images,
          bool_distractor=args.distractor,
