@@ -260,7 +260,7 @@ if __name__ == '__main__':
     parser.add_argument('--cache_dir', '-c', default='./',
                         help="Location to cache directory (cache for image names)")
     
-    parser.add_argument('--flash', '-im', action="store_true", 
+    parser.add_argument('--flash', '-f', action="store_true", 
                         help="Use flash attention")
 
     parser.add_argument('--batch_size', default=1,
