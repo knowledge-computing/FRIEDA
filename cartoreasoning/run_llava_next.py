@@ -263,7 +263,7 @@ if __name__ == '__main__':
     parser.add_argument('--flash', action="store_true",
                         help="Use flash attention")
     
-    parser.add_argument('--batch_size', default=1,
+    parser.add_argument('--batch_size', type=int, default=1,
                         help="Batch size. Default is 1.")
     
     parser.add_argument('--max_images', '-max', type=int, default=20,
@@ -278,8 +278,8 @@ if __name__ == '__main__':
          output_dir=args.output_dir,
          cache_dir=args.cache_dir,
          use_flash=args.flash,
-         batch_size=args.batch_size,
-         img_limit=args.max_images)
+         batch_size=int(args.batch_size),
+         img_limit=int(args.max_images))
 
     # main(model_name='llava-hf/llava-v1.6-mistral-7b-hf',
     #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
