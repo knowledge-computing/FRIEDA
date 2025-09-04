@@ -279,7 +279,7 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
     
-    main(model=args.model,
+    main(model_name=args.model,
          question_path=args.questions,
          image_folder=args.images,
          bool_distractor=args.distractor,
