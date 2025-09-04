@@ -278,8 +278,8 @@ if __name__ == '__main__':
          output_dir=args.output_dir,
          cache_dir=args.cache_dir,
          use_flash=args.flash,
-         batch_size=int(args.batch_size),
-         img_limit=int(args.max_images))
+         batch_size=args.batch_size,
+         img_limit=args.max_images)
 
     # main(model_name='llava-hf/llava-v1.6-mistral-7b-hf',
     #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
