@@ -274,7 +274,7 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size', default=1,
                         help="Batch size. Default is 1.")
     
-    parser.add_argument('--max_images', '-max', type=int, default=20,
+    parser.add_argument('--max_images', '-max', type=int, default=10,
                         help="FOR DEVELOPING TEST PURPOSE")
     
     args = parser.parse_args()
