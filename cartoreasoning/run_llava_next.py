@@ -200,30 +200,31 @@ def main(model_name:str,
         pl_question = pl_question[cache_length:]
 
     for i in tqdm(range(0, pl_question.height, batch_size)):
-        chunk = pl_question.slice(i, batch_size)
+        large_chunk = pl_question.slice(i, batch_size)
 
-        chunk = chunk.with_columns(
-            tmp = pl.struct(pl.col(['question_text', 'image_lists']))
+        large_chunk = large_chunk.with_columns(
+            pl.col('image_lists').list.len().alias('tmp_num_images')
         )
 
-        list_input = chunk['tmp'].to_list()
-        list_output = respond_q(model=model, processor=processor,
-                                input_struct=list_input,
-                                dict_im_data=dict_im_data,
-                                img_limit=img_limit)
-        
-        chunk = chunk.with_columns(
-            pl.col('q_answered').replace({False: True}),
-            llava_next_response = pl.Series(list_output)
-        ).drop(['tmp', 'image_lists'])
+        for chunk in large_chunk.partition_by('tmp_num_images'):
+            list_input = chunk['tmp'].to_list()
+            list_output = respond_q(model=model, processor=processor,
+                                    input_struct=list_input,
+                                    dict_im_data=dict_im_data,
+                                    img_limit=img_limit)
+            
+            chunk = chunk.with_columns(
+                pl.col('q_answered').replace({False: True}),
+                llava_next_response = pl.Series(list_output)
+            ).drop(['tmp', 'image_lists', 'tmp_num_images'])
 
-        pl_answered = pl.concat(
-            [pl_answered, chunk],
-            how='diagonal'
-        )
+            pl_answered = pl.concat(
+                [pl_answered, chunk],
+                how='diagonal'
+            )
 
-        with open(response_cache, 'wb') as handle:
-            pickle.dump(pl_answered, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            with open(response_cache, 'wb') as handle:
+                pickle.dump(pl_answered, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
