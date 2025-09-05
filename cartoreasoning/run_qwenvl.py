@@ -271,7 +271,7 @@ if __name__ == '__main__':
     parser.add_argument('--flash', action="store_true",
                         help="Use flash attention")
     
-    parser.add_argument('--batch_size', default=1,
+    parser.add_argument('--batch_size', type=int, default=1,
                         help="Batch size. Default is 1.")
     
     parser.add_argument('--max_images', '-max', type=int, default=20,
