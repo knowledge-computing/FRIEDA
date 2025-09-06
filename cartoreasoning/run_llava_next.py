@@ -207,6 +207,10 @@ def main(model_name:str,
         )
 
         for chunk in large_chunk.partition_by('tmp_num_images'):
+            chunk = chunk.with_columns(
+                tmp = pl.struct(pl.col(['question_text', 'image_lists']))
+            )
+
             list_input = chunk['tmp'].to_list()
             list_output = respond_q(model=model, processor=processor,
                                     input_struct=list_input,
@@ -215,7 +219,7 @@ def main(model_name:str,
             
             chunk = chunk.with_columns(
                 pl.col('q_answered').replace({False: True}),
-                llava_next_response = pl.Series(list_output)
+                llava_ov_response = pl.Series(list_output)
             ).drop(['tmp', 'image_lists', 'tmp_num_images'])
 
             pl_answered = pl.concat(
@@ -225,7 +229,7 @@ def main(model_name:str,
 
             with open(response_cache, 'wb') as handle:
                 pickle.dump(pl_answered, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
+                
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
 
