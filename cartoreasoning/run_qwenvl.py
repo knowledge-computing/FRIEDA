@@ -117,7 +117,14 @@ def respond_q(model,
         for msg in messages
     ]
 
-    image_inputs, video_inputs = process_vision_info(messages)
+    #image_inputs, video_inputs = process_vision_info(messages)
+    try:
+        image_inputs, video_inputs = process_vision_info(messages)
+    except Exception as e:
+        print("⚠️ Failed to load image(s) for this message:")
+        print("Question:", i['question_text'])
+        return [None] * len(input_struct)
+    
     inputs = processor(
         text=texts,
         images=image_inputs,
@@ -127,28 +134,36 @@ def respond_q(model,
     )
     inputs = inputs.to(model.device, torch.float16)
 
-    with torch.no_grad():    
-        # Batch Inference
-        generated_ids = model.generate(**inputs, max_new_tokens=256, 
-                                       do_sample=False, temperature=None, top_p=None, top_k=None)
-        generated_ids_trimmed = [
-            out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
-    ]
-    output_texts = processor.batch_decode(
-        generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
-    )
+    try:
+        with torch.no_grad():    
+            # Batch Inference
+            generated_ids = model.generate(**inputs, max_new_tokens=256, 
+                                        do_sample=False, temperature=None, top_p=None, top_k=None)
+            generated_ids_trimmed = [
+                out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
+        ]
+        output_texts = processor.batch_decode(
+            generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
+        )
 
-    list_output = []
+        list_output = []
 
-    for response in output_texts:
-        try:
-            cleaned_response = response.split("Final answer:")[-1].strip()
-            list_output.append(cleaned_response)
-            
-        except:
-            list_output.append(response)
+        for response in output_texts:
+            try:
+                cleaned_response = response.split("Final answer:")[-1].strip()
+                list_output.append(cleaned_response)
+                
+            except:
+                list_output.append(response)
 
-    return list_output
+        return list_output
+
+    except torch.cuda.OutOfMemoryError:
+        torch.cuda.empty_cache()
+        return [None] * len(input_struct)
+    except Exception:
+        # Any OOD/processing error → skip this item
+        return [None] * len(input_struct)
 
 def main(model_name:str,
          question_path:str,
@@ -200,12 +215,25 @@ def main(model_name:str,
     pl_answered = pl.DataFrame()
 
     response_cache = os.path.join(cache_dir, 'response_cache.pkl')
-    if check_exist(response_cache, bool_create=False) == 1: 
+    if check_exist(response_cache, bool_create=False) == 1:
         with open(response_cache, 'rb') as handle:
             pl_answered = pickle.load(handle)
 
-        cache_length = pl_answered.shape[0]
-        pl_question = pl_question[cache_length:]
+        if pl_answered.height > 0:
+            if "qwenvl_response" in pl_answered.columns:
+                pl_answered = pl_answered.filter(pl.col("qwenvl_response") != "None")
+            # Build a set of already answered question_text
+            answered_qs = set(pl_answered['question_text'].to_list())
+            # Filter pl_question to keep only unanswered ones
+            pl_question = pl_question.filter(~pl.col('question_text').is_in(list(answered_qs)))
+
+    # response_cache = os.path.join(cache_dir, 'response_cache.pkl')
+    # if check_exist(response_cache, bool_create=False) == 1: 
+    #     with open(response_cache, 'rb') as handle:
+    #         pl_answered = pickle.load(handle)
+
+    #     cache_length = pl_answered.shape[0]
+    #     pl_question = pl_question[cache_length:]
 
     for i in tqdm(range(0, pl_question.height, batch_size)):
         chunk = pl_question.slice(i, batch_size)
@@ -215,10 +243,15 @@ def main(model_name:str,
         )
 
         list_input = chunk['tmp'].to_list()
+
         list_output = respond_q(model=model, processor=processor,
                                 input_struct=list_input,
                                 dict_im_data=dict_im_data,
                                 img_limit=img_limit)
+
+        if not list_output or list_output[0] is None:
+            print("error")
+            continue  # skip marking answered
         
         chunk = chunk.with_columns(
             pl.col('q_answered').replace({False: True}),
@@ -243,9 +276,11 @@ def main(model_name:str,
 
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
+    print("Finished running")
+
     # Removing response cache pickle file
-    os.remove(response_cache)
-    os.remove(cache_file)
+    #os.remove(response_cache)
+    #os.remove(cache_file)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
@@ -271,7 +306,7 @@ if __name__ == '__main__':
     parser.add_argument('--flash', action="store_true",
                         help="Use flash attention")
     
-    parser.add_argument('--batch_size', default=1,
+    parser.add_argument('--batch_size', type=int, default=1,
                         help="Batch size. Default is 1.")
     
     parser.add_argument('--max_images', '-max', type=int, default=10,
