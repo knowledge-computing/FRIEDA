@@ -270,7 +270,7 @@ def main(model_name:str,
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
 
-    parser.add_argument('--model', '-m', default='llava-hf/llava-next-72b-hf',
+    parser.add_argument('--model', '-m', default='zai-org/GLM-4.5V',
                         help='Model name/type')
 
     parser.add_argument('--questions', '-q', required=True, 
