@@ -9,8 +9,25 @@ import pickle
 import polars as pl
 
 import torch
-from transformers import AutoProcessor, LlavaOnevisionForConditionalGeneration
+from transformers import AutoProcessor, Glm4vMoeForConditionalGeneration
 from transformers import BitsAndBytesConfig             # To reduce memory usage
+
+# Memory management
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+torch.cuda.empty_cache()
+torch.cuda.reset_peak_memory_stats()
+
+# max_memory = {
+#     0: "80GB",
+#     1: "80GB",
+#     2: "80GB",
+#     3: "80GB",
+#     # 4: "40GB",
+#     # 5: "40GB",
+#     # 6: "40GB",
+#     # 7: "40GB",
+#     "cpu": "100GB"   # fallback for layers that don't fit
+# }
 
 with open('./instruction.pkl', 'rb') as handle:
     instructions = pickle.load(handle)
@@ -36,16 +53,18 @@ def define_model(model_id:str,
     )
 
     if use_flash:
-        model = LlavaOnevisionForConditionalGeneration.from_pretrained(
+        model = Glm4vMoeForConditionalGeneration.from_pretrained(
             model_id,
             quantization_config=quantization_config,
             attn_implementation="flash_attention_2",
             device_map="auto",
+            # max_memory=max_memory,
+            torch_dtype=torch.bfloat16,
             trust_remote_code=True
-            )    # Only works under CUDA suppport
+            )        # Only works under CUDA suppport
     else:
         # Slow processing
-        model = LlavaOnevisionForConditionalGeneration.from_pretrained(
+        model = Glm4vMoeForConditionalGeneration.from_pretrained(
             model_id,
             quantization_config=quantization_config, 
             device_map="auto",
@@ -90,7 +109,7 @@ def make_chat_prompt(question:str,
     content.append({"type": "text", "text": f"{question}"})
 
     return content
-    
+
 def respond_q(model,
               processor,
               dict_im_data:Dict[str, str],
@@ -103,7 +122,6 @@ def respond_q(model,
                                    file_list=i['image_lists'],
                                    dict_im_data=dict_im_data,
                                    img_limit=img_limit)
-    
         conversation = [
             {   "role": "system",
                 "content": [{"type": "text", "text": f"{instructions}"}],
@@ -125,8 +143,9 @@ def respond_q(model,
         padding_side="left",
         return_tensors="pt"
     ).to(model.device, torch.float16)
+    inputs.pop("token_type_ids", None) # Not used in GLM45?
 
-    with torch.no_grad():   
+    with torch.no_grad():  
         generate_ids = model.generate(**inputs, max_new_tokens=256, do_sample=False)
 
     output_texts = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
@@ -187,11 +206,12 @@ def main(model_name:str,
         pl.when(bool_distractor)
         .then(pl.concat_list('contextual_urls', 'image_urls'))
         .otherwise(pl.col('image_urls')).alias('image_lists')
-    ).sort(pl.col('image_lists').list.len(), descending=True, maintain_order=True)
+    )
 
+    # Running inference in chunks (of 20) in case it crashse in middle
     pl_answered = pl.DataFrame()
 
-    response_cache = os.path.join(cache_dir, 'response_cache.pkl')
+    response_cache = os.path.join(cache_dir, 'glm_cache.pkl')
     if check_exist(response_cache, bool_create=False) == 1: 
         with open(response_cache, 'rb') as handle:
             pl_answered = pickle.load(handle)
@@ -219,7 +239,7 @@ def main(model_name:str,
             
             chunk = chunk.with_columns(
                 pl.col('q_answered').replace({False: True}),
-                llava_ov_response = pl.Series(list_output)
+                glm_45v_response = pl.Series(list_output)
             ).drop(['tmp', 'image_lists', 'tmp_num_images'])
 
             pl_answered = pl.concat(
@@ -230,13 +250,16 @@ def main(model_name:str,
             with open(response_cache, 'wb') as handle:
                 pickle.dump(pl_answered, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
+            torch.cuda.empty_cache()
+            torch.cuda.reset_peak_memory_stats()
+                
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
 
     if bool_distractor:
-        new_file_name = os.path.join(output_dir, 'onevision_w_contextual.json')
+        new_file_name = os.path.join(output_dir, 'glm45_w_contextual.json')
     else:
-        new_file_name = os.path.join(output_dir, 'onevision_wo_contextual.json')
+        new_file_name = os.path.join(output_dir, 'glm45_wo_contextual.json')
 
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
@@ -247,7 +270,7 @@ def main(model_name:str,
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
 
-    parser.add_argument('--model', '-m', default='llava-hf/llava-onevision-qwen2-72b-ov-hf',
+    parser.add_argument('--model', '-m', default='llava-hf/llava-next-72b-hf',
                         help='Model name/type')
 
     parser.add_argument('--questions', '-q', required=True, 
@@ -265,9 +288,9 @@ if __name__ == '__main__':
     parser.add_argument('--cache_dir', '-c', default='./',
                         help="Location to cache directory (cache for image names)")
     
-    parser.add_argument('--flash', '-f', action="store_true", 
+    parser.add_argument('--flash', action="store_true",
                         help="Use flash attention")
-
+    
     parser.add_argument('--batch_size', type=int, default=1,
                         help="Batch size. Default is 1.")
     
@@ -286,12 +309,12 @@ if __name__ == '__main__':
          batch_size=args.batch_size,
          img_limit=args.max_images)
 
-    # main(model_name='llava-hf/llava-onevision-qwen2-7b-ov-hf',
-    #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
-    #     image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
-    #     bool_distractor=True,
+    # main(model_name='zai-org/GLM-4.5V',
+    #     question_path='/home/yaoyi/pyo00005/carto-reasoning/questions/response_full_d10.json',
+    #     image_folder='/home/yaoyi/pyo00005/p2/carto-image/',
+    #     bool_distractor=False,
     #     output_dir='./',
     #     cache_dir='./',
     #     use_flash=True,
-    #     batch_size=2,
+    #     batch_size=args.batch_size,
     #     img_limit=args.max_images)
