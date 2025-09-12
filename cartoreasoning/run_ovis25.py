@@ -18,7 +18,7 @@ from transformers import BitsAndBytesConfig             # To reduce memory usage
 import warnings
 warnings.filterwarnings("ignore", category=pl.MapWithoutReturnDtypeWarning)
 
-with open('./instruction.pkl', 'rb') as handle:
+with open('./cartoreasoning/instruction.pkl', 'rb') as handle:
     instructions = pickle.load(handle)
 
 # Paraemter specific to Ovis
@@ -258,7 +258,7 @@ def main(model_name:str,
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
 
-    parser.add_argument('--model', '-m', default='Qwen/Qwen2.5-VL-72B-Instruct',
+    parser.add_argument('--model', '-m', default='AIDC-AI/Ovis2.5-9B',
                         help='Model name/type')
 
     parser.add_argument('--questions', '-q', required=True, 
@@ -282,7 +282,7 @@ if __name__ == '__main__':
     parser.add_argument('--thinking', action="store_true",
                         help="Allow reasoning capability")
     
-    parser.add_argument('--batch_size', default=1,
+    parser.add_argument('--batch_size', type=int, default=1,
                         help="Batch size. Default is 1.")
     
     parser.add_argument('--max_images', '-max', type=int, default=20,
@@ -290,7 +290,7 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
     
-    main(model=args.model,
+    main(model_name=args.model,
          question_path=args.questions,
          image_folder=args.images,
          bool_distractor=args.distractor,

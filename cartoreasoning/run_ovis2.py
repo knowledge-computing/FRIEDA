@@ -15,7 +15,7 @@ import torch
 from transformers import AutoModelForCausalLM
 from transformers import BitsAndBytesConfig             # To reduce memory usage
 
-with open('./instruction.pkl', 'rb') as handle:
+with open('./cartoreasoning/instruction.pkl', 'rb') as handle:
     instructions = pickle.load(handle)
 
 def check_exist(path_dir, bool_create=True):
@@ -267,10 +267,10 @@ if __name__ == '__main__':
     parser.add_argument('--cache_dir', '-c', default='./',
                         help="Location to cache directory (cache for image names)")
     
-    parser.add_argument('--flash', action="store_true", type=bool,
+    parser.add_argument('--flash', action="store_true", default=False, 
                         help="Use flash attention")
     
-    parser.add_argument('--batch_size', default=1,
+    parser.add_argument('--batch_size', type=int, default=1,
                         help="Batch size. Default is 1.")
     
     parser.add_argument('--max_images', '-max', type=int, default=20,
@@ -278,7 +278,7 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
 
-    main(model=args.model,
+    main(model_name=args.model,
          question_path=args.questions,
          image_folder=args.images,
          bool_distractor=args.distractor,
