@@ -68,7 +68,9 @@ def define_model(model_id:str,
             model_id,
             quantization_config=quantization_config, 
             device_map="auto",
-            trust_remote_code=True
+            trust_remote_code=True,
+            attn_implementation="sdpa",
+            torch_dtype=torch.bfloat16,
         )
 
     processor = AutoProcessor.from_pretrained(model_id)
