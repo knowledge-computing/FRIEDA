@@ -59,7 +59,7 @@ def define_model(model_id:str,
             attn_implementation="flash_attention_2",
             device_map="auto",
             # max_memory=max_memory,
-            torch_dtype=torch.bfloat16,
+            torch_dtype=torch.float16,
             trust_remote_code=True
             )        # Only works under CUDA suppport
     else:
@@ -68,7 +68,9 @@ def define_model(model_id:str,
             model_id,
             quantization_config=quantization_config, 
             device_map="auto",
-            trust_remote_code=True
+            trust_remote_code=True,
+            attn_implementation="sdpa",
+            torch_dtype=torch.bfloat16,
         )
 
     processor = AutoProcessor.from_pretrained(model_id)
@@ -145,21 +147,29 @@ def respond_q(model,
     ).to(model.device, torch.float16)
     inputs.pop("token_type_ids", None) # Not used in GLM45?
 
-    with torch.no_grad():  
-        generate_ids = model.generate(**inputs, max_new_tokens=256, do_sample=False)
+    try:
+        with torch.no_grad():  
+            generate_ids = model.generate(**inputs, max_new_tokens=256, do_sample=False)
 
-    output_texts = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
-    list_output = []
+        output_texts = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
+        list_output = []
 
-    for response in output_texts:
-        try:
-            cleaned_response = response.split("Final answer:")[-1].strip()
-            list_output.append(cleaned_response)
-            
-        except:
-            list_output.append(response)
+        for response in output_texts:
+            try:
+                cleaned_response = response.split("Final answer:")[-1].strip()
+                list_output.append(cleaned_response)
+                
+            except:
+                list_output.append(response)
 
-    return list_output
+        return list_output
+    
+    except torch.cuda.OutOfMemoryError:
+        torch.cuda.empty_cache()
+        return [None] * len(input_struct)
+    except Exception:
+        # Any OOD/processing error → skip this item
+        return [None] * len(input_struct)
 
 def main(model_name:str,
          question_path:str,
@@ -236,6 +246,10 @@ def main(model_name:str,
                                     input_struct=list_input,
                                     dict_im_data=dict_im_data,
                                     img_limit=img_limit)
+
+            if not list_output or list_output[0] is None:
+                print("error")
+                continue
             
             chunk = chunk.with_columns(
                 pl.col('q_answered').replace({False: True}),
@@ -264,8 +278,8 @@ def main(model_name:str,
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
     # Removing response cache pickle file
-    os.remove(response_cache)
-    os.remove(cache_file)
+    # os.remove(response_cache)
+    # os.remove(cache_file)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
@@ -294,7 +308,7 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size', type=int, default=1,
                         help="Batch size. Default is 1.")
     
-    parser.add_argument('--max_images', '-max', type=int, default=20,
+    parser.add_argument('--max_images', '-max', type=int, default=10,
                         help="FOR DEVELOPING TEST PURPOSE")
     
     args = parser.parse_args()
