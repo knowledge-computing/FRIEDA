@@ -1,0 +1,77 @@
+[
+    {
+        "question_text":"Which Los Reyes 'Claim's share border with Eden Property?",
+        "expected_answer":"Los Reyes Tres; Los Reyes Fracc Norte",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_CENTTechnicalReport, z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed\/image19_1.jpeg",
+            "NI43-101\/C__SEDAR_FILINGS_CENTTechnicalReport, z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed\/image13_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Border"
+    },
+    {
+        "question_text":"What is the Adjacent properties (as of 2023\/02\/27) located immediately east of MOBLAN Lithium Project. If the adjacent property is divided by percentage, identify the company\/individual with the largest percentage.",
+        "expected_answer":"Sumitomo",
+        "image_urls":[
+            "NI43-101\/g__Sayona_2023_Moblan_20230414_Moblan_Report\/image198_2.jpeg",
+            "NI43-101\/g__Sayona_2023_Moblan_20230414_Moblan_Report\/image33_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Border"
+    },
+    {
+        "question_text":"Which Original Agreement regions of the Windfall Lake Property share the longest boundary with the Urban-Duke Property within the Urban-Barry Greenstone Belt?",
+        "expected_answer":"NORONT South Block",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_OSK_TchRpt_WindfallProjectJan2023\/image145_1.png",
+            "NI43-101\/C__SEDAR_FILINGS_OSK_TchRpt_WindfallProjectJan2023\/image103_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Border"
+    },
+    {
+        "question_text":"The legend describes the different mining license of PureGold Mine Property. Which mining license shares boundary with a nearby lake?",
+        "expected_answer":"ML-10670",
+        "image_urls":[
+            "NI43-101\/n__SEDAR_WRLG_NI43-101_Report_Update_v20230619\/image26_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Border"
+    },
+    {
+        "question_text":"What is the total length of the border shared by the Denovo - Edgecreek block and the adjacent Pat - Argus - JM block?",
+        "expected_answer":"2.5km",
+        "image_urls":[
+            "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image37_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Border"
+    },
+    {
+        "question_text":"What is the length of the shortest border shared between Tearlach Resources and another company (excluding Fee Parcels)?",
+        "expected_answer":"0.5 miles",
+        "image_urls":[
+            "NI43-101\/C__FILINGS_Tearlach_Tearlach_TechnicalReport\/image45_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Border"
+    },
+    {
+        "question_text":"Which claim block shares border with 9 different claim block in Claim LAN?",
+        "expected_answer":"2145325",
+        "image_urls":[
+            "NI43-101\/g__Sayona_2023_NAL_Refiling_20230420_NAL_Report\/image69_3.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Border"
+    },
+    {
+        "question_text":"Which company shares the majority of its boundary with the O\u2019Brien Project?",
+        "expected_answer":"Mines Agnico-Eagle Limitee",
+        "image_urls":[
+            "NI43-101\/d__SEDAR_Montreal_Radisson_TechReport_0417\/image110_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Border"
+    }
+]

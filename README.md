@@ -1,5 +1,5 @@
-# Cartographical Reasoning Benchmark
-
+# FRIEDA: Benchmarking Multi-Step Cartographic Reasoning in Vision-Language Models
+<!-- 
 ## Usage
 
 You can run the script with the following flags:  
@@ -27,4 +27,4 @@ These flags apply only when running open-source models:
   Enable Flash Attention for faster inference if supported.  
 
 - `--batch_size`  
-  Batch size for processing inputs.  
+  Batch size for processing inputs.   -->
