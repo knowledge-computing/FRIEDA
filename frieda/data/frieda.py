@@ -18,7 +18,7 @@ class FRIEDA(Dataset):
 
             if download:
                 print("[INFO] Downloading FRIEDA images.")
-                self.download_image(root_dir)
+                # self.download_image(root_dir)
             else:
                 raise RuntimeError("Please allow downloading the dataset by setting '--download' or specify the correct root directory.")
             
@@ -39,7 +39,7 @@ class FRIEDA(Dataset):
 
             if download:
                 print("[INFO] Downloading FRIEDA instruction file.")
-                # self.download_instruction(root_dir)
+                self.download_instruction(root_dir)
 
             else:
                 raise RuntimeError("Please allow downloading the dataset by setting '--download' or specify the correct root directory.")
@@ -48,7 +48,7 @@ class FRIEDA(Dataset):
     def download_image(self, data_dir:str):
         import gdown
 
-        gdown.download(id='1ULDAt9EdMs0oFYqm7t4hLPlgI8TxM9uR', 
+        gdown.download(id='1ULDAt9EdMs0oFYqm7t4hLPlgI8TxM9uR',
                        output=f"{data_dir}/")
         
         print("[INFO] Extracting image tar file.")
@@ -58,11 +58,11 @@ class FRIEDA(Dataset):
     def download_annotation(self, data_dir:str):
         import gdown
 
-        gdown.download(id='1ZMxqgQiywKzhqgSN_mw6wlb-RrCOG8MS', 
+        gdown.download(id='1ZMxqgQiywKzhqgSN_mw6wlb-RrCOG8MS',
                        output=f"{data_dir}/")
         
     def download_instruction(self, data_dir:str):
         import gdown
 
-        gdown.download(id='', 
+        gdown.download(id='1CeDcV2pgM3eoWevpX151QII6aw1ZU9ju',
                        output=f"{data_dir}/")
