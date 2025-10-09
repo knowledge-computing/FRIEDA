@@ -1,0 +1,17 @@
+services:
+  - type: static
+    name: map-survey-app
+    buildCommand: |
+      pip install -r requirements.txt || true
+      PAGES_BASE_URL="https://map-survey-app.onrender.com" \
+      BACKEND_BASE_URL="https://mysite-mrzq.onrender.com" \
+      python generate_pages.py
+    staticPublishPath: pages
+    # Headers are optional but helpful
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: same-origin
