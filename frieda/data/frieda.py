@@ -4,11 +4,11 @@ import tarfile
 from torch.utils.data import Dataset
 
 class FRIEDA(Dataset):
-    def __init__(self, root_dir:str='./data', 
+    def __init__(self, root_dir:str, 
                  download:bool=False):
         self.root_dir = root_dir
 
-        img_dir = os.path.join(root_dir, 'imgs')
+        img_dir = os.path.join(root_dir, 'images')
         annotation_file = os.path.join(root_dir, "frieda_q_bank.json")
         instruction_file = os.path.join(root_dir, "instruction.pkl")
 
@@ -18,7 +18,7 @@ class FRIEDA(Dataset):
 
             if download:
                 print("[INFO] Downloading FRIEDA images.")
-                # self.download_image(root_dir)
+                self.download_image(root_dir)
             else:
                 raise RuntimeError("Please allow downloading the dataset by setting '--download' or specify the correct root directory.")
             
@@ -53,7 +53,7 @@ class FRIEDA(Dataset):
         
         print("[INFO] Extracting image tar file.")
         with tarfile.open(f"{data_dir}/images.tar") as tar:
-            tar.extractall(path=f"{data_dir}/imgs/")
+            tar.extractall(path=f"{data_dir}/")
     
     def download_annotation(self, data_dir:str):
         import gdown

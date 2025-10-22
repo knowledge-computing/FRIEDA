@@ -4,26 +4,33 @@ from typing import LiteralString
 class DecoderBase(ABC):
     def __init__(self,
                  name:str,
+                 do_sample:bool=False,
                  temperature:float=0.0,
                  max_new_tokens:int=2048,
-                 truth_remote_code:bool=True,
-                 instruction_prefix:str=None) -> None:
+                 trust_remote_code:bool=True,
+                 instruction_prefix:str=None,
+                 
+                 enable_thinking:bool=False,
+                 enable_thinking_budget:bool=False,
+                 thinking_budget_add:int=1024) -> None:
         
         print(f"[INFO] Initializing decoder model: {name}")
 
         self.name = name
+
+        self.do_sample = do_sample
         self.temperature = temperature
         self.max_new_tokens = max_new_tokens
-        self.truth_remote_code = truth_remote_code
+        self.trust_remote_code = trust_remote_code
         self.instruction_prefix = instruction_prefix
 
-    @abstractmethod
-    def upload_images(self,):
-        pass
+    # @abstractmethod
+    # def upload_images(self,):
+    #     pass
 
-    @abstractmethod
-    def make_chat_prompt(self,):
-        pass
+    # @abstractmethod
+    # def make_chat_prompt(self,):
+    #     pass
 
     @abstractmethod
     def respond_q(self,):
