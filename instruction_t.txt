@@ -1,0 +1,17 @@
+Answer the question. Follow these instructions.
+
+Numerical Answers
+* Include units as indicated on the map (Don’t convert 1200m to 1.2km)
+* If both map frame and ruler scale is available, use the ruler scale
+* If question asks for an area, use {unit}^2
+* Use numerical values (e.g., 4 instead of four)
+
+Directional Answers:
+* Use 8 cardinal directions only: North, North East, East, South East, South, South West, West, North West
+* Write 'North' or 'South' before 'East' or 'West'
+* Notice that the north arrow compass do not always point upward
+
+Multi-Part Answers:
+* Separate with semicolon (;) (e.g., Zone A; Zone B)
+
+Reply in the format: 'Final answer: <your answer>'.
