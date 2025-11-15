@@ -19,7 +19,7 @@ from google.genai import types
 load_dotenv()
 client = genai.Client(api_key=os.getenv('GOOGLE_API_KEY'))
 
-with open('./instruction_text.pkl', 'rb') as handle:
+with open('./instruction_t.pkl', 'rb') as handle:
     instructions = pickle.load(handle)
     instructions += "DO NOT use web search."    # Adding in case they use search
 
