@@ -61,7 +61,7 @@
     }
     
     /* 移除特定表格的宽度限制 */
-    .qa-table, .qa-table-container, .qa-caption-container {
+    .qa-table, .qa-table-container, .direct-container {
       width: 100%;
     }
     
@@ -473,18 +473,18 @@
       <h2 class="title is-3">Leaderboard</h2>
       
       <!-- 4D Object QA Results (现在放在前面) -->
-      <h3 class="title is-4" id="qa-leaderboard">4D Object Question Answering Leaderboard</h3>
+      <h3 class="title is-4" id="direct-leaderboard">FRIEDA-Direct Leaderboard</h3>
       <div class="table-container">
         <div id="qa-table-container"></div>
       </div>
-      <div class="table-caption" id="qa-caption-container"></div>
+      <div class="table-caption" id="direct-container"></div>
       
       <!-- 4D Object Captioning Results (现在放在后面) -->
-      <h3 class="title is-4" id="captioning-leaderboard">4D Object Captioning Leaderboard</h3>
+      <h3 class="title is-4" id="contextual-leaderboard">FRIEDA-Contextual Leaderboard</h3>
       <div class="table-container">
         <div id="captioning-table-container"></div>
       </div>
-      <div class="table-caption" id="captioning-caption-container"></div>
+      <div class="table-caption" id="contextual-container"></div>
     </div>
   </div>
   <!--/ Results Tables -->
