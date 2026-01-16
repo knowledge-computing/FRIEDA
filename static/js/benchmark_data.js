@@ -3,7 +3,7 @@
 // 4D Object Captioning Results
 const captioningResults = [
     {
-      model: "GPT-4o",
+      model: "GPT-5-Think",
       cider: 69.0,
       bleu4: 6.4,
       meteor: 35.9,
@@ -17,7 +17,7 @@ const captioningResults = [
       isGray: true
     },
     {
-      model: "Gemini 1.5 Pro",
+      model: "Gemini 2.5 Pro",
       cider: 94.8,
       bleu4: 11.2,
       meteor: 38.7,
