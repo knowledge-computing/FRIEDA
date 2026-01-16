@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/favicon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -430,32 +430,24 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            To be filled
-            <!-- We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones. -->
+            We introduce <strong>FRIEDA</strong>, a benchmark designed to stress-test <strong>open-ended, multi-step cartographic reasoning</strong> in large vision-language models (LVLMs).
           </p>
+
           <p>
-            <!-- Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness. -->
+            FRIEDA is built from <strong>real map figures</strong> collected from documents and technical reports across diverse <strong>domains</strong> (e.g., geology, urban planning, environmental assessment) 
+            and <strong>geographic regions</strong>. Grounded in GIS theory, FRIEDA spans a diverse spectrum of spatial relations: 
+            <strong>topological</strong> (border, equal, intersect, within), <strong>metric</strong> (distance), and <strong>directional</strong> (orientation). 
+            Questions are deliberately compositional: every example requires <strong>multi-hop inference</strong>, and many demand cross-map grounding</strong>, where evidence must be located and integrated across multiple maps.
           </p>
+
           <p>
-            <!-- We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity. -->
+            We evaluate 11 state-of-the-art LVLMs in two regimes: direct, where the relevant map(s) are provided, and contextual, where the model must first discover which map(s) matter before answering. 
+            Despite strong vision and language capabilities, performance remains low: Gemini-2.5-Pro and GPT-5-Think reach only <strong>38.20%</strong> and <strong>37.20%</strong> accuracy, respectively, compared to <strong>84.87%</strong> for humans.
+          </p>
+
+          <p>
+            These results highlight a persistent gap in spatial intelligence over real-world maps. FRIEDA offers a rigorous, realistic target for measuring progress, and a concrete challenge for building LVLMs that can truly 
+            <em>read, ground, and reason</em> with cartographic evidence.
           </p>
         </div>
       </div>
@@ -474,6 +466,29 @@
     </div> -->
     <!--/ Paper video. -->
   </div>
+
+  <!-- Results Tables -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-full">
+      <h2 class="title is-3">Leaderboard</h2>
+      
+      <!-- 4D Object QA Results (现在放在前面) -->
+      <h3 class="title is-4" id="qa-leaderboard">4D Object Question Answering Leaderboard</h3>
+      <div class="table-container">
+        <div id="qa-table-container"></div>
+      </div>
+      <div class="table-caption" id="qa-caption-container"></div>
+      
+      <!-- 4D Object Captioning Results (现在放在后面) -->
+      <h3 class="title is-4" id="captioning-leaderboard">4D Object Captioning Leaderboard</h3>
+      <div class="table-container">
+        <div id="captioning-table-container"></div>
+      </div>
+      <div class="table-caption" id="captioning-caption-container"></div>
+    </div>
+  </div>
+  <!--/ Results Tables -->
+  
 </section>
 
 
