@@ -133,22 +133,19 @@
   }
 
   function axisHTML() {
-    // 0–100 axis: ticks at 100/75/50/25/0
     const ticks = [100, 75, 50, 25, 0];
     return `
       <div class="lb-axis">
-        ${ticks
-          .map((t) => {
-            const top = (100 - t);
-            return `
-              <div class="lb-axis-line" style="top:${top}%"></div>
-              <div class="lb-axis-label" style="top:${top}%">${t}</div>
-            `;
-          })
-          .join("")}
+        ${ticks.map((t) => {
+          const top = (100 - t);
+          return `
+            <div class="lb-axis-line" style="top:${top}%"></div>
+            <div class="lb-axis-label" style="top:${top}%">${t}</div>
+          `;
+        }).join("")}
       </div>
     `;
-  }
+  }  
 
   function setSelectedModel(modelId) {
     if (state.selectedModelId === modelId) {
@@ -162,53 +159,38 @@
   }
 
   function renderSingleChartVertical(groupedModels) {
-    // groupedModels: [{ group, models: [...] }, ...]
-    // Build one long list, but insert group separators.
-    const columns = [];
-  
-    for (const { group, models } of groupedModels) {
-      // group header "column" (spacer)
-      columns.push({ type: "group", group });
-  
-      // sort within group by score desc
+    // Flatten models in group order: Human -> Proprietary -> Open Source
+    const flatModels = [];
+    for (const { models } of groupedModels) {
+      // keep “within group sort desc” like before
       const sorted = models.slice().sort((a, b) => b.score - a.score);
-      for (const m of sorted) {
-        columns.push({ type: "model", model: m });
-      }
+      flatModels.push(...sorted);
     }
   
-    const colsHTML = columns
-      .map((item) => {
-        if (item.type === "group") {
-          return `
-            <div class="lb-barcol lb-group-col" aria-hidden="true">
-              <div class="lb-group-chip">${item.group}</div>
-            </div>
-          `;
-        }
+    const barsHTML = flatModels.map((m) => {
+      const pct = clampPct(m.score); // 0..100
+      const meta = formatSize(m);
+      const selected = m.id === state.selectedModelId ? "is-selected" : "";
+      const unknown = (!m.alwaysShow && m.sizeB == null) ? "is-unknown" : "";
+      const title = `${m.name}: ${m.score.toFixed(2)}${meta ? ` (${meta})` : ""}`;
   
-        const m = item.model;
-        const pct = clampPct(m.score); // 0..100
-        const meta = formatSize(m);
-        const selected = m.id === state.selectedModelId ? "is-selected" : "";
-        const title = `${m.name}: ${m.score.toFixed(2)}${meta ? ` (${meta})` : ""}`;
-  
-        return `
-          <div class="lb-barcol ${selected}" data-model="${m.id}" title="${title}">
-            <div class="lb-score">${m.score.toFixed(2)}</div>
-            <div class="lb-bar" style="height:${pct}%"></div>
-            <div class="lb-xlab">${m.name}</div>
-            ${meta ? `<div class="lb-xmeta">${meta}</div>` : ``}
-          </div>
-        `;
-      })
-      .join("");
+      return `
+        <div class="lb-baritem ${selected}" data-model="${m.id}" title="${title}">
+          <div class="lb-value">${m.score.toFixed(2)}</div>
+          <div class="lb-bar ${unknown}" style="height:${pct}%"></div>
+          <div class="lb-xlab">${m.name}</div>
+          ${meta ? `<div class="lb-xmeta">${meta}</div>` : ``}
+        </div>
+      `;
+    }).join("");
   
     return `
       <div class="lb-vchart">
-        ${axisHTML()}
-        <div class="lb-bars">
-          ${colsHTML}
+        <div class="lb-plot">
+          ${axisHTML()}
+          <div class="lb-bars">
+            ${barsHTML}
+          </div>
         </div>
       </div>
     `;
@@ -241,7 +223,7 @@
       chart.innerHTML = renderSingleChartVertical(grouped);      
 
     // attach click handlers for highlight feature (#3)
-    chart.querySelectorAll(".lb-barcol").forEach((el) => {
+    chart.querySelectorAll(".lb-baritem").forEach((el) => {
       el.addEventListener("click", () => {
         const id = el.getAttribute("data-model");
         if (id) setSelectedModel(id);
