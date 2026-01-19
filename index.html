@@ -40,158 +40,12 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
-
-  <!-- Obtained from 4D-Bench webpage code -->
-  <style>
-    /* 基本表格样式 */
-    .results-table {
-      width: 100%; /* 表格宽度为100% */
-      border-collapse: collapse;
-      margin-bottom: 20px;
-      font-size: 0.95em;
-      border: 1px solid #ddd;
-      table-layout: auto; /* 改回auto布局以允许列宽自适应内容 */
-    }
-    
-    /* 表格容器样式 */
-    .table-container {
-      margin-bottom: 30px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      width: 100%;
-      overflow-x: visible; /* 不显示滚动条 */
-    }
-    
-    /* 移除特定表格的宽度限制 */
-    .qa-table, .qa-table-container, .direct-container {
-      width: 100%;
-    }
-    
-    /* 调整表格单元格样式 */
-    .results-table th, .results-table td {
-      padding: 8px 5px;
-      text-align: center;
-      border: 1px solid #ddd;
-      word-wrap: break-word;
-      overflow: hidden;
-    }
-    
-    /* 模型名称列靠左对齐，自适应内容宽度 */
-    .results-table th:nth-child(2), .results-table td:nth-child(2) {
-      text-align: left;
-      padding-left: 10px;
-      width: auto; /* 自适应内容宽度 */
-      white-space: normal; /* 允许文本换行 */
-      /* 移除min-width和max-width限制 */
-    }
-    
-    /* 行号列宽度固定 */
-    .results-table th:first-child, .results-table td:first-child {
-      width: 30px;
-      min-width: 30px;
-      max-width: 30px;
-    }
-    
-    /* 其他列宽度设置 */
-    .results-table th:not(:first-child):not(:nth-child(2)), 
-    .results-table td:not(:first-child):not(:nth-child(2)) {
-      min-width: 60px;
-      width: auto; /* 自适应内容 */
-    }
-    
-    /* 修改表头样式 */
-    .results-table th {
-      background-color: #f0f0f0;
-      font-weight: bold;
-      color: #333;
-      font-size: 0.9em;
-      white-space: normal; /* 允许表头文字换行 */
-      height: auto;
-      vertical-align: middle;
-      padding: 8px 4px;
-    }
-    
-    /* 模型名称样式 */
-    .model-name {
-      color: #0066cc;
-      font-weight: bold;
-      font-size: 0.95em;
-      display: block;
-      white-space: normal; /* 允许换行 */
-      /* 移除overflow和text-overflow限制 */
-    }
-    
-    /* 机构名称样式 */
-    .model-affiliation {
-      display: block;
-      font-size: 0.75em;
-      font-weight: normal;
-      color: #666;
-      margin-top: 2px;
-      white-space: normal; /* 允许换行 */
-      /* 移除overflow和text-overflow限制 */
-    }
-    
-    /* 数据单元格样式 */
-    .results-table tbody td:not(:first-child):not(:nth-child(2)) {
-      white-space: normal; /* 允许换行 */
-      font-size: 0.9em;
-    }
-    
-    /* 其他样式保持不变 */
-    .results-table tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-    .results-table tr:nth-child(odd) {
-      background-color: #ffffff;
-    }
-    .results-table tr:hover {
-      background-color: #f1f1f1;
-    }
-    .results-table thead tr {
-      background-color: #e6e6e6;
-    }
-    /* 最佳值加粗显示 */
-    .results-table .highlight {
-      /* 移除font-weight: bold; */
-      /* 可以保留其他highlight样式，如颜色等 */
-    }
-    /* GPT指标名称为绿色 */
-    .results-table .green-text {
-      color: green;
-      font-weight: bold;
-    }
-    /* GPT-4o的GPT指标值为灰色 */
-    .results-table .gray-text {
-      color: gray;
-    }
-    /* Human行背景色 */
-    .results-table .gray-row {
-      background-color: #f2f2f2;
-    }
-    /* 行号样式 */
-    .results-table .row-number {
-      width: 40px;
-      text-align: center;
-      color: #666;
-      font-weight: normal;
-    }
-    
-    /* 为表格的最后一列添加加粗样式 */
-    .results-table td:last-child {
-      font-weight: bold;
-    }
-    
-    /* 确保其他列不加粗（覆盖之前可能的highlight样式） */
-    .results-table td:not(:last-child) {
-      font-weight: normal;
-    }
-  </style>
   
   <!-- Load benchmark data and rendering scripts -->
   <script src="./static/js/benchmark_data.js"></script>
   <script src="./static/js/render_tables.js"></script>
   <!-- <script src="./static/js/leaderboard_data.js"></script> -->
-  <script src="./static/js/leaderboard.js"></script>
+  <script defer src="./static/js/leaderboard.js"></script>
 </head>
 <body>
 
@@ -497,7 +351,7 @@
 
 </section>
 
-<section class="section">
+<!-- <section class="section">
   <div class="container">
     <h2 class="title is-3">Leaderboard</h2>
 
@@ -544,7 +398,7 @@
       <p class="lb-note">Tip: click a model bar to highlight it.</p>
     </div>
   </div>
-</section>
+</section> -->
 
 <main class="page">
   <header class="header">

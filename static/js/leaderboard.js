@@ -5,8 +5,21 @@
    - "Show unknown size" toggle
    - Slice labels already contain n= in JSON keys
 */
+function resolveDataUrl() {
+  // Resolve relative to *this script* (works even when the page is hosted under a subpath).
+  const script =
+    document.currentScript ||
+    document.querySelector('script[src$="leaderboard.js"]') ||
+    document.querySelector('script[src$="/leaderboard.js"]');
+  if (script && script.src) {
+    return new URL("leaderboard_data.json", script.src).toString();
+  }
+  // Fallback: relative to page URL.
+  return "./static/js/leaderboard_data.json";
+}
 
-const DATA_URL = "./leaderboard_data.json";
+const DATA_URL = resolveDataUrl();
+
 
 const el = (id) => document.getElementById(id);
 
@@ -370,8 +383,14 @@ function refreshChartOnly() {
 
 async function main() {
   const res = await fetch(DATA_URL, { cache: "no-store" });
-  const data = await res.json();
-  state.data = data;
+if (!res.ok) {
+  // Helpful debug: when a 404 HTML page is returned, res.json() throws "Unexpected token <".
+  const preview = await res.text().catch(() => "");
+  const head = preview ? preview.slice(0, 140).replace(/\s+/g, " ") : "";
+  throw new Error(`Failed to fetch leaderboard data: ${DATA_URL} (HTTP ${res.status}). ${head ? "Response starts with: " + head : ""}`);
+}
+const data = await res.json();
+state.data = data;
 
   // initial defaults
   state.split = Object.keys(data.splits)[0];
@@ -392,5 +411,13 @@ async function main() {
 
 main().catch((e) => {
   console.error(e);
-  el("chartTitle").textContent = "Failed to load leaderboard data.";
+  const msg = "Failed to load leaderboard data.";
+  const titleEl = el("chartTitle");
+  if (titleEl) titleEl.textContent = msg;
+
+  const empty = el("emptyState");
+  if (empty) {
+    empty.classList.remove("hidden");
+    empty.textContent = `${msg} ${e && e.message ? "(" + e.message + ")" : ""}`;
+  }
 });
