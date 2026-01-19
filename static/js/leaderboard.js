@@ -161,17 +161,38 @@
     render();
   }
 
-  function renderGroupVertical(groupName, models) {
-    // sort within group by score desc
-    const sorted = models.slice().sort((a, b) => b.score - a.score);
-
-    const cols = sorted
-      .map((m) => {
-        const pct = clampPct(m.score);
+  function renderSingleChartVertical(groupedModels) {
+    // groupedModels: [{ group, models: [...] }, ...]
+    // Build one long list, but insert group separators.
+    const columns = [];
+  
+    for (const { group, models } of groupedModels) {
+      // group header "column" (spacer)
+      columns.push({ type: "group", group });
+  
+      // sort within group by score desc
+      const sorted = models.slice().sort((a, b) => b.score - a.score);
+      for (const m of sorted) {
+        columns.push({ type: "model", model: m });
+      }
+    }
+  
+    const colsHTML = columns
+      .map((item) => {
+        if (item.type === "group") {
+          return `
+            <div class="lb-barcol lb-group-col" aria-hidden="true">
+              <div class="lb-group-chip">${item.group}</div>
+            </div>
+          `;
+        }
+  
+        const m = item.model;
+        const pct = clampPct(m.score); // 0..100
         const meta = formatSize(m);
         const selected = m.id === state.selectedModelId ? "is-selected" : "";
         const title = `${m.name}: ${m.score.toFixed(2)}${meta ? ` (${meta})` : ""}`;
-
+  
         return `
           <div class="lb-barcol ${selected}" data-model="${m.id}" title="${title}">
             <div class="lb-score">${m.score.toFixed(2)}</div>
@@ -182,20 +203,17 @@
         `;
       })
       .join("");
-
+  
     return `
-      <div class="lb-group">
-        <div class="lb-group-title">${groupName}</div>
-        <div class="lb-vchart">
-          ${axisHTML()}
-          <div class="lb-bars">
-            ${cols}
-          </div>
+      <div class="lb-vchart">
+        ${axisHTML()}
+        <div class="lb-bars">
+          ${colsHTML}
         </div>
       </div>
     `;
   }
-
+  
   function render() {
     const chart = $("#lb-chart");
     const note = $("#lb-note");
@@ -217,11 +235,10 @@
       })
       .filter((m) => m.score != null);
 
-    const grouped = modelsByGroup(models);
+      const grouped = modelsByGroup(models);
 
-    chart.innerHTML = grouped
-      .map(({ group, models }) => renderGroupVertical(group, models))
-      .join("");
+      // ONE shared chart/plane
+      chart.innerHTML = renderSingleChartVertical(grouped);      
 
     // attach click handlers for highlight feature (#3)
     chart.querySelectorAll(".lb-barcol").forEach((el) => {
