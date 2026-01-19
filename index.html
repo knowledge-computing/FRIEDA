@@ -546,6 +546,62 @@
   </div>
 </section>
 
+<main class="page">
+  <header class="header">
+    <h1 class="title">Leaderboard</h1>
+  </header>
+
+  <section class="card">
+    <div class="controls">
+      <div class="control">
+        <label for="split">Split</label>
+        <select id="split"></select>
+      </div>
+
+      <div class="control">
+        <label for="subset">Subset</label>
+        <select id="subset"></select>
+      </div>
+
+      <div class="control">
+        <label for="view">View</label>
+        <select id="view"></select>
+      </div>
+
+      <div class="control">
+        <label for="slice">Slice</label>
+        <select id="slice"></select>
+      </div>
+
+      <label class="checkbox">
+        <input id="showUnknown" type="checkbox" />
+        <span>Show models with unknown size</span>
+      </label>
+
+      <div class="control highlightPick">
+        <label for="highlightModel">Highlight</label>
+        <select id="highlightModel"></select>
+      </div>
+    </div>
+
+    <div class="chartWrap">
+      <div class="chartHeader">
+        <div class="chartTitle" id="chartTitle">—</div>
+        <div class="chartHint">Tip: click a bar (or use Highlight) to focus.</div>
+      </div>
+
+      <div class="scrollX">
+        <!-- SVG injected here -->
+        <div id="chartMount" class="chartMount"></div>
+      </div>
+
+      <div id="emptyState" class="emptyState hidden">
+        No data for this selection (try a different subset/view/slice).
+      </div>
+    </div>
+  </section>
+</main>
+
 
 
 <section class="section">

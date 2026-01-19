@@ -1,323 +1,130 @@
-/* static/css/leaderboard.css */
+:root {
+  --bg: #ffffff;
+  --card: #ffffff;
+  --border: #eaeaea;
+  --text: #111827;
+  --muted: #6b7280;
 
-.lb-card {
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 12px;
-  padding: 16px;
+  /* Purple (as you requested) */
+  --bar: #7c3aed;          /* purple-600 */
+  --barHover: #6d28d9;     /* purple-700 */
+  --barDim: rgba(124, 58, 237, 0.25);
+
+  --highlight: #111827;    /* outline for highlight */
+  --grid: #eef2f7;
 }
 
-.lb-controls {
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--bg);
+  color: var(--text);
+}
+
+.page { padding: 28px; max-width: 1200px; margin: 0 auto; }
+.header { margin-bottom: 18px; }
+.title { font-size: 44px; letter-spacing: -0.02em; margin: 0; }
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--card);
+  padding: 18px;
+}
+
+.controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 14px;
-  align-items: center;
-  margin-bottom: 12px;
+  gap: 14px 18px;
+  align-items: end;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 14px;
 }
 
-.lb-controls .control {
+.control { display: flex; flex-direction: column; gap: 6px; }
+.control label { font-weight: 600; font-size: 14px; color: var(--text); }
+
+select {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 14px;
+  background: white;
+  min-width: 160px;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  user-select: none;
+  color: var(--text);
+}
+.checkbox input { width: 16px; height: 16px; }
+
+.highlightPick select { min-width: 220px; }
+
+.chartWrap { margin-top: 8px; }
+.chartHeader {
   display: flex;
-  gap: 8px;
-  align-items: center;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+.chartTitle { font-size: 16px; font-weight: 700; }
+.chartHint { font-size: 13px; color: var(--muted); }
+
+.scrollX {
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 14px;
+  border: 1px solid var(--border);
 }
 
-.lb-note {
-  font-size: 0.9rem;
-  opacity: 0.75;
-  margin: 6px 0 0;
-}
+.chartMount { padding: 8px; }
 
-/* --- Vertical chart --- */
-
-.lb-group {
-  margin-top: 18px;
-}
-
-.lb-group-title {
-  font-weight: 700;
-  opacity: 0.9;
-  margin: 10px 0 10px;
-}
-
-/* Group separator column */
-.lb-group-col {
-  cursor: default;
-}
-
-.lb-group-chip {
-  font-size: 0.78rem;
-  font-weight: 700;
-  opacity: 0.85;
-  padding: 6px 8px;
-  border-radius: 999px;
-  background: rgba(0,0,0,0.06);
-  text-align: center;
-  max-width: 66px;
-  line-height: 1.1;
-}
-
-.lb-vchart {
-  border: 1px solid rgba(0,0,0,0.08);
+.emptyState {
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px dashed var(--border);
   border-radius: 12px;
-  padding: 14px 14px 10px 14px;
-  overflow-x: auto;   /* only horizontal scroll if needed */
-  overflow-y: hidden; /* prevent the ugly vertical scrollbar */
+  color: var(--muted);
+}
+.hidden { display: none; }
+
+/* SVG styles */
+svg { display: block; }
+
+.axisText { fill: var(--muted); font-size: 12px; }
+.valueText { fill: #111827; font-size: 12px; font-weight: 700; }
+.modelText { fill: #111827; font-size: 12px; }
+.metaText { fill: var(--muted); font-size: 11px; }
+
+.gridLine { stroke: var(--grid); stroke-width: 1; }
+.axisLine { stroke: #cfd6e4; stroke-width: 1; }
+
+.bar {
+  fill: var(--bar);
+  cursor: pointer;
+  transition: opacity 120ms ease, transform 120ms ease, fill 120ms ease;
+}
+.bar:hover { fill: var(--barHover); }
+
+.bar.dimmed { opacity: 0.28; }
+.bar.highlighted {
+  opacity: 1 !important;
+  outline: none;
 }
 
-.lb-plot {
-  position: relative;
-  height: 360px;      /* chart height like the screenshot */
-  min-width: 900px;   /* helps keep spacing similar to BigCode */
-}
-
-.lb-axis {
-  position: absolute;
-  inset: 0;
+.barOutline {
+  fill: none;
+  stroke: var(--highlight);
+  stroke-width: 2;
   pointer-events: none;
 }
-
-.lb-axis-line {
-  position: absolute;
-  left: 52px;   /* leave space for y labels */
-  right: 0;
-  height: 1px;
-  background: rgba(0,0,0,0.10);
-}
-
-.lb-axis-label {
-  position: absolute;
-  left: 0;
-  width: 48px;
-  text-align: right;
-  padding-right: 6px;
-  transform: translateY(-50%);
-  font-size: 0.8rem;
-  opacity: 0.65;
-}
-
-.lb-bars {
-  position: absolute;
-  left: 60px;   /* start after y-axis */
-  right: 0;
-  bottom: 0;
-  top: 0;
-
-  display: flex;
-  align-items: flex-end;
-  gap: 18px;
-  padding-bottom: 50px; /* room for rotated labels */
-}
-
-.lb-baritem {
-  width: 78px;         /* bar width */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  user-select: none;
-}
-
-.lb-value {
-  font-variant-numeric: tabular-nums;
-  font-weight: 700;
-  font-size: 0.9rem;
-  opacity: 0.85;
-  margin-bottom: 6px;
-}
-
-.lb-bar {
-  width: 100%;
-  height: 0%;
-  background: #fbbf24; /* yellow bars like screenshot */
-  border-radius: 10px 10px 6px 6px;
-  transition: height 160ms ease, filter 160ms ease, outline 160ms ease;
-}
-
-.lb-baritem:hover .lb-bar {
-  filter: brightness(0.95);
-}
-
-.lb-xlab {
-  margin-top: 10px;
-  font-size: 0.82rem;
-  line-height: 1.1;
-  opacity: 0.9;
-
-  transform: rotate(-45deg);
-  transform-origin: top left;
-  white-space: nowrap;
-}
-
-.lb-xmeta {
-  margin-top: 4px;
-  font-size: 0.72rem;
-  opacity: 0.65;
-}
-
-/* Hatch pattern for unknown-size models (matches BigCode-ish texture) */
-.lb-bar.is-unknown {
-  background-color: #fbbf24;
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgba(0,0,0,0.18) 0px,
-    rgba(0,0,0,0.18) 3px,
-    rgba(0,0,0,0.00) 3px,
-    rgba(0,0,0,0.00) 7px
-  );
-}
-
-/* Highlight selected model */
-.lb-baritem.is-selected .lb-bar {
-  outline: 3px solid rgba(0,0,0,0.55);
-}
-
-.lb-baritem.is-selected .lb-xlab {
-  font-weight: 800;
-}
-
-/* =========================
-   BigCode-style (scoped)
-   paste at END of file
-   ========================= */
-
-   .lb-bigcode{
-    border: 1px solid rgba(0,0,0,0.08);
-    border-radius: 12px;
-    padding: 14px 14px 10px 14px;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-  
-  .lb-bigcode .lb-plot{
-    position: relative;
-    height: 360px;
-    min-width: 1000px;
-  }
-  
-  .lb-bigcode .lb-axis{
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-  }
-  
-  .lb-bigcode .lb-axis-line{
-    position: absolute;
-    left: 52px;
-    right: 0;
-    height: 1px;
-    background: rgba(0,0,0,0.10);
-  }
-  
-  .lb-bigcode .lb-axis-label{
-    position: absolute;
-    left: 0;
-    width: 48px;
-    text-align: right;
-    padding-right: 6px;
-    transform: translateY(-50%);
-    font-size: 0.8rem;
-    opacity: 0.65;
-  }
-  
-  /* the bar row */
-  .lb-bigcode .lb-bars{
-    position: absolute;
-    left: 60px;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  
-    display: flex;
-    align-items: flex-end;
-    gap: 18px;
-  
-    padding-bottom: 70px; /* room for rotated labels */
-    width: max-content;
-  }
-  
-  /* each bar item */
-  .lb-bigcode .lb-baritem{
-    width: 78px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .lb-bigcode .lb-value{
-    font-variant-numeric: tabular-nums;
-    font-weight: 700;
-    font-size: 0.9rem;
-    opacity: 0.85;
-    margin-bottom: 6px;
-  }
-  
-  /* IMPORTANT: fixed-height wrapper so % heights work */
-  .lb-bigcode .lb-barwrap{
-    height: 250px;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-  }
-  
-  /* FORCE yellow bars, regardless of older CSS */
-  .lb-bigcode .lb-bar{
-    width: 100%;
-    height: 0%;
-    display: block;
-    background: #fbbf24 !important; /* yellow */
-    border-radius: 10px 10px 6px 6px;
-    transition: height 160ms ease, filter 160ms ease, outline 160ms ease;
-  }
-  
-  .lb-bigcode .lb-baritem:hover .lb-bar{
-    filter: brightness(0.95);
-  }
-  
-  /* Hatch pattern for unknown-size */
-  .lb-bigcode .lb-bar.is-unknown{
-    background-color: #fbbf24 !important;
-    background-image: repeating-linear-gradient(
-      45deg,
-      rgba(0,0,0,0.18) 0px,
-      rgba(0,0,0,0.18) 3px,
-      rgba(0,0,0,0.00) 3px,
-      rgba(0,0,0,0.00) 7px
-    );
-  }
-  
-  /* ✅ FIX LABELS: keep a fixed label box; rotate only the span */
-  .lb-bigcode .lb-xlab{
-    margin-top: 10px;
-    width: 100%;
-    height: 60px;        /* reserve space under plot */
-    position: relative;
-    overflow: visible;
-  }
-  
-  .lb-bigcode .lb-xlab span{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transform: rotate(-45deg);
-    transform-origin: left bottom;
-    white-space: nowrap;
-    font-size: 0.82rem;
-    line-height: 1.1;
-    opacity: 0.9;
-  }
-  
-  .lb-bigcode .lb-xmeta{
-    margin-top: 4px;
-    font-size: 0.72rem;
-    opacity: 0.65;
-  }
-  
-  /* highlight selected */
-  .lb-bigcode .lb-baritem.is-selected .lb-bar{
-    outline: 3px solid rgba(0,0,0,0.55);
-  }
-  .lb-bigcode .lb-baritem.is-selected .lb-xlab span{
-    font-weight: 800;
-  }
-  
