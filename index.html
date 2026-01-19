@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
@@ -189,6 +190,8 @@
   <!-- Load benchmark data and rendering scripts -->
   <script src="./static/js/benchmark_data.js"></script>
   <script src="./static/js/render_tables.js"></script>
+  <script src="./static/js/leaderboard_data.js"></script>
+  <script src="./static/js/leaderboard.js"></script>
 </head>
 <body>
 
@@ -493,6 +496,55 @@
   </div>
 
 </section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3">Leaderboard</h2>
+
+    <div class="lb-card">
+      <div class="lb-controls">
+        <div class="control">
+          <label><strong>Split</strong></label>
+          <div class="select is-small">
+            <select id="lb-split"></select>
+          </div>
+        </div>
+
+        <div class="control">
+          <label><strong>Subset</strong></label>
+          <div class="select is-small">
+            <select id="lb-subset"></select>
+          </div>
+        </div>
+
+        <div class="control">
+          <label><strong>View</strong></label>
+          <div class="select is-small">
+            <select id="lb-dimension"></select>
+          </div>
+        </div>
+
+        <div class="control">
+          <label><strong>Slice</strong></label>
+          <div class="select is-small">
+            <select id="lb-slice"></select>
+          </div>
+        </div>
+
+        <div class="control">
+          <label class="checkbox">
+            <input id="lb-unknown" type="checkbox" />
+            Show models with unknown size
+          </label>
+        </div>
+      </div>
+
+      <p id="lb-note" class="lb-note"></p>
+      <div id="lb-chart" class="lb-table"></div>
+    </div>
+  </div>
+</section>
+
 
 
 <section class="section">

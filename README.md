@@ -1,14 +1,17 @@
-# Nerfies
+# FRIEDA
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [FRIEDA website](https://knowledge-computing.github.io/FRIEDA/).
 
-If you find Nerfies useful for your work please cite:
+If you find FRIEDA useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@misc{friedabenchmark2025,
+      title={FRIEDA: Benchmarking Multi-Step Cartographic Reasoning in Vision-Language Models}, 
+      author={Jiyoon Pyo and Yuankun Jiao and Dongwon Jung and Zekun Li and Leeje Jang and Sofia Kirsanova and Jina Kim and Yijun Lin and Qin Liu and Junyi Xie and Hadi Askari and Nan Xu and Muhao Chen and Yao-Yi Chiang},
+      year={2025},
+      eprint={2512.08016},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2512.08016}, 
 }
 ```
 

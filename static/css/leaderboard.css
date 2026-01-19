@@ -1,0 +1,97 @@
+/* static/css/leaderboard.css */
+
+.lb-card {
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  
+  .lb-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .lb-controls .control {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .lb-note {
+    font-size: 0.9rem;
+    opacity: 0.75;
+    margin: 6px 0 0;
+  }
+  
+  .lb-table {
+    margin-top: 14px;
+  }
+  
+  .lb-group {
+    margin-top: 14px;
+  }
+  
+  .lb-group-title {
+    font-weight: 700;
+    opacity: 0.9;
+    margin: 14px 0 8px;
+  }
+  
+  .lb-row {
+    display: grid;
+    grid-template-columns: 260px 1fr 70px;
+    gap: 12px;
+    align-items: center;
+    padding: 6px 0;
+  }
+  
+  .lb-model {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+  }
+  
+  .lb-model .name {
+    font-weight: 600;
+  }
+  
+  .lb-model .meta {
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+  
+  .lb-bar-wrap {
+    position: relative;
+    height: 12px;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.06);
+    overflow: hidden;
+  }
+  
+  .lb-bar {
+    height: 100%;
+    width: 0%;
+    background: rgba(0,0,0,0.28);
+    border-radius: 999px;
+  }
+  
+  .lb-score {
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 900px) {
+    .lb-row {
+      grid-template-columns: 1fr;
+      gap: 6px;
+      padding: 10px 0;
+    }
+    .lb-score {
+      text-align: left;
+    }
+  }
+  
