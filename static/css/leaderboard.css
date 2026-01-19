@@ -173,3 +173,151 @@
 .lb-baritem.is-selected .lb-xlab {
   font-weight: 800;
 }
+
+/* =========================
+   BigCode-style (scoped)
+   paste at END of file
+   ========================= */
+
+   .lb-bigcode{
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+    padding: 14px 14px 10px 14px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .lb-bigcode .lb-plot{
+    position: relative;
+    height: 360px;
+    min-width: 1000px;
+  }
+  
+  .lb-bigcode .lb-axis{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  
+  .lb-bigcode .lb-axis-line{
+    position: absolute;
+    left: 52px;
+    right: 0;
+    height: 1px;
+    background: rgba(0,0,0,0.10);
+  }
+  
+  .lb-bigcode .lb-axis-label{
+    position: absolute;
+    left: 0;
+    width: 48px;
+    text-align: right;
+    padding-right: 6px;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    opacity: 0.65;
+  }
+  
+  /* the bar row */
+  .lb-bigcode .lb-bars{
+    position: absolute;
+    left: 60px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  
+    display: flex;
+    align-items: flex-end;
+    gap: 18px;
+  
+    padding-bottom: 70px; /* room for rotated labels */
+    width: max-content;
+  }
+  
+  /* each bar item */
+  .lb-bigcode .lb-baritem{
+    width: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .lb-bigcode .lb-value{
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-bottom: 6px;
+  }
+  
+  /* IMPORTANT: fixed-height wrapper so % heights work */
+  .lb-bigcode .lb-barwrap{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  /* FORCE yellow bars, regardless of older CSS */
+  .lb-bigcode .lb-bar{
+    width: 100%;
+    height: 0%;
+    display: block;
+    background: #fbbf24 !important; /* yellow */
+    border-radius: 10px 10px 6px 6px;
+    transition: height 160ms ease, filter 160ms ease, outline 160ms ease;
+  }
+  
+  .lb-bigcode .lb-baritem:hover .lb-bar{
+    filter: brightness(0.95);
+  }
+  
+  /* Hatch pattern for unknown-size */
+  .lb-bigcode .lb-bar.is-unknown{
+    background-color: #fbbf24 !important;
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(0,0,0,0.18) 0px,
+      rgba(0,0,0,0.18) 3px,
+      rgba(0,0,0,0.00) 3px,
+      rgba(0,0,0,0.00) 7px
+    );
+  }
+  
+  /* ✅ FIX LABELS: keep a fixed label box; rotate only the span */
+  .lb-bigcode .lb-xlab{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;        /* reserve space under plot */
+    position: relative;
+    overflow: visible;
+  }
+  
+  .lb-bigcode .lb-xlab span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 0.82rem;
+    line-height: 1.1;
+    opacity: 0.9;
+  }
+  
+  .lb-bigcode .lb-xmeta{
+    margin-top: 4px;
+    font-size: 0.72rem;
+    opacity: 0.65;
+  }
+  
+  /* highlight selected */
+  .lb-bigcode .lb-baritem.is-selected .lb-bar{
+    outline: 3px solid rgba(0,0,0,0.55);
+  }
+  .lb-bigcode .lb-baritem.is-selected .lb-xlab span{
+    font-weight: 800;
+  }
+  

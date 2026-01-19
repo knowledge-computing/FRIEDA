@@ -177,15 +177,17 @@
       return `
         <div class="lb-baritem ${selected}" data-model="${m.id}" title="${title}">
           <div class="lb-value">${m.score.toFixed(2)}</div>
-          <div class="lb-bar ${unknown}" style="height:${pct}%"></div>
-          <div class="lb-xlab">${m.name}</div>
+          <div class="lb-barwrap">
+            <div class="lb-bar ${unknown}" style="height:${pct}%"></div>
+          </div>
+          <div class="lb-xlab"><span>${m.name}</span></div>
           ${meta ? `<div class="lb-xmeta">${meta}</div>` : ``}
         </div>
       `;
     }).join("");
   
     return `
-      <div class="lb-vchart">
+      <div class="lb-vchart lb-bigcode">
         <div class="lb-plot">
           ${axisHTML()}
           <div class="lb-bars">
