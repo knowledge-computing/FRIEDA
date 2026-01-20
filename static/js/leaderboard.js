@@ -318,13 +318,13 @@ function renderChart(data, series, opts = {}) {
   }
 
   // axis line
-  const axisY = document.createElementNS(ns, "line");
-  axisY.setAttribute("x1", String(padL));
-  axisY.setAttribute("x2", String(padL));
-  axisY.setAttribute("y1", String(padT));
-  axisY.setAttribute("y2", String(padT + innerH));
-  axisY.setAttribute("class", "axisLine");
-  svg.appendChild(axisY);
+  // const axisY = document.createElementNS(ns, "line");
+  // axisY.setAttribute("x1", String(padL));
+  // axisY.setAttribute("x2", String(padL));
+  // axisY.setAttribute("y1", String(padT));
+  // axisY.setAttribute("y2", String(padT + innerH));
+  // axisY.setAttribute("class", "axisLine");
+  // svg.appendChild(axisY);
 
   const axisX = document.createElementNS(ns, "line");
   axisX.setAttribute("x1", String(padL));

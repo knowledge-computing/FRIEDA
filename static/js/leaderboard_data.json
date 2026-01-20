@@ -10,14 +10,14 @@
     { "id": "gpt_5_think", "name": "GPT-5-Think", "group": "Proprietary LVLMs", "paramsB": null, "open": false },
     { "id": "claude_sonnet_4", "name": "Claude-Sonnet-4", "group": "Proprietary LVLMs", "paramsB": null, "open": false },
 
-    { "id": "llava_next_110b", "name": "LLaVA-NeXT-110B", "group": "Open Source LVLMs", "paramsB": 110, "open": true },
-    { "id": "glm_4_5v_108b", "name": "GLM-4.5V-108B", "group": "Open Source LVLMs", "paramsB": 108, "open": true },
-    { "id": "internvl3_78b", "name": "InternVL3-78B", "group": "Open Source LVLMs", "paramsB": 78, "open": true },
-    { "id": "llava_onevision_72b", "name": "LLaVA-OneVision-72B", "group": "Open Source LVLMs", "paramsB": 72, "open": true },
-    { "id": "qwen2_5_vl_72b", "name": "Qwen2.5-VL-72B", "group": "Open Source LVLMs", "paramsB": 72, "open": true },
-    { "id": "internvl3_5_38b", "name": "InternVL3.5-38B", "group": "Open Source LVLMs", "paramsB": 38, "open": true },
-    { "id": "ovis2_34b", "name": "Ovis2-34B", "group": "Open Source LVLMs", "paramsB": 34, "open": true },
-    { "id": "ovis2_5_9b_think", "name": "Ovis2.5-9B-Think", "group": "Open Source LVLMs", "paramsB": 9, "open": true }
+    { "id": "llava_next_110b", "name": "LLaVA-NeXT", "group": "Open Source LVLMs", "paramsB": 110, "open": true },
+    { "id": "glm_4_5v_108b", "name": "GLM-4.5V", "group": "Open Source LVLMs", "paramsB": 108, "open": true },
+    { "id": "internvl3_78b", "name": "InternVL3", "group": "Open Source LVLMs", "paramsB": 78, "open": true },
+    { "id": "llava_onevision_72b", "name": "LLaVA-OneVision", "group": "Open Source LVLMs", "paramsB": 72, "open": true },
+    { "id": "qwen2_5_vl_72b", "name": "Qwen2.5-VL", "group": "Open Source LVLMs", "paramsB": 72, "open": true },
+    { "id": "internvl3_5_38b", "name": "InternVL3.5", "group": "Open Source LVLMs", "paramsB": 38, "open": true },
+    { "id": "ovis2_34b", "name": "Ovis2", "group": "Open Source LVLMs", "paramsB": 34, "open": true },
+    { "id": "ovis2_5_9b_think", "name": "Ovis2.5-Think", "group": "Open Source LVLMs", "paramsB": 9, "open": true }
   ],
   "splits": {
     "FRIEDA-direct": {
