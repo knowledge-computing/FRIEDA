@@ -95,28 +95,28 @@ function initControls(data) {
   el("showUnknown").checked = state.showUnknown;
 
   // highlight dropdown
-  const meta = modelMetaById(data);
-  const allModels = data.models
-    .filter((m) => m.id !== "human" || true) // keep human selectable too
-    .map((m) => m.id);
+  // const meta = modelMetaById(data);
+  // const allModels = data.models
+  //   .filter((m) => m.id !== "human" || true) // keep human selectable too
+  //   .map((m) => m.id);
 
-  const highlightSelect = el("highlightModel");
-  highlightSelect.innerHTML = "";
-  {
-    const opt0 = document.createElement("option");
-    opt0.value = "";
-    opt0.textContent = "None";
-    highlightSelect.appendChild(opt0);
-  }
-  for (const id of allModels) {
-    const m = meta.get(id);
-    const opt = document.createElement("option");
-    opt.value = id;
-    const sizeTxt = m.paramsB == null ? "params: unknown" : `params: ${m.paramsB}B`;
-    opt.textContent = `${m.name} (${sizeTxt})`;
-    highlightSelect.appendChild(opt);
-  }
-  highlightSelect.value = state.highlighted || "";
+  // const highlightSelect = el("highlightModel");
+  // highlightSelect.innerHTML = "";
+  // {
+  //   const opt0 = document.createElement("option");
+  //   opt0.value = "";
+  //   opt0.textContent = "None";
+  //   highlightSelect.appendChild(opt0);
+  // }
+  // for (const id of allModels) {
+  //   const m = meta.get(id);
+  //   const opt = document.createElement("option");
+  //   opt.value = id;
+  //   const sizeTxt = m.paramsB == null ? "params: unknown" : `params: ${m.paramsB}B`;
+  //   opt.textContent = `${m.name} (${sizeTxt})`;
+  //   highlightSelect.appendChild(opt);
+  // }
+  // highlightSelect.value = state.highlighted || "";
 }
 
 function wireEvents() {
@@ -152,11 +152,11 @@ function wireEvents() {
     refreshChartOnly();
   });
 
-  el("highlightModel").addEventListener("change", () => {
-    const v = el("highlightModel").value;
-    state.highlighted = v || null;
-    refreshChartOnly();
-  });
+  // el("highlightModel").addEventListener("change", () => {
+  //   const v = el("highlightModel").value;
+  //   state.highlighted = v || null;
+  //   refreshChartOnly();
+  // });
 }
 
 function computeSeries(data) {

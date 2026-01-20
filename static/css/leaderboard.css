@@ -1,13 +1,12 @@
 :root {
-  --bg: #ffffff;
+  --bg: #8f3636;
   --card: #ffffff;
   --border: #eaeaea;
   --text: #111827;
   --muted: #6b7280;
 
-  /* Purple (as you requested) */
-  --bar: #7c3aed;          /* purple-600 */
-  --barHover: #6d28d9;     /* purple-700 */
+  --bar: #cc86bc;
+  --barHover: #805976;
   --barDim: rgba(124, 58, 237, 0.25);
 
   --highlight: #111827;    /* outline for highlight */
