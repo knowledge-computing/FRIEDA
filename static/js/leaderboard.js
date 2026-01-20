@@ -292,19 +292,19 @@ function renderChart(data, series) {
     rect.setAttribute("y", String(y));
     rect.setAttribute("width", String(barW));
     rect.setAttribute("height", String(h));
-    rect.setAttribute("rx", "10");
+    rect.setAttribute("rx", "3");       // bar radius
     rect.setAttribute("class", "bar");
 
     if (dimOthers && d.id !== highlighted) rect.classList.add("dimmed");
     if (highlighted && d.id === highlighted) rect.classList.add("highlighted");
 
-    rect.addEventListener("click", () => {
-      state.highlighted = (state.highlighted === d.id) ? null : d.id;
-      el("highlightModel").value = state.highlighted || "";
-      refreshChartOnly();
-    });
+    // rect.addEventListener("click", () => {
+    //   state.highlighted = (state.highlighted === d.id) ? null : d.id;
+    //   el("highlightModel").value = state.highlighted || "";
+    //   refreshChartOnly();
+    // });
 
-    svg.appendChild(rect);
+    // svg.appendChild(rect);
 
     // outline for highlighted
     if (highlighted && d.id === highlighted) {
