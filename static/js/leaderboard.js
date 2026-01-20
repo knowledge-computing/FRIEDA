@@ -141,6 +141,7 @@ function wireEvents() {
 
   el("subset").addEventListener("change", () => {
     state.subset = el("subset").value;
+    state.animateNext = true;
     state.view = null;
     state.slice = null;
     refresh();
@@ -148,17 +149,20 @@ function wireEvents() {
 
   el("view").addEventListener("change", () => {
     state.view = el("view").value;
+    state.animateNext = true;
     state.slice = null;
     refresh();
   });
 
   el("slice").addEventListener("change", () => {
     state.slice = el("slice").value;
+    state.animateNext = true;
     refreshChartOnly();
   });
 
   el("showUnknown").addEventListener("change", () => {
     state.showUnknown = el("showUnknown").checked;
+    state.animateNext = true;
     refreshChartOnly();
   });
 
@@ -209,9 +213,9 @@ function computeSeries(data) {
 }
 
 function setChartTitle(data, series) {
-  const unit = data.meta?.unit || "%";
-  const title = `${state.split} • ${state.subset} • ${state.view} • ${state.slice}  (${unit}, y-max=100)`;
-  el("chartTitle").textContent = title;
+  // User requested removing the long dynamic title line.
+  const t = el("chartTitle");
+  if (t) t.textContent = "";
 }
 
 function renderChart(data, series, opts = {}) {
@@ -318,13 +322,13 @@ function renderChart(data, series, opts = {}) {
   }
 
   // axis line
-  // const axisY = document.createElementNS(ns, "line");
-  // axisY.setAttribute("x1", String(padL));
-  // axisY.setAttribute("x2", String(padL));
-  // axisY.setAttribute("y1", String(padT));
-  // axisY.setAttribute("y2", String(padT + innerH));
-  // axisY.setAttribute("class", "axisLine");
-  // svg.appendChild(axisY);
+  const axisY = document.createElementNS(ns, "line");
+  axisY.setAttribute("x1", String(padL));
+  axisY.setAttribute("x2", String(padL));
+  axisY.setAttribute("y1", String(padT));
+  axisY.setAttribute("y2", String(padT + innerH));
+  axisY.setAttribute("class", "axisLine");
+  svg.appendChild(axisY);
 
   const axisX = document.createElementNS(ns, "line");
   axisX.setAttribute("x1", String(padL));
