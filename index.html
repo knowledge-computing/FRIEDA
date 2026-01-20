@@ -43,7 +43,7 @@
   
   <!-- Load benchmark data and rendering scripts -->
   <script src="./static/js/benchmark_data.js"></script>
-  <script src="./static/js/render_tables.js"></script>
+  <!-- <script src="./static/js/render_tables.js"></script> -->
   <!-- <script src="./static/js/leaderboard_data.js"></script> -->
   <script defer src="./static/js/leaderboard.js"></script>
 </head>
@@ -330,17 +330,64 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
         <h2 class="title is-3">Leaderboard</h2>
+        <section class="card">
+          <div class="controls">
+            <div class="control">
+              <label for="split">Split</label>
+              <select id="split"></select>
+            </div>
+      
+            <div class="control">
+              <label for="subset">Subset</label>
+              <select id="subset"></select>
+            </div>
+      
+            <div class="control">
+              <label for="view">View</label>
+              <select id="view"></select>
+            </div>
+      
+            <div class="control">
+              <label for="slice">Slice</label>
+              <select id="slice"></select>
+            </div>
+      
+            <label class="checkbox">
+              <input id="showUnknown" type="checkbox" />
+              <span>Show models with unknown size</span>
+            </label>
+      
+            <div class="control highlightPick">
+              <label for="highlightModel">Highlight</label>
+              <select id="highlightModel"></select>
+            </div>
+          </div>
+      
+          <div class="chartWrap">
+            <div class="chartHeader">
+              <div class="chartTitle" id="chartTitle">—</div>
+              <div class="chartHint">Tip: click a bar (or use Highlight) to focus.</div>
+            </div>
+      
+            <div class="scrollX">
+              <!-- SVG injected here -->
+              <div id="chartMount" class="chartMount"></div>
+            </div>
+      
+            <div id="emptyState" class="emptyState hidden">
+              No data for this selection (try a different subset/view/slice).
+            </div>
+          </div>
+        </section>
         
-        <!-- 4D Object QA Results (现在放在前面) -->
-        <h3 class="title is-4" id="direct-leaderboard">FRIEDA-Direct Leaderboard</h3>
+        <!-- <h3 class="title is-4" id="direct-leaderboard">FRIEDA-Direct Leaderboard</h3> -->
         <!-- <div class="table-container">
           <div id="qa-table-container"></div>
         </div> -->
-        <div class="table-caption" id="direct-container"></div>
+        <!-- <div class="table-caption" id="direct-container"></div> -->
         
-        <!-- 4D Object Captioning Results (现在放在后面) -->
-        <h3 class="title is-4" id="contextual-leaderboard">FRIEDA-Contextual Leaderboard</h3>
-        <div class="table-container">
+        <!-- <h3 class="title is-4" id="contextual-leaderboard">FRIEDA-Contextual Leaderboard</h3>
+        <div class="table-container"> -->
           <!-- <div id="captioning-table-container"></div>
         </div>
         <div class="table-caption" id="contextual-container"></div> -->
@@ -399,64 +446,6 @@
     </div>
   </div>
 </section> -->
-
-<main class="page">
-  <header class="header">
-    <h1 class="title">Leaderboard</h1>
-  </header>
-
-  <section class="card">
-    <div class="controls">
-      <div class="control">
-        <label for="split">Split</label>
-        <select id="split"></select>
-      </div>
-
-      <div class="control">
-        <label for="subset">Subset</label>
-        <select id="subset"></select>
-      </div>
-
-      <div class="control">
-        <label for="view">View</label>
-        <select id="view"></select>
-      </div>
-
-      <div class="control">
-        <label for="slice">Slice</label>
-        <select id="slice"></select>
-      </div>
-
-      <label class="checkbox">
-        <input id="showUnknown" type="checkbox" />
-        <span>Show models with unknown size</span>
-      </label>
-
-      <div class="control highlightPick">
-        <label for="highlightModel">Highlight</label>
-        <select id="highlightModel"></select>
-      </div>
-    </div>
-
-    <div class="chartWrap">
-      <div class="chartHeader">
-        <div class="chartTitle" id="chartTitle">—</div>
-        <div class="chartHint">Tip: click a bar (or use Highlight) to focus.</div>
-      </div>
-
-      <div class="scrollX">
-        <!-- SVG injected here -->
-        <div id="chartMount" class="chartMount"></div>
-      </div>
-
-      <div id="emptyState" class="emptyState hidden">
-        No data for this selection (try a different subset/view/slice).
-      </div>
-    </div>
-  </section>
-</main>
-
-
 
 <section class="section">
   <div class="container is-max-desktop">
