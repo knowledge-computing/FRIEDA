@@ -298,13 +298,13 @@ function renderChart(data, series) {
     if (dimOthers && d.id !== highlighted) rect.classList.add("dimmed");
     if (highlighted && d.id === highlighted) rect.classList.add("highlighted");
 
-    // rect.addEventListener("click", () => {
-    //   state.highlighted = (state.highlighted === d.id) ? null : d.id;
-    //   el("highlightModel").value = state.highlighted || "";
-    //   refreshChartOnly();
-    // });
+    rect.addEventListener("click", () => {
+      state.highlighted = (state.highlighted === d.id) ? null : d.id;
+      el("highlightModel").value = state.highlighted || "";
+      refreshChartOnly();
+    });
 
-    // svg.appendChild(rect);
+    svg.appendChild(rect);
 
     // outline for highlighted
     if (highlighted && d.id === highlighted) {
