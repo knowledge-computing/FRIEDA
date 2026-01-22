@@ -37,6 +37,7 @@ body {
   flex-wrap: wrap;
   gap: 14px 18px;
   align-items: end;
+  justify-content: center;
   padding-bottom: 14px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 14px;
@@ -102,6 +103,7 @@ select {
 svg { display: block; }
 
 .axisText { fill: var(--muted); font-size: 12px; }
+.axisLabel { fill: var(--muted); font-size: 13px; font-weight: 600; }
 .valueText { fill: #111827; font-size: 12px; font-weight: 700; }
 .modelText { fill: #111827; font-size: 12px; }
 .modelText .metaTspan { fill: var(--muted); font-size: 11px; }

@@ -320,16 +320,7 @@ function renderChart(data, series, opts = {}) {
     txt.textContent = String(t);
     svg.appendChild(txt);
   }
-
-  // axis line
-  const axisY = document.createElementNS(ns, "line");
-  axisY.setAttribute("x1", String(padL));
-  axisY.setAttribute("x2", String(padL));
-  axisY.setAttribute("y1", String(padT));
-  axisY.setAttribute("y2", String(padT + innerH));
-  axisY.setAttribute("class", "axisLine");
-  svg.appendChild(axisY);
-
+  // axis lines
   const axisX = document.createElementNS(ns, "line");
   axisX.setAttribute("x1", String(padL));
   axisX.setAttribute("x2", String(svgW - padR));
@@ -337,6 +328,15 @@ function renderChart(data, series, opts = {}) {
   axisX.setAttribute("y2", String(padT + innerH));
   axisX.setAttribute("class", "axisLine");
   svg.appendChild(axisX);
+
+  // y-axis label
+  const yLabel = document.createElementNS(ns, "text");
+  yLabel.setAttribute("class", "axisLabel");
+  yLabel.setAttribute("text-anchor", "middle");
+  yLabel.setAttribute("transform", `translate(18,${padT + innerH / 2}) rotate(-90)`);
+  yLabel.textContent = "Accuracy (%)";
+  svg.appendChild(yLabel);
+
 
   // Bars
   const highlighted = state.highlighted;
@@ -401,7 +401,7 @@ function renderChart(data, series, opts = {}) {
 
     const labelOffset = Math.max(10, Math.min(18, Math.floor(barW * 0.7)));
     const lx = x + barW / 2 + labelOffset;
-    const ly = padT + innerH + 46;
+    const ly = padT + innerH + 34;
     lbl.setAttribute("transform", `translate(${lx},${ly}) rotate(-45)`);
 
     const t1 = document.createElementNS(ns, "tspan");
