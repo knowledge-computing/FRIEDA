@@ -114,7 +114,7 @@ svg { display: block; }
 
 .bar {
   fill: var(--bar);
-  cursor: pointer;
+  cursor: default;
   transition: opacity 120ms ease, transform 120ms ease, fill 120ms ease;
 }
 .bar:hover { fill: var(--barHover); }

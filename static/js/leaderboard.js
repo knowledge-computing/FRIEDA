@@ -30,6 +30,7 @@ const state = {
   view: null,
   slice: null,
   showUnknown: true,
+  // Click-to-highlight disabled (kept for backwards compatibility / future use)
   highlighted: null,
   animateNext: false
 };
@@ -95,7 +96,7 @@ function initControls(data) {
   // show unknown
   el("showUnknown").checked = state.showUnknown;
 
-  // Remove highlight dropdown from UI (highlight remains click-to-toggle on bars)
+  // Remove highlight dropdown from UI
   const hl = el("highlightModel");
   if (hl) {
     const wrap = hl.closest(".highlightPick") || hl.parentElement;
@@ -339,10 +340,6 @@ function renderChart(data, series, opts = {}) {
 
 
   // Bars
-  const highlighted = state.highlighted;
-
-  // If highlight is set, dim others (like BigCodeBench focus mode)
-  const dimOthers = !!highlighted;
 
   series.items.forEach((d, i) => {
     const x = padL + i * (barW + gap);
@@ -363,27 +360,9 @@ function renderChart(data, series, opts = {}) {
       rect.style.setProperty("--delay", `${i * 12}ms`);
     }
 
-    if (dimOthers && d.id !== highlighted) rect.classList.add("dimmed");
-    if (highlighted && d.id === highlighted) rect.classList.add("highlighted");
-
-    rect.addEventListener("click", () => {
-      state.highlighted = (state.highlighted === d.id) ? null : d.id;
-      refreshChartOnly();
-    });
+    // Click-to-highlight intentionally disabled.
 
     svg.appendChild(rect);
-
-    // outline for highlighted
-    if (highlighted && d.id === highlighted) {
-      const outline = document.createElementNS(ns, "rect");
-      outline.setAttribute("x", String(x - 2));
-      outline.setAttribute("y", String(y - 2));
-      outline.setAttribute("width", String(barW + 4));
-      outline.setAttribute("height", String(h + 4));
-      outline.setAttribute("rx", "4");
-      outline.setAttribute("class", "barOutline");
-      svg.appendChild(outline);
-    }
 
     // value on top
     const val = document.createElementNS(ns, "text");
@@ -401,7 +380,7 @@ function renderChart(data, series, opts = {}) {
 
     const labelOffset = Math.max(10, Math.min(18, Math.floor(barW * 0.7)));
     const lx = x + barW / 2 + labelOffset;
-    const ly = padT + innerH + 34;
+    const ly = padT + innerH + 22;
     lbl.setAttribute("transform", `translate(${lx},${ly}) rotate(-45)`);
 
     const t1 = document.createElementNS(ns, "tspan");
