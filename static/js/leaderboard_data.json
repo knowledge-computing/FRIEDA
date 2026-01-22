@@ -153,6 +153,62 @@
                 }
               }
             }
+          },
+
+          "Spatial relation": {
+            "slices": {
+              "Overall (n=500)": { "n": 500, "scores": { "gemini_2_5_pro": 36.60, "gpt_5_think": 37.00, "claude_sonnet_4": 28.4, "llava_next_110b": 3.8, "glm_4_5v_108b": 7.4, "internvl3_78b": 9.2, "llava_onevision_72b": 9.2, "qwen2_5_vl_72b": 26.40, "internvl3_5_38b": 12.00, "ovis2_34b": 16.00, "ovis2_5_9b_think": 24.8 } },
+              "Border (n=71)": { "n": 71, "scores": { "gemini_2_5_pro": 28.17, "gpt_5_think": 28.17, "claude_sonnet_4": 19.72, "llava_next_110b": 2.86, "glm_4_5v_108b": 9.46, "internvl3_78b": 2.82, "llava_onevision_72b": 7.04, "qwen2_5_vl_72b": 12.68, "internvl3_5_38b": 8.45, "ovis2_34b": 21.13, "ovis2_5_9b_think": 18.31 } },
+              "Distance (n=91)": { "n": 91, "scores": { "gemini_2_5_pro": 29.67, "gpt_5_think": 27.47, "claude_sonnet_4": 19.78, "llava_next_110b": 3.3, "glm_4_5v_108b": 0.00, "internvl3_78b": 5.49, "llava_onevision_72b": 5.49, "qwen2_5_vl_72b": 16.48, "internvl3_5_38b": 4.40, "ovis2_34b": 14.29, "ovis2_5_9b_think": 9.89 } },
+              "Equal (n=54)": { "n": 54, "scores": { "gemini_2_5_pro": 50.00, "gpt_5_think": 40.74, "claude_sonnet_4": 27.78, "llava_next_110b": 3.64, "glm_4_5v_108b": 6.00, "internvl3_78b": 5.56, "llava_onevision_72b": 3.7, "qwen2_5_vl_72b": 29.63, "internvl3_5_38b": 7.41, "ovis2_34b": 18.52, "ovis2_5_9b_think": 27.78 } },
+              "Intersect (n=80)": { "n": 80, "scores": { "gemini_2_5_pro": 21.25, "gpt_5_think": 36.25, "claude_sonnet_4": 23.75, "llava_next_110b": 7.50, "glm_4_5v_108b": 13.41, "internvl3_78b": 3.75, "llava_onevision_72b": 7.5, "qwen2_5_vl_72b": 16.25, "internvl3_5_38b": 7.5, "ovis2_34b": 18.75, "ovis2_5_9b_think": 21.25 } },
+              "Orientation (n=89)": { "n": 89, "scores": { "gemini_2_5_pro": 64.77, "gpt_5_think": 61.36, "claude_sonnet_4": 55.68, "llava_next_110b": 0.0, "glm_4_5v_108b": 1.12, "internvl3_78b": 30.68, "llava_onevision_72b": 17.05, "qwen2_5_vl_72b": 55.68, "internvl3_5_38b": 34.09, "ovis2_34b": 2.27, "ovis2_5_9b_think": 56.82 } },
+              "Within (n=115)": { "n": 115, "scores": { "gemini_2_5_pro": 30.17, "gpt_5_think": 30.17, "claude_sonnet_4": 23.28, "llava_next_110b": 5.17, "glm_4_5v_108b": 12.82, "internvl3_78b": 5.17, "llava_onevision_72b": 11.21, "qwen2_5_vl_72b": 25.86, "internvl3_5_38b": 8.62, "ovis2_34b": 21.55, "ovis2_5_9b_think": 17.24 } }
+            }
+          },
+
+          "Map count": {
+            "slices": {
+              "Single (n=202)": { "n": 202, "scores": { "gemini_2_5_pro": 25.25, "gpt_5_think": 26.24, "claude_sonnet_4": 20.30, "llava_next_110b": 1.99, "glm_4_5v_108b": 6.19, "internvl3_78b": 6.93, "llava_onevision_72b": 7.43, "qwen2_5_vl_72b": 18.32, "internvl3_5_38b": 8.42, "ovis2_34b": 14.36, "ovis2_5_9b_think": 20.79 } },
+              "Multi (n=298)": { "n": 298, "scores": { "gemini_2_5_pro": 44.30, "gpt_5_think": 44.30, "claude_sonnet_4": 33.89, "llava_next_110b": 5.03, "glm_4_5v_108b": 8.28, "internvl3_78b": 10.74, "llava_onevision_72b": 10.4, "qwen2_5_vl_72b": 31.88, "internvl3_5_38b": 14.43, "ovis2_34b": 17.11, "ovis2_5_9b_think": 27.52 } }
+            }
+          },
+
+          "Answer type": {
+            "slices": {
+              "Textual (n=372)": { "n": 372, "scores": { "gemini_2_5_pro": 31.99, "gpt_5_think": 31.72, "claude_sonnet_4": 23.12, "llava_next_110b": 4.85, "glm_4_5v_108b": 9.95, "internvl3_78b": 4.57, "llava_onevision_72b": 7.53, "qwen2_5_vl_72b": 21.24, "internvl3_5_38b": 7.53, "ovis2_34b": 19.62, "ovis2_5_9b_think": 19.62 } },
+              "Distance (n=45)": { "n": 45, "scores": { "gemini_2_5_pro": 17.78, "gpt_5_think": 28.89, "claude_sonnet_4": 17.78, "llava_next_110b": 2.22, "glm_4_5v_108b": 0.0, "internvl3_78b": 4.44, "llava_onevision_72b": 6.67, "qwen2_5_vl_72b": 11.11, "internvl3_5_38b": 4.44, "ovis2_34b": 15.56, "ovis2_5_9b_think": 6.67 } },
+              "Direction (n=83)": { "n": 83, "scores": { "gemini_2_5_pro": 67.47, "gpt_5_think": 65.06, "claude_sonnet_4": 57.83, "llava_next_110b": 0.0, "glm_4_5v_108b": 0.0, "internvl3_78b": 32.53, "llava_onevision_72b": 18.07, "qwen2_5_vl_72b": 57.83, "internvl3_5_38b": 36.14, "ovis2_34b": 0.00, "ovis2_5_9b_think": 57.83 } }
+            }
+          },
+
+          "Map element type": {
+            "slices": {
+              "Map text (n=366)": { "n": 366, "scores": { "gemini_2_5_pro": 37.43, "gpt_5_think": 38.25, "claude_sonnet_4": 29.78, "llava_next_110b": 3.01, "glm_4_5v_108b": 5.93, "internvl3_78b": 8.47, "llava_onevision_72b": 7.65, "qwen2_5_vl_72b": 27.32, "internvl3_5_38b": 13.39, "ovis2_34b": 13.93, "ovis2_5_9b_think": 26.23 } },
+              "Legend (n=417)": { "n": 417, "scores": { "gemini_2_5_pro": 35.49, "gpt_5_think": 34.53, "claude_sonnet_4": 26.38, "llava_next_110b": 4.32, "glm_4_5v_108b": 6.75, "internvl3_78b": 8.39, "llava_onevision_72b": 9.11, "qwen2_5_vl_72b": 24.46, "internvl3_5_38b": 10.31, "ovis2_34b": 16.31, "ovis2_5_9b_think": 22.30 } },
+              "Compass (n=137)": { "n": 137, "scores": { "gemini_2_5_pro": 50.36, "gpt_5_think": 51.09, "claude_sonnet_4": 43.07, "llava_next_110b": 0.00, "glm_4_5v_108b": 4.67, "internvl3_78b": 20.44, "llava_onevision_72b": 13.87, "qwen2_5_vl_72b": 41.61, "internvl3_5_38b": 23.26, "ovis2_34b": 5.11, "ovis2_5_9b_think": 40.15 } },
+              "Scale (n=46)": { "n": 46, "scores": { "gemini_2_5_pro": 19.57, "gpt_5_think": 30.43, "claude_sonnet_4": 19.57, "llava_next_110b": 2.17, "glm_4_5v_108b": 0.00, "internvl3_78b": 4.35, "llava_onevision_72b": 6.52, "qwen2_5_vl_72b": 13.04, "internvl3_5_38b": 4.35, "ovis2_34b": 15.22, "ovis2_5_9b_think": 8.70 } }
+            }
+          },
+
+          "Map element count": {
+            "slices": {
+              "1 (n=132)": { "n": 132, "scores": { "gemini_2_5_pro": 34.85, "gpt_5_think": 34.09, "claude_sonnet_4": 25.0, "llava_next_110b": 6.06, "glm_4_5v_108b": 10.95, "internvl3_78b": 6.06, "llava_onevision_72b": 9.85, "qwen2_5_vl_72b": 21.97, "internvl3_5_38b": 6.06, "ovis2_34b": 25.0, "ovis2_5_9b_think": 21.97 } },
+              "2 (n=279)": { "n": 279, "scores": { "gemini_2_5_pro": 34.77, "gpt_5_think": 35.48, "claude_sonnet_4": 27.24, "llava_next_110b": 3.94, "glm_4_5v_108b": 6.13, "internvl3_78b": 9.32, "llava_onevision_72b": 8.96, "qwen2_5_vl_72b": 26.88, "internvl3_5_38b": 13.62, "ovis2_34b": 14.7, "ovis2_5_9b_think": 24.01 } },
+              "3 (n=80)": { "n": 80, "scores": { "gemini_2_5_pro": 46.25, "gpt_5_think": 48.75, "claude_sonnet_4": 37.50, "llava_next_110b": 0.0, "glm_4_5v_108b": 3.33, "internvl3_78b": 15.0, "llava_onevision_72b": 8.75, "qwen2_5_vl_72b": 32.5, "internvl3_5_38b": 17.5, "ovis2_34b": 7.5, "ovis2_5_9b_think": 33.75 } },
+              "4 (n=9)": { "n": 9, "scores": { "gemini_2_5_pro": 33.33, "gpt_5_think": 22.22, "claude_sonnet_4": 33.33, "llava_next_110b": 0.0, "glm_4_5v_108b": 0.0, "internvl3_78b": 0.0, "llava_onevision_72b": 11.11, "qwen2_5_vl_72b": 22.22, "internvl3_5_38b": 0.0, "ovis2_34b": 0.0, "ovis2_5_9b_think": 11.11 } }
+            }
+          },
+
+          "Domain": {
+            "slices": {
+              "Planning (n=112)": { "n": 112, "scores": { "gemini_2_5_pro": 39.22, "gpt_5_think": 36.27, "claude_sonnet_4": 30.39, "llava_next_110b": 3.92, "glm_4_5v_108b": 5.61, "internvl3_78b": 8.82, "llava_onevision_72b": 12.75, "qwen2_5_vl_72b": 25.49, "internvl3_5_38b": 10.78, "ovis2_34b": 16.67, "ovis2_5_9b_think": 20.59 } },
+              "Investment (n=27)": { "n": 27, "scores": { "gemini_2_5_pro": 40.74, "gpt_5_think": 25.93, "claude_sonnet_4": 25.93, "llava_next_110b": 14.81, "glm_4_5v_108b": 0.0, "internvl3_78b": 7.41, "llava_onevision_72b": 14.81, "qwen2_5_vl_72b": 37.04, "internvl3_5_38b": 14.81, "ovis2_34b": 25.93, "ovis2_5_9b_think": 18.52 } },
+              "Environment (n=100)": { "n": 100, "scores": { "gemini_2_5_pro": 34.00, "gpt_5_think": 34.0, "claude_sonnet_4": 24.0, "llava_next_110b": 3.0, "glm_4_5v_108b": 5.66, "internvl3_78b": 12.0, "llava_onevision_72b": 9.0, "qwen2_5_vl_72b": 20.0, "internvl3_5_38b": 9.0, "ovis2_34b": 12.0, "ovis2_5_9b_think": 25.0 } },
+              "Disaster (n=83)": { "n": 83, "scores": { "gemini_2_5_pro": 50.60, "gpt_5_think": 49.4, "claude_sonnet_4": 42.17, "llava_next_110b": 7.23, "glm_4_5v_108b": 10.23, "internvl3_78b": 13.25, "llava_onevision_72b": 10.84, "qwen2_5_vl_72b": 44.58, "internvl3_5_38b": 10.84, "ovis2_34b": 22.89, "ovis2_5_9b_think": 36.14 } },
+              "Parks (n=22)": { "n": 22, "scores": { "gemini_2_5_pro": 50.00, "gpt_5_think": 72.73, "claude_sonnet_4": 45.45, "llava_next_110b": 4.55, "glm_4_5v_108b": 0.0, "internvl3_78b": 18.18, "llava_onevision_72b": 18.18, "qwen2_5_vl_72b": 36.36, "internvl3_5_38b": 27.27, "ovis2_34b": 18.18, "ovis2_5_9b_think": 36.36 } },
+              "Geology (n=166)": { "n": 166, "scores": { "gemini_2_5_pro": 27.11, "gpt_5_think": 30.12, "claude_sonnet_4": 21.08, "llava_next_110b": 0.6, "glm_4_5v_108b": 8.29, "internvl3_78b": 4.82, "llava_onevision_72b": 4.22, "qwen2_5_vl_72b": 18.67, "internvl3_5_38b": 7.83, "ovis2_34b": 12.65, "ovis2_5_9b_think": 21.08 } }
+            }
           }
         }
       },
