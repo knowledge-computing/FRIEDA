@@ -1,0 +1,42 @@
+[
+    {
+        "question_text":"Identify the Federally Managed Mining Leases in Indin Lake Gold Property. These areas corresponds to which labeled areas. Give just the years. The labels are currently in form DATE NAME.",
+        "expected_answer":"2011-01-07; 2012-01-26",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9\/image82_3.jpeg",
+            "NI43-101\/C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9\/image76_3.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Equal"
+    },
+    {
+        "question_text":"Within the Perry River claim, what is the dominant geology unit code assigned to the area containing the 'MO RIP' mineral occurrence?",
+        "expected_answer":"mc",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_StamperOil_2023_STMP2301170550_STMP2301170550TR\/image29_m0.png",
+            "NI43-101\/C__SEDAR_FILINGS_StamperOil_2023_STMP2301170550_STMP2301170550TR\/image17_m0.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Equal"
+    },
+    {
+        "question_text":"What is the name of the northeastern boundary of the 1% Annual Chance Flood Hazard area of City of Harvey?",
+        "expected_answer":"CSX Transportation Soo Line",
+        "image_urls":[
+            "FEMA\/fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217\/image136_1.png",
+            "FEMA\/fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217\/image33_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Equal"
+    },
+    {
+        "question_text":"Which feature on the infrastructure map corresponds to Existing Component 60 of the Santander project?",
+        "expected_answer":"Worker camp",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101\/image71_3.jpeg",
+            "NI43-101\/C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101\/image241_3.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Equal"
+    }
+]

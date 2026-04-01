@@ -1,0 +1,95 @@
+[
+    {
+        "question_text":"In which direction is University Park located in relation to the Proposed Wet Pond within the MWRD City of Harvey BRIC Funding Infrastructure Project Area?",
+        "expected_answer":"South West",
+        "image_urls":[
+            "FEMA\/fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217\/image149_1.png",
+            "FEMA\/fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217\/image158_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"Which direction does Seeley Lake lie in relation to Marathon Project\u2019s Tailings Storage Facility?",
+        "expected_answer":"North West",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_1-TR\/image55_2.jpeg",
+            "NI43-101\/C__SEDAR_1-TR\/image39_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"What is the orientation of the Merrill-Crowe facility in relation to the Camp Area at the Silver Sand Project?",
+        "expected_answer":"South West",
+        "image_urls":[
+            "NI43-101\/C__Users_silve_Downloads_Sedar_PEATR\/image212_1.png",
+            "NI43-101\/C__Users_silve_Downloads_Sedar_PEATR\/image206_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"What is the orientation of the San Rafael tin mine relative to the La Princesa property?",
+        "expected_answer":"North West",
+        "image_urls":[
+            "NI43-101\/C__SEDARDocs_ASC-LaPrincesa_TechRep\/image53_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"What is the position of the drilling collars completed by 'UKHM' compared to the drilling collars by 'Spectrum (2003)' at AurMac Project?",
+        "expected_answer":"South West",
+        "image_urls":[
+            "NI43-101\/C__SEDARFILINGS_Banyan-TR_BanyanTR_ss\/image49_3.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"In the process plant layout, which feature (as given on the legend) is located closest to the northeast of the Caustic Reagent Store?",
+        "expected_answer":"Acidic Reagent Store",
+        "image_urls":[
+            "NI43-101\/l__SEDAR_Osino_DFSTechReportJuly132023_OsinoDFSJuly132023\/image526_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"What is the orientation of the eastern boundary of the Touril Mine (Mina Touril) relative to the eastern boundary of the Vale de Marcos Mine (Mina Vale de Marcos)?",
+        "expected_answer":"South West",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_01SEDARFilings_EuropacTECHRPT01312023JA\/image18_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"Which holding (name and T-code) lies immediately east of El Choque Seis?",
+        "expected_answer":"Huracan 4 R1A; T.246910",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_01SEDARFilings_AvinoTCHRPT03302023JA\/image47_2.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"What is the orientation of Sulphide Zone 3FW in relation to Sulphide Zone 2 for Agnico Eagle\u2019s LaRonde Complex?",
+        "expected_answer":"North",
+        "image_urls":[
+            "None\/None\/image86_2.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation"
+    },
+    {
+        "question_text":"What is the orientation of the Product Stockpile in relation to the Heap Leach Stockpile at the Fremont Gold Project?",
+        "expected_answer":"North East",
+        "image_urls":[
+            "NI43-101\/w__StrataboundMinerals_SEDAR_1194765_tech_Mar31_2023_file_strata_tr_03312023\/image264_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation"
+    }
+]

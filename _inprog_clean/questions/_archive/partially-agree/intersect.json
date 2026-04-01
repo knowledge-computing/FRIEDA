@@ -1,0 +1,105 @@
+[
+    {
+        "question_text":"The Trailbreak claims of Atsutla Gold Project is divided into multiple claim blocks associated with a unique number (e.g., 1083821). Identify the southernmost boundary of 'Umegran Joint Survey Area'. Which claim block is fully crossed by this boundary?",
+        "expected_answer":"1082066",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA\/image52_2.jpeg",
+            "NI43-101\/C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA\/image17_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"The Lekcin property is divided into 5 sub-areas. How many 2018 Friesen rock samples were collected within the sub-areas that are intersected by the power line?",
+        "expected_answer":"3",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_LEK_TechReport_2023_v3_5\/image19_1.jpeg",
+            "NI43-101\/C__SEDAR_FILINGS_LEK_TechReport_2023_v3_5\/image22_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"Which claim block(s) of the UEX Christie Lake Project are crossed by the power line?",
+        "expected_answer":"CBS 8027; S-101722",
+        "image_urls":[
+            "NI43-101\/i__SEDAR_DenisonMines_2023_DenisonTRVol\/image33_1.png",
+            "NI43-101\/i__SEDAR_DenisonMines_2023_DenisonTRVol\/image55_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"What is the name of the current mineral resource that is crossed by westernmost alteration and deformation corridor of Pure Gold property?",
+        "expected_answer":"Russet",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_1-TR\/image60_1.jpeg",
+            "NI43-101\/C__SEDAR_1-TR\/image49_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"How many S-# blocks does the 'Interp. Brittle Fault' cross within the Red Willow project area?",
+        "expected_answer":"6",
+        "image_urls":[
+            "NI43-101\/C__RedWillow_TechnicalReport\/image23_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"Which claim block(s) included in lithium deal for Tonopah North Project is (are) crossed by the county line?",
+        "expected_answer":"TN165; TN167; TN169; TN170; TN172; TN174",
+        "image_urls":[
+            "NI43-101\/C__FILINGS_Tearlach_Tearlach_TechnicalReport\/image14_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"Which proposed hole of ZEB project lies on the longest section line.",
+        "expected_answer":"Z19",
+        "image_urls":[
+            "NI43-101\/C__Data_zbnitrjul17\/image169_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"The Niblack Exploration Drift intersects with a stream originating from which body of water?",
+        "expected_answer":"Waterfall Creek",
+        "image_urls":[
+            "NI43-101\/C__FILINGS_SEDAR-OTC-CSE_1_TechReport_2022_FINAL\/image22_2.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"The Jasperoide's_Concessions Concessions are divided into multiple concession blocks with unique IDs (e.g., Jasperoide 25). Which concession block is intersected by the boundary of the CC Yanque community?",
+        "expected_answer":"Jasperoide 41",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_TechnicalReport\/image35_m0.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"How many 2022 Rock Sample Locations are along the southern edge of St. Anthony property?",
+        "expected_answer":"2",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_Jerico-Cumberland_TR-ST-ANT-FINAL\/image29_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"In the Osprey Grid region of Red Willow project, which Ground Geophysical Survey area is not crossed by the 'SWML Survey - 2007' lines?",
+        "expected_answer":"Gravity Survey - 2007",
+        "image_urls":[
+            "NI43-101\/C__RedWillow_TechnicalReport\/image53_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    }
+]

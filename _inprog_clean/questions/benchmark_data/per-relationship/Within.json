@@ -1,0 +1,1217 @@
+[
+    {
+        "question_ref":"q_0007",
+        "question_text":"Along Pine Street and Pike Street, how many 'Future Redevelopment & Renovation Project' areas overlap with the 'West Focus Area'?",
+        "expected_answer":"7",
+        "image_urls":[
+            "seattle-planning\/507SeattleStudio_Web\/image27_m1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0012",
+        "question_text":"In Seattle, which Urban Village 'Hub' is classified as 'Village with High Risk of Displacement and Low Access to Opportunity'?",
+        "expected_answer":"Bitter Lake Village",
+        "image_urls":[
+            "seattle-planning\/EDIImpPlan042916final\/image26_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0018",
+        "question_text":"Identify the area within the 0.25 Mile Buffer from Ballard-Interbay MIC where the 'Abandoned landfill' overlaps with the '1000' methane buffer'. How many 'Toxics Cleanup' points are located within this area?",
+        "expected_answer":"1",
+        "image_urls":[
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image323_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0020",
+        "question_text":"Identify the Noise-sensitive Area with the smallest area size. In which Industrial Lands Subareas is this area located within?",
+        "expected_answer":"SoDo Stadium",
+        "image_urls":[
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image354_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0024",
+        "question_text":"In the SoDo Stadium Industrial Lands Subareas, how many 'Terminal & Rail Yard Gate' points are located outside the boundaries of both 'Intermodal Facilities'?",
+        "expected_answer":"7",
+        "image_urls":[
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image590_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0026",
+        "question_text":"Which 'National Register Districts' overlap with both the 'Ballard' and 'Interbay Dravus' Industrial Lands Subareas within the Ballard-Interbay MIC?",
+        "expected_answer":"Washington Ship Canal",
+        "image_urls":[
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image687_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0027",
+        "question_text":"How many 'Historic- Not Evaluated' Archaeological Resources are located within the 'Georgetown' Industrial Lands Subareas?",
+        "expected_answer":"5",
+        "image_urls":[
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image691_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0029",
+        "question_text":"Which Fire Battalions in the City of Seattle have no hospitals within their boundaries? Provide the answer in the format 'Battalion #'.",
+        "expected_answer":"Battalion 7",
+        "image_urls":[
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image742_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0031",
+        "question_text":"Seattle Public Schools classifies every 'Elementary Attendance Area' into one of 12 categories. Which categories contain the 'Highly Capable Cohort Site'?",
+        "expected_answer":"Robert Eagle Staff; Eckstein",
+        "image_urls":[
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image761_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0072",
+        "question_text":"Maharashtra State is divided into multiple districts, and each district is further divided into multiple tahsils. Identify the district named 'Thane'. How many 'Drought Affected Tahsil's are located within this district?",
+        "expected_answer":"1",
+        "image_urls":[
+            "aiib\/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project\/image51_1.png",
+            "aiib\/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project\/image52_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0083",
+        "question_text":"Within the '100 m Radius Study Areas' of Km 67\/3, Km 67\/20, and Km 67\/16\u201318, identify all 'Sensitive Features' point. Among these points, identify the one located in a different 'Landuse\/Landcover Class' from the others. What is the 'Landuse\/Landcover Class' of this point?",
+        "expected_answer":"Vegetation",
+        "image_urls":[
+            "aiib\/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project\/image193_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0087",
+        "question_text":"In the New Construction Plan, each building is labeled with a number, and multiple buildings may share the same number. How many buildings are within the 'Story Hotel Under Construction' area in Phase 2\/3 Construction?",
+        "expected_answer":"12",
+        "image_urls":[
+            "seychelles\/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1\/image47_1.png",
+            "seychelles\/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1\/image14_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0090",
+        "question_text":"Within Chinatown, Singapore, each area inside the conservation boundary is labeled with a name (e.g., TANGJONG PAGAR) and each Gazetted Monument is labeled with a number and name (e.g., 5: Al-Abrar Mosque). Which Gazetted Monuments are located in the area that contains the \u2018Future malls\u2019 line? Give just the names.",
+        "expected_answer":"Jamae Mosque; Sri Mariamman Temple",
+        "image_urls":[
+            "sg-ura\/AnnualReport_1997-1998\/image26_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0092",
+        "question_text":"Every 'Tower' point within the project location proposed by EQMS is associated with a code in the form 'TT-{NUMBER}'. Which 'Flood Prone Zone' is the tower point labeled 'TT-1\/1' located?",
+        "expected_answer":"Not Flood Prone",
+        "image_urls":[
+            "aiib\/Environmental-and-Social-Impact-Assessment\/image234_1.png",
+            "aiib\/Environmental-and-Social-Impact-Assessment\/image155_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0094",
+        "question_text":"In the Fisherman\u2019s Cove \/ H Resort area, there are four regions categorized as 'Land-birds Feeding Zones'. Identify the one that lies along the shoreline. How many 'Observed Nests' lie within this shoreline zone? Express your answer in form X\/Y, where X = number of shoreline nests and Y = total number of observed nests. Do not reduce the fraction.",
+        "expected_answer":"6-Mar",
+        "image_urls":[
+            "seychelles\/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1\/image69_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0096",
+        "question_text":"There are multiple numbered points along the boundary of the '181925 Sqm' region of Seychelles. The area and the surroundings are classified into four habitant categories: Macroalgae meadows, Sand banks, Rock\/Rubble beds, and Coral Reefs. Which habitat category lies between Point 6 and 7.",
+        "expected_answer":"Sand bank",
+        "image_urls":[
+            "seychelles\/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report\/image22_1.png",
+            "seychelles\/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report\/image193_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0101",
+        "question_text":"According to Ordnance Survey Ireland, locate the 'Ballymagroarty' point from the 'Remedial Action List of Public Water Supplies (July 2020)'. Which category from the 'Licensed Sites by Sector (September 2020)' is most prevalent in the area containing this point?",
+        "expected_answer":"Food & Drink Sector",
+        "image_urls":[
+            "ireland\/EPA_Irelands_Environment_2020\/image359_1.png",
+            "ireland\/EPA_Irelands_Environment_2020\/image262_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0103",
+        "question_text":"As given in the Extended Central Sketch Plan of Singapore, how many \u2018Major Bus Terminals\u2019 are located inside the \u2018High Density Housing with Commercial Uses\u2019 region?",
+        "expected_answer":"1",
+        "image_urls":[
+            "sg-ura\/30yrs-of-conservation\/image6_m1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0113",
+        "question_text":"Areas of the West Imphal District are classified under 6 geomorphology types and 4 soil types. Which soil type contains the area classified as 'Piedmot Slope'? (If the soil type name includes an '&', give only the part that comes after the '&'.)",
+        "expected_answer":"Fine, Ruptic Ultic Dystrochrepts",
+        "image_urls":[
+            "aiib\/IEE-20240306-iee-report\/image91_1.png",
+            "aiib\/IEE-20240306-iee-report\/image98_2.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0116",
+        "question_text":"The Ordnance Survey Ireland divides the country into counties, each labeled with either a number or a number-letter combination. How many 'Decrease' points for Rivers 2013-2018 Phosphate Trends are located within the county labeled '20'?",
+        "expected_answer":"4",
+        "image_urls":[
+            "ireland\/EPA_Irelands_Environment_2020\/image176_m1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0122",
+        "question_text":"The Fisherman's Cove \/ H Resort area is divided into 9 Vegetation-Habitat regions. Under the Phase 1\/3 Demolition, which Vegetation-Habitat regions fall within the demolition boundary?",
+        "expected_answer":"Hedge - Exotic; Ornamental Garden; Mixed Woodland",
+        "image_urls":[
+            "seychelles\/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1\/image18_1.png",
+            "seychelles\/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1\/image13_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0130",
+        "question_text":"TEAGASC identifies 11 'Great Soil Groups' in Ireland. What is the dominant 'Great Soil Group' in the Mid Western region of Ireland?",
+        "expected_answer":"Gleys",
+        "image_urls":[
+            "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image60_1.png",
+            "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image100_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0131",
+        "question_text":"Within the 'BUKIT PASOH' area of the Historic District Chinatown of Singapore, how many 'ENVELOPE CONTROL SITE's are located inside it?",
+        "expected_answer":"5",
+        "image_urls":[
+            "sg-ura\/30yrs-of-conservation\/image14_m0.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0133",
+        "question_text":"Identify the two types of 'Mammal Species at OTP' and the two types of 'Fish Species at OTP'. Which species has the greatest number of points within the 'Out Ta Paong - OPT Canal' boundary? Answer with the specific species name.",
+        "expected_answer":"Siamese Tiger Perch",
+        "image_urls":[
+            "aiib\/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject\/image176_1.png",
+            "aiib\/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject\/image177_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0134",
+        "question_text":"Within the region, all islands are labeled in the format 'Island name (country code)'. What are the country codes of the islands that have an Annual mean BaP concentration 'ng\/m^3' point in 2017?",
+        "expected_answer":"FR; NO",
+        "image_urls":[
+            "ireland\/EPA_Irelands_Environment_2020\/image79_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0135",
+        "question_text":"In the AIIB Project, the Critical Landslide Sites are divided into two regions: RE North and RE South. The Other Sites are grouped into three 'Group's, each consisting of multiple 'Pack's. Identify the Group located entirely within the 'RE South' region. What are the Pack numbers (with leading zeros) included in this Group?",
+        "expected_answer":"05; 07; 08; 09",
+        "image_urls":[
+            "aiib\/P000124-SL-Landslide\/image36_2.png",
+            "aiib\/P000124-SL-Landslide\/image37_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0136",
+        "question_text":"The Ordnance Survey Ireland records each 'Bathing Water Quality Status' with a unique number. What are the numbers of the points classified as having 'Sufficient' Bathing Water Quality Status within the 'Dublin Area'?",
+        "expected_answer":"6; 14; 17",
+        "image_urls":[
+            "ireland\/EPA_Irelands_Environment_2020\/image364_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0137",
+        "question_text":"Identify the 'Protected Landscape' located near the Al Ain National Zoo. What are the 'Destination' points that are situated within this protected landscape.",
+        "expected_answer":"Green Mubazzarah; Mezyad Desert Park, Jebel Hafeet Overlook",
+        "image_urls":[
+            "abu-dhabi\/2011-HM-Urban-Design21\/image46_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0142",
+        "question_text":"In the City of Seattle, which 'Fire 911 Responses by ZIP Code (2016-2020)' area is the 'Police HQ' located in?",
+        "expected_answer":"More than 30,000",
+        "image_urls":[
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image746_1.png",
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image751_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0143",
+        "question_text":"The Marlette Lake Dam Resilient Infrastructure project labels several points along the Project Site Access Route (e.g., \u2018Marlette Dam Construction Site\u2019). How many points labeled \u2018Flume Trail\u2019 lie within the Lake Tahoe\u2013Nevada State Park boundaries?",
+        "expected_answer":"1",
+        "image_urls":[
+            "FEMA\/fema_pdmc-pj-09-nv-2018-001-marlette-dea-20240710\/image28_1.png",
+            "FEMA\/fema_pdmc-pj-09-nv-2018-001-marlette-dea-20240710\/image10_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0152",
+        "question_text":"Each 'APE' region in the LPDM NM #1 Los Luceros Fire Mitigation Project is associated with a number (e.g., 151). Which 'APE' types overlap with the 'Orchard' Project Area Classifications?",
+        "expected_answer":"18; 11",
+        "image_urls":[
+            "FEMA\/fema_ehp-lpdm-pj-06-nm-2023-001-loslucerosfiremit-drafttea-2024412\/image52_m0.png",
+            "FEMA\/fema_ehp-lpdm-pj-06-nm-2023-001-loslucerosfiremit-drafttea-2024412\/image35_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0153",
+        "question_text":"In the T.C. Jester Stormwater Detention Basin, what are the 'Flood Hazard Zones' that contain the two 'Wet-Bottom Area in Proposed Basins'?",
+        "expected_answer":"1% Annual Chance Flood Hazard; Regulatory Floodway",
+        "image_urls":[
+            "FEMA\/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202\/image39_1.png",
+            "FEMA\/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202\/image98_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0160",
+        "question_text":"The T.C. Jester Stormwater Detention Basin consists of several area types ending with 'Wetlands'. Which type overlaps with the 'Proposed Basin 1A' Action Area? Provide the answer including the word 'Wetlands'.",
+        "expected_answer":"Delineated Wetlands",
+        "image_urls":[
+            "FEMA\/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202\/image99_1.png",
+            "FEMA\/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202\/image115_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0176",
+        "question_text":"Identify the 'Zone X500 - Areas of 500-Year Flood' region within the Virginia Street Drainage Improvements project. Which 'Soil Units' overlap with this area?",
+        "expected_answer":"URLX; LetA; LabA",
+        "image_urls":[
+            "FEMA\/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125\/image21_1.png",
+            "FEMA\/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125\/image17_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0178",
+        "question_text":"Which 'Evacuation Zones' is the Fort Myers Beach Fire Station #32 located in the Lee County Emergency Management?",
+        "expected_answer":"A",
+        "image_urls":[
+            "FEMA\/fema_rm-hurriance-ian-mat-report-12-2023\/image331_1.png",
+            "FEMA\/fema_rm-hurriance-ian-mat-report-12-2023\/image370_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0179",
+        "question_text":"Within Area 7 of North Shore Levee West, how many 'Closure Structures' are located in the 'Permanent Impact Area'?",
+        "expected_answer":"7",
+        "image_urls":[
+            "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image143_1.png",
+            "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image158_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0182",
+        "question_text":"In the City of Seattle, what type of 'Industrial Lands Subareas' does 'Terminal 91' belong to?",
+        "expected_answer":"Interbay Smith Cove",
+        "image_urls":[
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image752_m0.png",
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image786_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0192",
+        "question_text":"Which 'Flood Hazard Zones' area contains the 'Estuarine and Marine Wetland' region, as shown in the City of New Haven Inland and Coastal Flood Resiliency Project? Provide the name, excluding the 'Hazard Zone' portion.",
+        "expected_answer":"1% Annual Chance",
+        "image_urls":[
+            "FEMA\/fema_bric-emb-2021-br-002-0005-ct-newhaven-fea-signedfonsi-20240904\/image31_1.png",
+            "FEMA\/fema_bric-emb-2021-br-002-0005-ct-newhaven-fea-signedfonsi-20240904\/image34_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0196",
+        "question_text":"Identify the 'Wetland Area' of size 0.9 acres in the Wetland Delineation Proposed St. Louis School. What is the 'Sample Plot & ID' number located within this area?",
+        "expected_answer":"2",
+        "image_urls":[
+            "FEMA\/fema_dr-4559-st-louis-hs-appendix\/image136_1.png",
+            "FEMA\/fema_dr-4559-st-louis-hs-appendix\/image132_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0197",
+        "question_text":"Which Physiographic Division contains the 'Mille Lacs Sole Source Aquifer SSA' area?",
+        "expected_answer":"Western Lake",
+        "image_urls":[
+            "FEMA\/fema_ehp_il-in-oh-mi-mn-wi-floodcontrol-revdpea_03252025\/image37_1.png",
+            "FEMA\/fema_ehp_il-in-oh-mi-mn-wi-floodcontrol-revdpea_03252025\/image25_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0200",
+        "question_text":"Identify the 'Water Tank' point within the Search Buffer of Corbina Rd Tract. What is the ZIP code of the region where the Water Tank point is located?",
+        "expected_answer":"70607",
+        "image_urls":[
+            "FEMA\/fema_dr-4559-st-louis-hs-appendix\/image235_1.png",
+            "FEMA\/fema_dr-4559-st-louis-hs-appendix\/image247_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0201",
+        "question_text":"Which 'Flood Hazard Zone' overlaps the majority of the 'Freshwater Pond' in the Lumberton Loop Project Area?",
+        "expected_answer":"Regulatory Floodway",
+        "image_urls":[
+            "FEMA\/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614\/image36_1.png",
+            "FEMA\/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614\/image43_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_0202",
+        "question_text":"Within Area 6 of North Shore Levee West, how many \u2018Closure Structures\u2019 are located in the \u2018Vegetation Conversion Area\u2019?",
+        "expected_answer":"3",
+        "image_urls":[
+            "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image142_1.png",
+            "FEMA\/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126\/image157_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1001",
+        "question_text":"Location circle with which number is located inside of the PROPOSED NEW COMMERCIAL NODE in Cape Town?",
+        "expected_answer":"3",
+        "image_urls":[
+            "capetown\/District_Six_LSDF\/image28_1.png",
+            "capetown\/District_Six_LSDF\/image42_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1004",
+        "question_text":"What type of Targeting Agricultural Measures WFD 2nd Cycle Significant Pressures exists in Northern Ireland?",
+        "expected_answer":"WFD Catchments",
+        "image_urls":[
+            "ireland\/EPA_Irelands_Environment_2020\/image339_1.png",
+            "ireland\/EPA_Irelands_Environment_2020\/image368_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1012",
+        "question_text":"In the City of Seattle, which 'Elementary Attendance Area' is the 'Seattle Schools Administration' located in?",
+        "expected_answer":"Mercer",
+        "image_urls":[
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image760_1.png",
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image761_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1016",
+        "question_text":"In Seattle's proposed lid area, how many Gathering Spaces have their centers located within the Proposed Buildings?",
+        "expected_answer":"2",
+        "image_urls":[
+            "seattle-planning\/507SeattleStudio_Web\/image47_1.png",
+            "seattle-planning\/507SeattleStudio_Web\/image51_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1023",
+        "question_text":"In Cape Town, what type of area is the Possible Future Airport located in, excluding the area covered by Phase 1-4 IRT Phasing?",
+        "expected_answer":"Cultural Landscape",
+        "image_urls":[
+            "capetown\/Annexure B - Cape Town Spatial Development Framework\/image79_1.png",
+            "capetown\/Annexure B - Cape Town Spatial Development Framework\/image92_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1035",
+        "question_text":"In Seattle, WA, how many Very Good Transit locations are situated within areas of the Future Land Use type known as Major Institutions?",
+        "expected_answer":"0",
+        "image_urls":[
+            "seattle-planning\/CouncilAdopted2020\/image36_1.png",
+            "seattle-planning\/CouncilAdopted2020\/image46_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1038",
+        "question_text":"In Seattle, WA, which type of Existing Land Use is covered by the highest Employment Density by Census Tract?",
+        "expected_answer":"Commercial\/Mixed-Use",
+        "image_urls":[
+            "seattle-planning\/CouncilAdopted2020\/image435_1.png",
+            "seattle-planning\/CouncilAdopted2020\/image436_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1041",
+        "question_text":"In Seattle's proposed lid area, how many Closed Highway Ramps have their centers not located within the Green Space?",
+        "expected_answer":"1",
+        "image_urls":[
+            "seattle-planning\/507SeattleStudio_Web\/image49_1.png",
+            "seattle-planning\/507SeattleStudio_Web\/image50_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1053",
+        "question_text":"What type of 'Alternative 1 - No Action' is the SoDo Stadium Industrial Lands Subareas located in Seattle, WA?",
+        "expected_answer":"Industrial General",
+        "image_urls":[
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image128_1.png",
+            "seattle-planning\/IndustrialMaritimeStrategyFinalEIS\/image151_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1065",
+        "question_text":"In Seattle's proposed lid surroundings, the majority of 'Publicly accessible plazas and green setbacks' are located in neighborhoods with which level of access to opportunity? Answer with 1-6, where 1 represents the lowest and 6 the highest.",
+        "expected_answer":"6",
+        "image_urls":[
+            "seattle-planning\/507SeattleStudio_Web\/image12_1.png",
+            "seattle-planning\/507SeattleStudio_Web\/image22_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1068",
+        "question_text":"In the CRFREE Project, what type of CAWD Pipeline Undergrounding and Replacement Work Area nearly exactly overlaps with the Trenching Area?",
+        "expected_answer":"Existing Lagoon Crossing Structure",
+        "image_urls":[
+            "FEMA\/fema_r9_draft-environmental-assessment-for-carmel-river-floodplain-restoration-and-environmental-enhancement-project-hmgp-dr-4344-539-097-ca_042025\/image99_1.png",
+            "FEMA\/fema_r9_draft-environmental-assessment-for-carmel-river-floodplain-restoration-and-environmental-enhancement-project-hmgp-dr-4344-539-097-ca_042025\/image189_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1069",
+        "question_text":"Within the Air Quality Assessment 'zone a' of Ireland, which 'Corine Land Cover Classes 2000' has the largest area?",
+        "expected_answer":"Artificial surfaces",
+        "image_urls":[
+            "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image44_1.png",
+            "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image96_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1084",
+        "question_text":"Based on the Classification of Shellfish Production Areas, how many locations categorized as 'A: Can be collected for direct human consumption' are in the 'North Western (b)' area of Ireland?",
+        "expected_answer":"5",
+        "image_urls":[
+            "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image60_1.png",
+            "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image84_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1085",
+        "question_text":"In Ireland, which aquaculture area location is situated in the county where the Knockharley landfill is located?",
+        "expected_answer":"Mornington",
+        "image_urls":[
+            "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image192_1.png",
+            "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image245_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1087",
+        "question_text":"In Ireland, which type of Noise In Quiet Area overlaps the most with artificial areas?",
+        "expected_answer":"Anthropogenic Noise",
+        "image_urls":[
+            "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image97_1.png",
+            "ireland\/State-of-the-environment-in-Ireland-2004-reduced\/image104_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1095",
+        "question_text":"What is the dominant travel time range of the 'Paya Lebar' region? The ranges are labeled in the format 'minimum mins < Travel Time \u2264 maximum mins.' Provide only the maximum value in minutes.",
+        "expected_answer":"60",
+        "image_urls":[
+            "sg-ura\/Skyline_Issue_13\/image7_m2.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1099",
+        "question_text":"The Military Lease Area in Tinian is divided into multiple 'Proposed Training Areas' (coded with a 'TA' prefix). Which Proposed Training Area is the 'Explosives Training Range' located in?",
+        "expected_answer":"TA B2",
+        "image_urls":[
+            "EIS\/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives\/image9_m0.png",
+            "EIS\/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives\/image38_m0.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1108",
+        "question_text":"In 'Douglas' County and 'Coos' County, areas are categorized into one or multiple of four types. In which area types is the 'Dean Creek Elk Viewing Area' located?",
+        "expected_answer":"Low Income Tracts; Low-Income Counties",
+        "image_urls":[
+            "EIS\/Final EIS for the Elliott State Research Forest HCP\/image210_1.png",
+            "EIS\/Final EIS for the Elliott State Research Forest HCP\/image169_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1119",
+        "question_text":"In Tinian, each 'Noise Sensitive Receptor' is assigned a unique code in the format {Letter}{Number} (e.g., T18). Which Noise Sensitive Receptors are located within both the '115 dBP' Explosive Equipment boundary and the '87 dBP' M2 boundary?",
+        "expected_answer":"T16; T22; T20",
+        "image_urls":[
+            "EIS\/Appendices A through L_CJMT_RDEIS\/image297_1.png",
+            "EIS\/Appendices A through L_CJMT_RDEIS\/image299_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1121",
+        "question_text":"Identify the northernmost 'Activity Center' within the 'HCP Permit Area' of Elliott State Forest. In which two 'Allocation Area's is this point located?",
+        "expected_answer":"CRW Reserve; CRW RCA",
+        "image_urls":[
+            "EIS\/Final EIS for the Elliott State Research Forest HCP\/image50_1.png",
+            "EIS\/Final EIS for the Elliott State Research Forest HCP\/image55_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1127",
+        "question_text":"The 'Peak Overpressure' of the SLC-4 Falcon 9 First Stage Landing Sonic Boom is classified into seven levels. Identify the 'LBVI Localities' that lie on the 'VSFB Boundary'. Within which 'Peak Overpressure' level is this locality located? Report the smallest value.",
+        "expected_answer":"4",
+        "image_urls":[
+            "EIS\/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1\/image150_m0.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1128",
+        "question_text":"All 'Noise Sensitive Areas' (NSA) within the study area are associated with a number (e.g., NSA 1). Identify the NSAs located within Somerset County, Pennsylvania. Among these, which NSAs lie west of the 'Alignment AE' area? Provide your answer in the format NSA #.",
+        "expected_answer":"NSA 7; NSA 8; NSA 10; NSA 9; NSA 11; NSA 12; NSA 13; NSA 14",
+        "image_urls":[
+            "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image241_1.png",
+            "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image273_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1138",
+        "question_text":"How many 'Existing Water Storage Tanks' are located within the 'Low-Permeability Tinian Pyroclastic Rocks at Sea Level' area in Tinian?",
+        "expected_answer":"2",
+        "image_urls":[
+            "EIS\/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1\/image17_1.png",
+            "EIS\/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1\/image65_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1145",
+        "question_text":"'Surface Radar Sites' are labeled in the format 'Surface Radar Site #'. How many of these sites are located within the Composite SDZ boundary?",
+        "expected_answer":"1",
+        "image_urls":[
+            "EIS\/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives\/image50_m0.png",
+            "EIS\/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives\/image55_m0.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_1149",
+        "question_text":"Identify the study area under 'Maryland Census Tract 3' 'Census Block Groups' 1. What are the numbers of the 'Waste Sites' located within this region?",
+        "expected_answer":"19; 30; 23; 33",
+        "image_urls":[
+            "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image220_1.png",
+            "EIS\/Vol-3-FEISAppendixA-M-May-2025\/image227_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_2001",
+        "question_text":"The gold (Au) prospect \u201cR\u201d Zone falls within which claim block of the High Lake Prospect?",
+        "expected_answer":"LEA-107822",
+        "image_urls":[
+            "NI43-101\/w__McFarlaneLakeMining_SEDAR_1210098_tech_Jul04_2023_mcfarlaneTR-july42023\/image61_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_2008",
+        "question_text":"Which project area of MON Concession boundary has the most drill hole collar?",
+        "expected_answer":"MUL",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_2023_Mulatos_Tech_Rep_Mar_27_2023\/image69_2.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_2016",
+        "question_text":"What is the dominant geology of the Yaramoko Mining Lease?",
+        "expected_answer":"Mafic Volcanic",
+        "image_urls":[
+            "NI43-101\/C__Filings_Yaramoko_43_101_Yaramoko_43101\/image44_1.jpeg",
+            "NI43-101\/C__Filings_Yaramoko_43_101_Yaramoko_43101\/image33_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_2022",
+        "question_text":"How many diamond drill holes (DDH) were completed by SRG Mining within soil-covered areas of the Lola Graphite Project?",
+        "expected_answer":"11",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_SRG_REPORT\/image90_2.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_2026",
+        "question_text":"Which Trailbreaker claim block within the Atsutla Gold Project contains site verification sample 612358?",
+        "expected_answer":"1078867",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA\/image130_2.jpeg",
+            "NI43-101\/C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA\/image144_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_2030",
+        "question_text":"Which 2023 Resource Pit Crest of Los Reyes consist of the Metallurgical Test Drill Hole that is located farthest South?",
+        "expected_answer":"Noche Buena",
+        "image_urls":[
+            "NI43-101\/z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed\/image131_2.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_3013",
+        "question_text":"Which region of Fording River West has the highest density of Teck Drilled holes?",
+        "expected_answer":"SWFLK1",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_TR-FordingRiver-2023TR\/image72_m0.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_3024",
+        "question_text":"Identify the area of Nighthawk Gold Property located North of the 'Winter Road'. How many Gold Deposits are located within this area?",
+        "expected_answer":"8",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9\/image75_3.jpeg",
+            "NI43-101\/C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9\/image99_3.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_4016",
+        "question_text":"How many 'Long Lac Mines (1975)' Drill Hole Collars exist outside of Koval Patent Claims but within Historic Ben Lake Claim Group?",
+        "expected_answer":"0",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS__doc__SEDAR_NewOriginGoldTR_pp\/image34_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_4028",
+        "question_text":"How many Souris River penetrations within the Mansur Project area are located outside the HCL permit boundary?",
+        "expected_answer":"2",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_rokcrsourcesTECH05082023CA\/image29_2.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_5003",
+        "question_text":"Identify the Analysis Zone that is projected to have the greatest area affected by sea level rise by 2100? How many groundwater wells are located in this zone?",
+        "expected_answer":"8",
+        "image_urls":[
+            "seattle-planning\/OneSeattlePlanDEIS\/image211_1.png",
+            "seattle-planning\/OneSeattlePlanDEIS\/image210_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_5004",
+        "question_text":"How many Mineral Deposits are located within the 'Prospecting License' region of Sona Hill deposit?",
+        "expected_answer":"1",
+        "image_urls":[
+            "NI43-101\/p__BC_Securities_and_MA_SEDAR_DOWNLOAD_ARIS_20230331TR\/image24_2.jpeg",
+            "NI43-101\/p__BC_Securities_and_MA_SEDAR_DOWNLOAD_ARIS_20230331TR\/image38_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_5005",
+        "question_text":"How many RTX diamond Drillholes are located within the High Tide Resource Corp. mineral license area but outside the boundaries of the Mineral Resource Optimized Pit Shell?",
+        "expected_answer":"6",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_HighTideTR04062023\/image42_2.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_5011",
+        "question_text":"Identify the Assay Check Soil Sample Lithium ppm of the point(s) located on the east side of ACE 1-20 Placer Claims Block of Bonnie Clair East Lithium Project. What is the average value of these points.",
+        "expected_answer":"112.07",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_3_Amend_43101_Jul122023_esign\/image33_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_5012",
+        "question_text":"Which 'Urban & Rural Areas' are completely within the boundary of Los Reyes property?",
+        "expected_answer":"Guadalupe de los Reyes",
+        "image_urls":[
+            "NI43-101\/z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed\/image40_2.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_5021",
+        "question_text":"In which URANIUM MINING DISTRICT is 'Cyclone Rim Project' situated?",
+        "expected_answer":"Great Divide Basin",
+        "image_urls":[
+            "NI43-101\/z__PUBLIC_Consolidated-Uranium-Inc_2023_AN-SPMeeting_CUR-Cyclone-Rim-TR\/image5_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_5022",
+        "question_text":"Each Concessions area is associated with a unique code (e.g., Berenguela 03-18). In which concession area is 'Hacienda Andamarca' located within? Give the code of the area.",
+        "expected_answer":"Berenguela 04-09",
+        "image_urls":[
+            "NI43-101\/C__FILINGS_SEDAR-OTC-CSE_722031_AAGBerenTR\/image45_1.jpeg",
+            "NI43-101\/C__FILINGS_SEDAR-OTC-CSE_722031_AAGBerenTR\/image41_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_6001",
+        "question_text":"A claim block is each area within Red Willow Project associated with a S-# code (e.g., S-112024). Which claim block of Red Willow Project is located southernmost.",
+        "expected_answer":"S-110271",
+        "image_urls":[
+            "NI43-101\/C__RedWillow_TechnicalReport\/image10_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_6006",
+        "question_text":"How many 'Diamond Drill Holes' are located outside the 'Exploration Target' areas of the Fremont Gold Project?",
+        "expected_answer":"5",
+        "image_urls":[
+            "NI43-101\/w__StrataboundMinerals_SEDAR_1194765_tech_Mar31_2023_file_strata_tr_03312023\/image104_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_6010",
+        "question_text":"Which lithology group (e.g., Alkaline Centre) within the mineralized zone 'WD Occurrence' contains the highest number of drill holes?",
+        "expected_answer":"Layered Series",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_1-TR\/image127_2.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_6011",
+        "question_text":"In the Lake Lery Marsh Creation and Rim Restoration Project (Phase III), within which MCA Cell is the 60-foot boring point SB60-09 located? Give the answer in form 'MCA Cell #'.",
+        "expected_answer":"MCA Cell 1",
+        "image_urls":[
+            "FEMA\/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702\/image120_1.png",
+            "FEMA\/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702\/image121_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_6022",
+        "question_text":"Within the Los Luceros Fire Mitigation project, under which 'Project Area Classifications' does the 'River House' fall under?",
+        "expected_answer":"Developed Area",
+        "image_urls":[
+            "FEMA\/fema_ehp-lpdm-pj-06-nm-2023-001-loslucerosfiremit-drafttea-2024412\/image32_1.png",
+            "FEMA\/fema_ehp-lpdm-pj-06-nm-2023-001-loslucerosfiremit-drafttea-2024412\/image4_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_6025",
+        "question_text":"IAMGOLD (100%) means IAMGOLD owns 100% of that land. Each tenements consists of multiple sub-areas associated with a number (e.g., 2396140). Assuming each sub-areas are equally size and that there are 163 sub-areas within Nelligan project, what is the weighted average percentage owned by IAMGOLD? Round the percentage down to the nearest whole number.",
+        "expected_answer":"76",
+        "image_urls":[
+            "NI43-101\/w__Iamgold_SEDAR_1188221_tech_Feb22_2023_iag_tr_022323\/image21_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_6030",
+        "question_text":"How many wells are located within the 'State Mining Lease' but outside the 'Resource Boundary' of Florence Copper?",
+        "expected_answer":"2",
+        "image_urls":[
+            "NI43-101\/z__Manuela_TechnicalR\/image93_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_7001",
+        "question_text":"Within Galloway property are multiple blocks associated with a unique number (e.g., 2450989). What is the block number in which mineralized body Lac Sanies Zone Ouert (Bedard) lies in?",
+        "expected_answer":"2454254",
+        "image_urls":[
+            "NI43-101\/i__Soco_Sedar_2023_ST_Fokus_Technical_Report_FOKUS_techreport_NI43-101\/image41_2.jpeg",
+            "NI43-101\/i__Soco_Sedar_2023_ST_Fokus_Technical_Report_FOKUS_techreport_NI43-101\/image31_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_7005",
+        "question_text":"Which community boundary surrounds majority of 'Claim: El Eden'?",
+        "expected_answer":"Nucleo Agrario: SAN ANTONIO DEl CERRO",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_CENTTechnicalReport\/image15_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_7011",
+        "question_text":"How many 'Twinned RC Hole - 2013' are located within the 'Pine Tree\/Josephine Mineralized Zones'?",
+        "expected_answer":"3",
+        "image_urls":[
+            "NI43-101\/w__StrataboundMinerals_SEDAR_1194765_tech_Mar31_2023_file_strata_tr_03312023\/image112_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_7012",
+        "question_text":"The 'Oil\/Gas\/Other Well' located within the 0.25-mile search buffer of the Corbina Rd Tract lies within which type of soils boundary? Give it by the unit code (Alphabet) shown on the map.",
+        "expected_answer":"Cr",
+        "image_urls":[
+            "FEMA\/fema_dr-4559-st-louis-hs-appendix\/image237_1.png",
+            "FEMA\/fema_dr-4559-st-louis-hs-appendix\/image243_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_7015",
+        "question_text":"The Project Claims of MAC property consist of multiple claim blocks associated with a unique number (e.g., 1099390). In which claim block is Showing '093K063' located in?",
+        "expected_answer":"1099378",
+        "image_urls":[
+            "NI43-101\/C__MS_SEDAR_Technical_Report_MAC_Project\/image62_6.jpeg",
+            "NI43-101\/C__MS_SEDAR_Technical_Report_MAC_Project\/image14_6.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_7017",
+        "question_text":"The Koster Dam Project maps the underlying geology and gives a unique alphabetical code for each geology type. What is the geology code, as given on the map, in which 'Borin Creek Placer' lies in?",
+        "expected_answer":"EOlv",
+        "image_urls":[
+            "NI43-101\/C__KosterDamTechReportISM\/image13_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_7025",
+        "question_text":"The Santander Concessions area is divided into blocks associated with unique numbers ranging from 1-72). The area is also classified under different Community and Agreement regions. What agreement is 'Block 5' under?",
+        "expected_answer":"Exploration Agreement-Rural Community Santa Cruz de Andamarca",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101\/image53_3.jpeg",
+            "NI43-101\/C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101\/image64_3.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_7027",
+        "question_text":"A geology map labels each geologic type with a unique alphabetical code. What is the principle geologic unit code, as labelled on the map, underlying majority of Wood Project Area?",
+        "expected_answer":"JMS",
+        "image_urls":[
+            "NI43-101\/C__AA-SEDAR_VELVET-PEA-2023\/image45_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_7029",
+        "question_text":"Identify the region between the two 'Section Line's within the Mineral Resource Optimized Pit Shell of Labrador West Iron Project. How many Diamond Drillholes (both 2022 and 2020) are located in this region.",
+        "expected_answer":"3",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_HighTideTR04062023\/image51_2.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_8004",
+        "question_text":"In MAC Project, what is the geologic unit code (as shown on the map) for the area where the developed prospect is located?",
+        "expected_answer":"MJKFgr",
+        "image_urls":[
+            "NI43-101\/C__MS_SEDAR_Technical_Report_MAC_Project\/image43_6.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_8007",
+        "question_text":"How many 'Stations' are located entirely within both the 'Deep Conductor (Intrusion?)' and the 'Phase Tensor NW\u2013SE (Upper 500 m)' region of the CDPR-Santander concession?",
+        "expected_answer":"10",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101\/image115_3.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_8008",
+        "question_text":"What program of which year simultaneously enclose both the HAW and HAL concession of MON Concession boundary. Give it in format (YEAR PROGRAM)",
+        "expected_answer":"2022 Magnetics",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_2023_Mulatos_Tech_Rep_Mar_27_2023\/image57_2.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_8015",
+        "question_text":"Identify the areas with the greatest number of Bore Holes. Who holds the largest share of mineral rights for this area?",
+        "expected_answer":"Richard M. Colgate",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_AAAA_Viscount_2023-KSR-43-101F\/image17_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_8017",
+        "question_text":"The claim area of Collective Metals contains of several claim blocks associated with a unique number (e.g., 1083660). Which claim block has least number of Cu ppm points?",
+        "expected_answer":"1083728",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_20230628collectivetech\/image11_1.jpeg",
+            "NI43-101\/C__SEDAR_FILINGS_20230628collectivetech\/image14_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_8018",
+        "question_text":"Identify the non-jurisdictional wetlands located outside the soil disposal area, subject site, and wood chip disposal area. Which NWI feature(s) overlap with this region?",
+        "expected_answer":"PEM1A; PEM1C; PSS1A",
+        "image_urls":[
+            "FEMA\/hmgp-dr-4332-hmgp-4332-0197-tx_1-a3adetention-dea-2025225\/image26_1.png",
+            "FEMA\/hmgp-dr-4332-hmgp-4332-0197-tx_1-a3adetention-dea-2025225\/image27_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_8024",
+        "question_text":"The backwash tank in the City Creek Water Treatment Plant project area lies within which flood hazard area according to the project's mapping?",
+        "expected_answer":"Zone X",
+        "image_urls":[
+            "FEMA\/fema_ehp-bric-emd-2021-br-063-0016-ut-citycreekwtp-dea-20240318\/image14_1.png",
+            "FEMA\/fema_ehp-bric-emd-2021-br-063-0016-ut-citycreekwtp-dea-20240318\/image10_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_8026",
+        "question_text":"Which deposit(s)\/exploration area(s) of Marathon PGM Property has the highest NSR Royalty?",
+        "expected_answer":"Main Zone",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_1-TR\/image80_2.jpeg",
+            "NI43-101\/C__SEDAR_1-TR\/image81_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_8029",
+        "question_text":"Which Field\/Pool\/Unit occupies the most area within the Rainbow Lake Property boundary?",
+        "expected_answer":"Rainbow",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_Volt_230523TechReport\/image37_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_8030",
+        "question_text":"Identify the Freshwater Emergent Wetland area of Lumberton Loops Project Area. Which road(s) enclose this area?",
+        "expected_answer":"Tartan Rd; Vann Dr; Stirling Dr",
+        "image_urls":[
+            "FEMA\/fema_bric-ema-2020-br-100-0009-nc-lumbertonloop-fea-signedfonsi-20240731\/image43_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_9003",
+        "question_text":"What is the northern-most mineral tile number within Koster Dam project?",
+        "expected_answer":"1088616",
+        "image_urls":[
+            "NI43-101\/C__KosterDamTechReportISM\/image9_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_9011",
+        "question_text":"In which concession region is Don Diego (Au) located?",
+        "expected_answer":"MLCC Exploitation MCs",
+        "image_urls":[
+            "NI43-101\/z__PUBLIC_Lundin-Mining-Corporation_2023_technical-reports_Caserones_Lundin-NI43-101-TR-Caserones\/image49_3.jpeg",
+            "NI43-101\/z__PUBLIC_Lundin-Mining-Corporation_2023_technical-reports_Caserones_Lundin-NI43-101-TR-Caserones\/image37_3.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_9012",
+        "question_text":"Which metallogenic belt contains the city Copiapo?",
+        "expected_answer":"Lower Cretaceous",
+        "image_urls":[
+            "NI43-101\/C___docs_221231alturasMineralsAFSaif_220629alturasMineralsTR_cwm\/image20_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_ref":"q_9019",
+        "question_text":"How many mineral showings are within the same claim region as Toots Cove?",
+        "expected_answer":"4",
+        "image_urls":[
+            "NI43-101\/C__KC_SEDAR_4811101_LABTechnicalReport\/image45_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    }
+]

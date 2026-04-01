@@ -1,0 +1,133 @@
+[
+    {
+        "question_text":"Which deposit(s)\/exploration area(s) of Marathon PGM Property has the highest NSR Royalty?",
+        "expected_answer":"Main Zone",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_1-TR\/image80_2.jpeg",
+            "NI43-101\/C__SEDAR_1-TR\/image81_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"What is the dominant geology of the Yaramoko Mining Lease?",
+        "expected_answer":"Mafic Volcanic",
+        "image_urls":[
+            "NI43-101\/C__Filings_Yaramoko_43_101_Yaramoko_43101\/image44_1.jpeg",
+            "NI43-101\/C__Filings_Yaramoko_43_101_Yaramoko_43101\/image33_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"The claim area of Collective Metals contains of several claim blocks associated with a unique number (e.g., 1083660). Which claim block has least number of Cu ppm points?",
+        "expected_answer":"1083728",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_20230628collectivetech\/image11_1.jpeg",
+            "NI43-101\/C__SEDAR_FILINGS_20230628collectivetech\/image14_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"Which Trailbreaker claim block within the Atsutla Gold Project contains site verification sample 612358?",
+        "expected_answer":"1078867",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA\/image130_2.jpeg",
+            "NI43-101\/C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA\/image144_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"The backwash tank in the City Creek Water Treatment Plant project area lies within which flood hazard area according to the project's mapping?",
+        "expected_answer":"Zone X",
+        "image_urls":[
+            "FEMA\/fema_ehp-bric-emd-2021-br-063-0016-ut-citycreekwtp-dea-20240318\/image14_1.png",
+            "FEMA\/fema_ehp-bric-emd-2021-br-063-0016-ut-citycreekwtp-dea-20240318\/image10_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"Which metallogenic belt contains the city Copiapo?",
+        "expected_answer":"Lower Cretaceous",
+        "image_urls":[
+            "NI43-101\/C___docs_221231alturasMineralsAFSaif_220629alturasMineralsTR_cwm\/image20_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"How many mineral showings are within the same claim region as Toots Cove?",
+        "expected_answer":"4",
+        "image_urls":[
+            "NI43-101\/C__KC_SEDAR_4811101_LABTechnicalReport\/image45_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"What is the northern-most mineral tile number within Koster Dam project?",
+        "expected_answer":"1088616",
+        "image_urls":[
+            "NI43-101\/C__KosterDamTechReportISM\/image9_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"Which 2023 Resource Pit Crest of Los Reyes consist of the Metallurgical Test Drill Hole that is located farthest South?",
+        "expected_answer":"Noche Buena",
+        "image_urls":[
+            "NI43-101\/z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed\/image131_2.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"Which Field\/Pool\/Unit occupies the most area within the Rainbow Lake Property boundary?",
+        "expected_answer":"Rainbow",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_Volt_230523TechReport\/image37_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"The gold (Au) prospect \u201cR\u201d Zone falls within which claim block of the High Lake Prospect?",
+        "expected_answer":"LEA-107822",
+        "image_urls":[
+            "NI43-101\/w__McFarlaneLakeMining_SEDAR_1210098_tech_Jul04_2023_mcfarlaneTR-july42023\/image61_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"How many 'Stations' are located entirely within both the 'Deep Conductor (Intrusion?)' and the 'Phase Tensor NW\u2013SE (Upper 500 m)' region of the CDPR-Santander concession?",
+        "expected_answer":"10",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101\/image115_3.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"How many diamond drill holes (DDH) were completed by SRG Mining within soil-covered areas of the Lola Graphite Project?",
+        "expected_answer":"11",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_SRG_REPORT\/image90_2.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"Identify the Freshwater Emergent Wetland area of Lumberton Loops Project Area. Which road(s) enclose this area?",
+        "expected_answer":"Tartan Rd; Vann Dr; Stirling Dr",
+        "image_urls":[
+            "FEMA\/fema_bric-ema-2020-br-100-0009-nc-lumbertonloop-fea-signedfonsi-20240731\/image43_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    }
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "question_text":"In which concession region is Don Diego (Au) located?",
+        "expected_answer":"MLCC Exploitation MCs",
+        "image_urls":[
+            "NI43-101\/z__PUBLIC_Lundin-Mining-Corporation_2023_technical-reports_Caserones_Lundin-NI43-101-TR-Caserones\/image49_3.jpeg",
+            "NI43-101\/z__PUBLIC_Lundin-Mining-Corporation_2023_technical-reports_Caserones_Lundin-NI43-101-TR-Caserones\/image37_3.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"In which stratified rock unit is the federal mining claim Deana G-32 located in?",
+        "expected_answer":"Moira Sound Unit - Ordovician to Lower Silurian",
+        "image_urls":[
+            "None\/None\/image20_2.jpeg",
+            "None\/None\/image34_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"The Sonoro Gold Concession area contains multiple claim blocks associated with a name and T-code (e.g., Tres Amigos T-166174). Which claim block contains the fewest Surface Samples (Au_ppm)?",
+        "expected_answer":"Teresita T-220210",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_SGOTechRep20230324\/image32_1.jpeg",
+            "NI43-101\/C__SEDAR_FILINGS_SGOTechRep20230324\/image18_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"Identify the non-jurisdictional wetlands located outside the soil disposal area, subject site, and wood chip disposal area. Which NWI feature(s) overlap with this region?",
+        "expected_answer":"PEM1A; PEM1C; PSS1A",
+        "image_urls":[
+            "FEMA\/hmgp-dr-4332-hmgp-4332-0197-tx_1-a3adetention-dea-2025225\/image26_1.png",
+            "FEMA\/hmgp-dr-4332-hmgp-4332-0197-tx_1-a3adetention-dea-2025225\/image27_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"What program of which year simultaneously enclose both the HAW and HAL concession of MON Concession boundary. Give it in format (YEAR PROGRAM)",
+        "expected_answer":"2022 Magnetics",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_2023_Mulatos_Tech_Rep_Mar_27_2023\/image57_2.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"Which project area of MON Concession boundary has the most drill hole collar?",
+        "expected_answer":"MUL",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_2023_Mulatos_Tech_Rep_Mar_27_2023\/image69_2.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"How many 'Long Lac Mines (1975)' Drill Hole Collars exist outside of Koval Patent Claims but within Historic Ben Lake Claim Group?",
+        "expected_answer":"1",
+        "image_urls":[
+            "None\/None\/image34_1.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"In MAC Project, what is the geologic unit code (as shown on the map) for the area where the developed prospect is located?",
+        "expected_answer":"MJKFgr",
+        "image_urls":[
+            "NI43-101\/C__MS_SEDAR_Technical_Report_MAC_Project\/image43_6.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"Identify the 'Gradient Resistivity - 2007' zone intersected by four 'SWML survey' lines in the Red Willow Long Lake region. How many 'Ground EM Anomalies' are located within this zone?",
+        "expected_answer":"3",
+        "image_urls":[
+            "NI43-101\/C__RedWillow_TechnicalReport\/image64_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"How many Souris River penetrations within the Mansur Project area are located outside the HCL permit boundary?",
+        "expected_answer":"2",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_rokcrsourcesTECH05082023CA\/image29_2.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    },
+    {
+        "question_text":"Identify the areas with the greatest number of Bore Holes. Who holds the largest share of mineral rights for this area?",
+        "expected_answer":"Richard M. Colgate",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_AAAA_Viscount_2023-KSR-43-101F\/image17_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Within"
+    }
+]

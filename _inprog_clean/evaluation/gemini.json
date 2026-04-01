@@ -1,0 +1,20 @@
+[
+    {
+        "question_ref":"q_0004",
+        "_response":[
+            "<your answer>'. \n<<\/sys>>\n\n[inst]  \nin the 23rd ave and s jackson st rezone (draft), 'rezone area 8' is divided into approximately four segments by the \u201cmax structure width of 250'\u201d lines, excluding the central area enclosed within these lines. in which cardinal direction is the segment closest to franz bakery located? [\/inst] the segment closest to franz bakery is located in the south east direction."
+        ],
+        "question_text":"In the 23rd Ave and S Jackson St Rezone (Draft), 'Rezone Area 8' is divided into approximately four segments by the \u201cMax structure width of 250'\u201d lines, excluding the central area enclosed within these lines. In which cardinal direction is the segment closest to Franz Bakery located?",
+        "expected_answer":[
+            "south west"
+        ],
+        "image_urls":[
+            "seattle-planning\/23rdAvenueUDF\/image37_m0.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Orientation",
+        "answer_type":"cardinal",
+        "extracted_ans":"South East",
+        "correct":false
+    }
+]

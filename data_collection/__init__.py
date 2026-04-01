@@ -1,0 +1,1 @@
+from .map_extract import map_from_pdf

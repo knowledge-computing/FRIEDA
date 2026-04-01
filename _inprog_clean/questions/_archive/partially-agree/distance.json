@@ -1,0 +1,116 @@
+[
+    {
+        "question_text":"Estimate the distance between Eby prospect and Ludgate gold deposit of Munro-Croesus claims.",
+        "expected_answer":"10 km",
+        "image_urls":[
+            "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image37_1.jpeg",
+            "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image135_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"What is the approximate straight-line distance between Current Exploration Target \u2018Dome\u2019 of PureGold Mine to 'Cochenour'?",
+        "expected_answer":"8.5 km",
+        "image_urls":[
+            "NI43-101\/n__SEDAR_WRLG_NI43-101_Report_Update_v20230619\/image61_1.png",
+            "NI43-101\/n__SEDAR_WRLG_NI43-101_Report_Update_v20230619\/image28_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"Geordie Deposit of Marthon Project property is located closest to which company's property?",
+        "expected_answer":"Sienna Resources Inc",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_1-TR\/image464_2.jpeg",
+            "NI43-101\/C__SEDAR_1-TR\/image87_2.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"Which vein zone within the Sonoro concession area is located closest to the mining claim that contains the Cerro Prieto Mine?",
+        "expected_answer":"El Zorrillo",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_SGOTechRep20230324\/image150_1.jpeg",
+            "NI43-101\/C__SEDAR_FILINGS_SGOTechRep20230324\/image42_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"Identify the southernmost point of the fault line intersecting the boundary of the Green Mountain Property mineral tenures. What is the distance from this point to the Acacia past producer?",
+        "expected_answer":"7.8 km",
+        "image_urls":[
+            "NI43-101\/i__Securities_SEDAR_ToFile_Level14_Level14_Tech_Rept_May_2023\/image43_1.jpeg",
+            "NI43-101\/i__Securities_SEDAR_ToFile_Level14_Level14_Tech_Rept_May_2023\/image110_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"Which 'XERCES_Bumble Bee Watch' observation point is located closest to the 'Moderate' wildfire risk area at Prescott Park?",
+        "expected_answer":"Bombus vosnesenskii Radoszkowski, 1862",
+        "image_urls":[
+            "FEMA\/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729\/image39_1.png",
+            "FEMA\/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729\/image159_1.png"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"What is the shortest straight-line distance from the 'Lookout' B.C. Minfile Occurrence to the Green Mountain Property tenure?",
+        "expected_answer":"0.7 km",
+        "image_urls":[
+            "NI43-101\/i__Securities_SEDAR_ToFile_Level14_Level14_Tech_Rept_May_2023\/image50_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"What is the straight-line distance between 'Christmas Creek' and the nearest 'Trailbreak soil samples 2021 Au (ppb)' associated with the highest value?",
+        "expected_answer":"0.75 km",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA\/image82_2.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"What is the shortest distance between the largest follow-up area within the NHK property and the property's boundary?",
+        "expected_answer":"3.2 km",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9\/image144_3.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"What is the Owner Name of the property located closest to the Cabin Lake property?",
+        "expected_answer":"Evergold Corp.",
+        "image_urls":[
+            "NI43-101\/C__TK_SEDAR_4847_102_7TECHREPORT\/image63_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"What is the vertical distance from the conventional drilling point located outside the Whistler Property Outline to the boundary of the Whistler Property Outline?",
+        "expected_answer":"1.375 km",
+        "image_urls":[
+            "NI43-101\/C__Users_sedar.LAW_Desktop_Hermonie_WhistlerTR\/image77_m0.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"Identify the southeastern edge of the 'Potential lid area'. What is the shortest distance between this edge and the 'Air quality monitoring station' in King County, within the City of Seattle?",
+        "expected_answer":"2800\u2019",
+        "image_urls":[
+            "seattle-planning\/507SeattleStudio_Web\/image14_m0.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Distance"
+    }
+]

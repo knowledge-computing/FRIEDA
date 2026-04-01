@@ -1,0 +1,76 @@
+[
+    {
+        "question_text":"What is the name and acquisition year (as shown on the map) of the Cabacal Option Agreement block whose part of its southernmost edge crosses Tertiary Cover area?",
+        "expected_answer":"867407\/2008",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_Meridian_2023_TechRpt2023_MNOTechRpt2023\/image74_1.jpeg",
+            "NI43-101\/C__SEDAR_FILINGS_Meridian_2023_TechRpt2023_MNOTechRpt2023\/image114_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"Which claim block(s) and number(s) of Slick Rock Project Area does the Northern edge of DOE legacy site pass through?",
+        "expected_answer":"MCT 4; MCT 6",
+        "image_urls":[
+            "NI43-101\/C___docs_230404catStrategicTR_230404catStrategicTR_cwm\/image10_1.png",
+            "NI43-101\/C___docs_230404catStrategicTR_230404catStrategicTR_cwm\/image26_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"How many Asanko tenement blocks does the Haul Road intersect?",
+        "expected_answer":"6",
+        "image_urls":[
+            "NI43-101\/w__GalianoGold_SEDAR_1194039_tech_Mar28_2023_galiano_techreport\/image121_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"How many claim blocks of the O'Brien Project does the power line pass through?",
+        "expected_answer":"30",
+        "image_urls":[
+            "NI43-101\/d__SEDAR_Montreal_Radisson_TechReport_0417\/image20_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"How many unique assessment file reference areas intersect the boundary of the Wesley Lithium Property?",
+        "expected_answer":"5",
+        "image_urls":[
+            "NI43-101\/C__FILINGS_Tearlach_Tearlach_TechnicalReport\/image22_4.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"The Uatnan property is divided into multiple claim blocks associated with a unique number (e.g., 1040933). How many claim blocks are crossed by forestry road R0928?",
+        "expected_answer":"12",
+        "image_urls":[
+            "NI43-101\/z__nou-43101-PEA-ang\/image61_3.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"What is the name of the line that runs through the Slick Rock Project area from the northwest to the southeast?",
+        "expected_answer":"Disappointment Syncline",
+        "image_urls":[
+            "NI43-101\/C__AA-SEDAR_VELVET-PEA-2023\/image51_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    },
+    {
+        "question_text":"How many claim blocks of Capstone Mining Concession does the northeastern border of Resource Limit pass through?",
+        "expected_answer":"6",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_2023_Technical_Report_COZ_TR_20230502\/image53_2.png"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Intersect"
+    }
+]

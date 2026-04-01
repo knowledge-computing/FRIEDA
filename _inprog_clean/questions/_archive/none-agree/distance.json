@@ -1,0 +1,57 @@
+[
+    {
+        "question_text":"What is the west-east distance between the center of MC22-120 drillhole line and MC22-93 drillhole line of HighGold.",
+        "expected_answer":"900 m",
+        "image_urls":[
+            "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image113_1.jpeg",
+            "NI43-101\/s__SEDAR_Onyx_43101TechnicalReport\/image110_1.jpeg"
+        ],
+        "map_count":"Multi",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"What is the shortest straight line distance from Eden Project to Eden 2 Claim?",
+        "expected_answer":"1.5 km",
+        "image_urls":[
+            "NI43-101\/C__SEDAR_FILINGS_CENTTechnicalReport\/image11_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"What is the maximum horizontal distance of the overlapped mineralized zone 101 and 102 of SW Deposit?",
+        "expected_answer":"55 m",
+        "image_urls":[
+            "NI43-101\/k__filings_livework_wkout_72043_MAS_TechReport\/image72_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"What is the shortest straight-line distance between the Sudbury Mining Claim S 470253 and the nearest freehold property?",
+        "expected_answer":"7",
+        "image_urls":[
+            "NI43-101\/g__Sayona_2023_NAL_Refiling_20230420_NAL_Report\/image354_4.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"Identify the inner hole within the Goldlund Property Boundary. Which 'Minor Showing' is located closest to the this inner hole?",
+        "expected_answer":"Slough Lake",
+        "image_urls":[
+            "NI43-101\/u__TreasuryMetals_TechnicalReport_TML-TR-Mar27-2023\/image143_2.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Distance"
+    },
+    {
+        "question_text":"What is the approximate horizontal length of the TrGs region with the shortest distance from Golden Sky\u2019s Bullseye property.",
+        "expected_answer":"6 km",
+        "image_urls":[
+            "NI43-101\/C__DATA_tmc43101mar21\/image27_1.jpeg"
+        ],
+        "map_count":"Single",
+        "spatial_relationship":"Distance"
+    }
+]
