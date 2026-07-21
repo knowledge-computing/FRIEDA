@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 
-from frieda.providers.utility import config_bnb
+from evaluate.providers.utility import config_bnb
 
 class DecoderBase(ABC):
     def __init__(self,
