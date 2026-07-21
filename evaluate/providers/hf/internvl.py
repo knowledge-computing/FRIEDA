@@ -5,8 +5,8 @@ from typing import List
 import torch
 from transformers import AutoProcessor
 
-from frieda.providers.base import DecoderBase
-from frieda.providers.utility import make_input_message
+from evaluate.providers.base import DecoderBase
+from evaluate.providers.utility import make_input_message
 
 class InternVLDecoder(DecoderBase):
     def __init__(self,

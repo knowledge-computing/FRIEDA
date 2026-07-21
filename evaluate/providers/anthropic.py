@@ -5,8 +5,8 @@ from time import time
 
 import torch
 
-from frieda.providers.base import DecoderBase
-from frieda.providers.utility import make_input_message
+from evaluate.providers.base import DecoderBase
+from evaluate.providers.utility import make_input_message
 
 class ClaudeDecoder(DecoderBase):
     def __init__(self,

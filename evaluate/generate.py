@@ -1,11 +1,10 @@
 import os
 import polars as pl
 import pickle
-from tqdm import tqdm
 
-from frieda.providers import (DecoderBase, 
+from providers import (DecoderBase, 
                               init_model, determine_backend)
-from frieda.data_control import (load_data, save_data,
+from data_control import (load_data, save_data,
                                  partition_data)
 
 def respond_q(model: DecoderBase,
