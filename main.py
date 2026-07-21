@@ -54,34 +54,34 @@ if __name__ == "__main__":
     sub = parser.add_subparsers(dest="cmd", required=True)
 
     p_download = sub.add_parser("download")
-    parser.add_argument("--download_dir", default="./data", 
-                        help="Path to download data to. Default path is ./data")
-    parser.add_arugment("--method", type=str, default='hf', choices=['gdrive', 'hf'],
-                        help="Method of downloading FRIEDA (either Google Drive or HuggingFace)")
+    p_download.add_argument("--download_dir", default="./data",
+                            help="Path to download data to. Default path is ./data")
+    p_download.add_argument("--method", type=str, default='hf', choices=['gdrive', 'hf'],
+                            help="Method of downloading FRIEDA (either Google Drive or HuggingFace)")
     
     p_eval = sub.add_parser("test")
-    parser.add_argument("--model", type=str, default=None,
+    p_eval.add_argument("--model", type=str, required=True,
                         help="Name/model_id/path of LVLM to test on")
-    parser.add_argument("--split", type=str, default='direct', choices=['direct', 'contextual'],
-                        help="FRIEDA evaluation subset (either -direct or -contextual)"),
-    parser.add_argument('--data_dir', type=str, default=None,
-                        help="")
-    parser.add_argument("--result_dir", type=str, default='./results',
+    p_eval.add_argument("--split", type=str, default='direct', choices=['direct', 'contextual'],
+                        help="FRIEDA evaluation subset (either direct or contextual)")
+    p_eval.add_argument('--data_dir', type=str, default=None,
+                        help="Path to the FRIEDA dataset")
+    p_eval.add_argument("--result_dir", type=str, default='./results',
                         help="Path to save evaluation results to. Default path is ./results")
-    parser.add_argument("--batch_size", type=int, default=8,
+    p_eval.add_argument("--batch_size", type=int, default=8,
                         help="Batch size")
-    parser.add_argument("--thinking", action="store_true",
+    p_eval.add_argument("--thinking", action="store_true",
                         help="Run in thinking mode. e.g., Ovis2.5-Thinking")
-    parser.add_argument("--use_flash", action="store_true",
+    p_eval.add_argument("--use_flash", action="store_true",
                         help="Use flash attention 2")
-    parser.add_argument("--evaluate", action="store_true",
+    p_eval.add_argument("--evaluate", action="store_true",
                         help="Run final output evaluation")
     
     # p_visualize = sub.add_parser("visualize")
 
     p_preprocess = sub.add_parser("collection")
-    parser.add_argument("--data_dir", type=str, required=True,
-                        help="Directory with raw PDF files")
+    p_preprocess.add_argument("--data_dir", type=str, required=True,
+                              help="Directory with raw PDF files")
 
     args = parser.parse_args()
 
